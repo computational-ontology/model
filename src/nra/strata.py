@@ -61,7 +61,7 @@ _ORD = r"(?:[\divxlc]+[a-z]?|one|two|three|four|five|six|first|second|third|four
 _DROP = re.compile(
     r"^(article|art\.?|artículo|section|sec\.?|§|clause|paragraph|párrafo|num\.?|part|parte|title|título|titulo|chapter|capítulo|capitulo)?\s*"
     + _ORD + r"\.?:?$|^\W*$",
-    re.I,
+    re.IGNORECASE,
 )
 
 
@@ -137,7 +137,7 @@ def main(argv: list[str] | None = None) -> int:
     rows = load_rows(a.data)
     types = [chapter_type(r.get("header", "")) for r in rows]
     by_cons: dict[str, set[str]] = defaultdict(set)
-    for r, t in zip(rows, types):
+    for r, t in zip(rows, types, strict=True):
         by_cons[t].add(r["constitution_id"])
     print("sections per chapter type:")
     for t, c in Counter(types).most_common():

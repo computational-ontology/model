@@ -1,6 +1,8 @@
 # texts are never committed — see NOTICE
 data/snapshot/
 data/raw/
+data/*.zip
+*.zip
 *.jsonl.gz
 
 # python

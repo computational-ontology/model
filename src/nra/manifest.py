@@ -43,7 +43,7 @@ class SnapshotManifest(BaseModel):
         path.write_text(self.model_dump_json(indent=2), encoding="utf-8")
 
     @classmethod
-    def load(cls, path: Path) -> "SnapshotManifest":
+    def load(cls, path: Path) -> SnapshotManifest:
         return cls.model_validate(json.loads(path.read_text(encoding="utf-8")))
 
 

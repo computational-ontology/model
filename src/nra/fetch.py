@@ -23,7 +23,7 @@ import argparse
 import json
 import sys
 import time
-from datetime import date
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib import robotparser
 
@@ -41,7 +41,7 @@ def _robots() -> robotparser.RobotFileParser:
     rp.set_url("https://www.constituteproject.org/robots.txt")
     try:
         rp.read()
-    except Exception:
+    except OSError:
         rp.parse(["User-agent: *", "Disallow: /"])  # unreachable → be conservative
     return rp
 
@@ -94,7 +94,7 @@ def build(key: str, lang: str, out: Path, manifest_path: Path, limit: int | None
             )
         print(f"[{i}/{len(cons)}] {cid}: {len(secs)} sections", file=sys.stderr)
     manifest = SnapshotManifest(
-        dump_date=date.today(),
+        dump_date=datetime.now(tz=timezone.utc).date(),
         query={"key": key, "lang": lang, "in_force": "true"},
         sections=records,
     )
