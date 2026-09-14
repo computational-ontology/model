@@ -21,7 +21,7 @@ keywords:
   - natural language processing
   - ideology
 abstract: >-
-  Pipeline and models that break a text down into three strata (Registro, Enunciación,
-  Mediación) following Maurizio Ferraris's New Realism, typing entities as physical,
+  Pipeline and models that break a text down into three strata (Record, Enunciation,
+  Mediation) following Maurizio Ferraris's New Realism, typing entities as physical,
   ideal or social and labelling each claim with a hermeneutic operator (naturalised,
   revealed, other). Pilot corpus: emergency provisions across in-force constitutions.

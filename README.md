@@ -6,9 +6,9 @@ The analyzer takes a text and returns a structured breakdown in three strata:
 
 | Stratum | Ferraris / Peirce | What it produces |
 |---|---|---|
-| **E1 · Registro** | firstness · ontology | the frozen inscription; inscribed acts; entities typed *physical / ideal / social*; document type |
-| **E2 · Enunciación** | secondness · epistemology | claims and frames; the **operator** on each claim (↓ naturalised · ✦ revealed · other); ideological signature |
-| **E3 · Mediación** | thirdness · technology | the card, a JSON-LD export against the project ontology, and a reflexive log (model version, date) |
+| **E1 · Record** | firstness · ontology | the frozen inscription; inscribed acts; entities typed *physical / ideal / social*; document type |
+| **E2 · Enunciation** | secondness · epistemology | claims and frames; the **operator** on each claim (↓ naturalised · ✦ revealed · other); ideological signature |
+| **E3 · Mediation** | thirdness · technology | the card, a JSON-LD export against the project ontology, and a reflexive log (model version, date) |
 
 Every model output is labelled **emendable** and carries a model hash and a date; the frozen input is the only **in-emendable** item and is never rewritten.
 

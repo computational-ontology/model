@@ -6,7 +6,7 @@ Companion to `claude/INSTRUCCIONES_PROYECTO.md` (axioms, tables, vocabulary). Di
 
 ## 1. What is being built
 
-A website (working name **new-realism**) with a structured analyzer: a user pastes a text and receives a card per stratum (E1 Registro · E2 Enunciación · E3 Mediación), a JSON-LD export against the project ontology, and an optional chat explanation grounded in the card. Behind it, a pipeline in which most components are rules and three are learned models. Everything is published Gold Route: GitHub (code, codebook, ontology), OSF (preregistration), Zenodo (DOIs for codebook, dataset, evaluation set, model weights mirror), Hugging Face Hub (models and dataset cards).
+A website (working name **new-realism**) with a structured analyzer: a user pastes a text and receives a card per stratum (E1 Record · E2 Enunciation · E3 Mediation), a JSON-LD export against the project ontology, and an optional chat explanation grounded in the card. Behind it, a pipeline in which most components are rules and three are learned models. Everything is published Gold Route: GitHub (code, codebook, ontology), OSF (preregistration), Zenodo (DOIs for codebook, dataset, evaluation set, model weights mirror), Hugging Face Hub (models and dataset cards).
 
 ## 2. Tasks: what is learned, what is a rule
 

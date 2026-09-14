@@ -1,205 +1,205 @@
-# Computational-Ontology Model — Instrucciones del proyecto (v0.2, "estabilizar el suelo")
+# Computational-Ontology Model — Project instructions (v0.3, "stabilising the ground")
 
-Fuente filosófica de anclaje: Jimmy Hernández Marcelo, «La filosofía de la tecnología desde el Nuevo realismo», estudio introductorio a M. Ferraris, *Metafísica de la Web* (Madrid, Dykinson, 2020), pp. 9-33. Las tres tablas de ese texto (pp. 18, 21 y 29) y las once tesis de la documentalidad (pp. 22-24) son el armazón de todo lo que sigue.
+Anchor source: Jimmy Hernández Marcelo, «La filosofía de la tecnología desde el Nuevo realismo», introductory study to M. Ferraris, *Metafísica de la Web* (Madrid, Dykinson, 2020), pp. 9-33. The three tables in that text (pp. 18, 21 and 29) and the eleven theses of documentality (pp. 22-24) are the frame for everything below.
 
-Cambios respecto a v0.1: regla de lengua multilingüe (A.4); las correcciones de la auditoría quedan incorporadas en los axiomas (A.2), el vocabulario (A.3) y la arquitectura (C.2-C.3), y C.1 registra cada error con la corrección aplicada; C.4 incorpora la capa de ideologías.
-
----
-
-## PARTE A — Instrucciones del proyecto (texto para pegar en "Project instructions")
-
-### A.1 Propósito
-
-Este proyecto diseña, implementa y valida un **modelo ontológico-computacional** (pipeline de NLP semántico) que permita mapear *realidades en competencia* a partir de corpus textuales, sin reducir el análisis a polaridad de sentimiento. El marco filosófico es el **Nuevo realismo de Maurizio Ferraris** (LabOnt, Turín): distinción ontología/epistemología, in-enmendabilidad, documentalidad («Objeto = Acto Inscrito»), documedialidad e histéresis. Las "realidades en competencia" se operacionalizan como **firmas ideológicas** sobre un mismo objeto social (ver A.2.11 y C.4). El realismo de campos de sentido de Markus Gabriel se usa sólo como recurso auxiliar y siempre etiquetado como tal.
-
-### A.2 Axiomas de diseño (no negociables)
-
-1. **Separación ontología / epistemología en cada capa.** Todo artefacto del pipeline se etiqueta con su columna de la Tabla 1: *in-enmendable* (registro, inscripción, corpus congelado) o *enmendable* (modelo, embedding, clúster, interpretación). Nunca se presenta un output enmendable como si fuera in-enmendable.
-2. **Prohibición de la falacia trascendental.** No se afirma que lo que el modelo "sabe" (embeddings, atención, clústeres) determine lo que *hay* en el corpus. Los clústeres son esquemas conceptuales; las inscripciones son el mundo. Toda visualización lleva la advertencia «esquema, no realidad».
-3. **Tipología ontológica obligatoria de las entidades** (Tabla 2): cada entidad detectada se clasifica como *físico*, *ideal* o *social*, con sus tres coordenadas (espacio, tiempo, dependencia de la conciencia). Ninguna entidad queda sin tipo.
-4. **Nada social existe fuera del texto (tesis 6).** El pipeline trabaja sobre *inscripciones*; lo que no está inscrito no es un objeto social computable. No se infieren objetos sociales "latentes" no atestiguados. El corpus es un archivo de registros, no "comunicación".
-5. **El algoritmo es terceridad (Tabla 3).** La tecnología —incluido este pipeline— es un *factor de verdad* que media entre ontología y epistemología. El proyecto documenta reflexivamente sus propios efectos (qué hechos produce, qué interpretaciones habilita); no se presenta como espejo neutral.
-6. **Realismo emergentista.** Las realidades en competencia se modelan como *emergencia* de muchas inscripciones no programáticas (copernicanismo de la Web, punto 5), no como construcciones deliberadas de un sujeto.
-7. **Individuación por firma/estilo (tesis 11).** La identidad de un emisor o comunidad discursiva se rastrea por rasgos estilométricos, no sólo por metadatos.
-8. **Documento fuerte ≠ documento débil (tesis 9).** Inscripciones de actos (constituciones, leyes, sentencias, contratos) y registros de hechos (prensa, redes, testimonios) forman sub-corpus distintos con tratamientos distintos; no se mezclan en un mismo modelo sin declararlo.
-9. **Temporalidad e histéresis.** Todo objeto social se rastrea como trayectoria fechada; se miden la persistencia de marcos tras el evento causal y su decaimiento. No hay análisis puramente sincrónico.
-10. **Sin interpretabilidad por decreto.** Ningún componente (cabezas de atención, factores de matriz, ejes de reducción dimensional) se declara "eje de perspectiva" sin validación empírica: anotación humana, robustez, ablaciones, contraste con comunidades conocidas.
-11. **Las perspectivas son ideologías inscritas.** Una "perspectiva" no es un estado mental sino un objeto social (tesis 4): una firma ideológica reconocible en inscripciones, modelable con la tupla de Romero y los operadores hermenéuticos ya definidos en el ecosistema SOCE / *Arquitecturas ideológicas* (C.4).
-
-### A.3 Vocabulario canónico (usar siempre estos términos, en este sentido)
-
-| Término | Sentido en este proyecto | Prohibido usar como sinónimo de… |
-|---|---|---|
-| **Inscripción / registro** | Huella accesible a al menos dos personas, soporte del objeto social | "dato bruto", "texto en sí" |
-| **Objeto social** | Acto inscrito que involucra ≥2 sujetos y depende de que existan sujetos que lo reconozcan | "opinión", "sentimiento" |
-| **In-enmendable** | Lo que no puede corregirse con la sola fuerza del pensamiento (el registro tal como quedó) | "verdadero" |
-| **Enmendable** | Lo que sabemos sobre lo que existe; corregible; el modelo y sus salidas | "subjetivo" |
-| **Realidad** | Dominio de los individuos (ontología, primeridad) | "verdad" |
-| **Verdad** | Dominio de los objetos de conocimiento (epistemología, segundidad) | "realidad" |
-| **Interpretación / hecho** | Producto de la mediación tecnológica (terceridad) | "opinión" |
-| **Documento fuerte** | Inscripción de un *acto* (ley, contrato, constitución, sentencia, promesa) | — |
-| **Documento débil** | Registro de un *hecho* (noticia, post, testimonio, log) | — |
-| **Comunidad de inscripción** | Conjunto de emisores/soportes que comparten firma (estilo + firma ideológica) sobre un objeto social | "audiencia", "burbuja" |
-| **Ideología** | Tecnología de dirección (Romero): tupla estructural I = ⟨C,S,D,G,B,A,P,V,I,O,M⟩ inscrita en documentos; objeto social | "sesgo", "opinión política" |
-| **Firma ideológica** | Par ⟨ω_I, cadena de operadores⟩ que individualiza una ideología sobre la matriz M = C×S | "etiqueta partidista" |
-| **Naturalización (↓)** | Operador que presenta un esquema enmendable como realidad in-enmendable ("creencias con el disfraz de hechos"; mimetismo ontológico) | "mentira", "desinformación" |
-| **Campo de sentido (Gabriel)** | Dominio en el que un objeto aparece; recurso auxiliar para modelar perspectivas | "verdad objetiva", "core truth" |
-| **Histéresis** | Persistencia de efectos de un evento más allá de sus causas | "tendencia" |
-
-### A.4 Reglas de trabajo para Claude en este proyecto
-
-- **Lengua: multilingüe, según cómo pida Luis.** Responder en la lengua en que está escrito el mensaje (español, inglés o italiano; japonés sólo si lo pide explícitamente). Si el mensaje mezcla lenguas, responder en la dominante. Los documentos se producen en la lengua que Luis indique para ese entregable; si no indica, en la del mensaje. La terminología técnica de NLP puede quedar en inglés en cualquier lengua; los términos de Ferraris se citan en italiano/español según la fuente y con equivalente en la lengua del texto.
-- Antes de proponer cualquier componente técnico, indicar (a) a qué fila/columna de las Tablas 1-3 corresponde y (b) qué tesis de la documentalidad lo justifica o lo restringe.
-- No mezclar a Ferraris y a Gabriel sin marcarlo: cuando se use «campo de sentido» o «Sinnfeld», anteponer «(Gabriel, realismo neutral)». Ferraris advierte que ese realismo puede hacer resurgir la idea de que el hombre otorga sentido a la existencia (p. 26).
-- No atribuir interpretabilidad ontológica a cabezas de atención, factores de una matriz o ejes de UMAP/t-SNE sin validación empírica explícita (axioma 10).
-- Toda afirmación filosófica sobre Ferraris debe citarse con página del PDF de anclaje o de la obra original; si no hay fuente, marcarla como «hipótesis de trabajo». Lo mismo para Romero, Gabriel y los formalismos propios (SOCE, *Arquitecturas ideológicas*): citar `manifest.json` o el documento canónico correspondiente.
-- Mantener la separación entre convocatorias (SPReAD / MSCA) ya establecida en el ecosistema SOCE: este proyecto es infraestructura común; no se importa texto de una propuesta a otra.
-- Al terminar cada tarea: autoauditoría (errores, supuestos no fundados, correcciones) y registro del avance en el proyecto (`claude/…`).
-- Consultar la documentación oficial de cualquier plataforma/librería antes de modificarla o recomendarla.
+Changes since v0.2: English is the canonical language of this document and of the stratum names (Record · Enunciation · Mediation); content unchanged.
 
 ---
 
-## PARTE B — El armazón: las tres tablas y su traducción computacional
+## PART A — Project instructions (text to paste into "Project instructions")
 
-### Tabla 1 (p. 18) — Epistemología vs. Ontología → qué capa del pipeline pertenece a qué dominio
+### A.1 Purpose
 
-| Ferraris | EPISTEMOLOGÍA (enmendable) | ONTOLOGÍA (in-enmendable) |
+This project designs, implements and validates a **computational-ontology model** (a semantic-NLP pipeline) that maps *competing realities* in textual corpora without reducing the analysis to sentiment polarity. The philosophical frame is **Maurizio Ferraris's New Realism** (LabOnt, Turin): the ontology/epistemology distinction, unamendability, documentality ("Object = Inscribed Act"), documediality and hysteresis. "Competing realities" are operationalised as **ideological signatures** over one and the same social object (A.2.11, C.4). Markus Gabriel's fields-of-sense realism is used only as an auxiliary resource and is always labelled as such.
+
+### A.2 Design axioms (non-negotiable)
+
+1. **Ontology / epistemology separated in every layer.** Every artefact of the pipeline is tagged with its column of Table 1: *unamendable* (record, inscription, frozen corpus) or *amendable* (model, embedding, cluster, interpretation). An amendable output is never presented as unamendable.
+2. **No transcendental fallacy.** It is never claimed that what the model "knows" (embeddings, attention, clusters) determines what *there is* in the corpus. Clusters are conceptual schemes; inscriptions are the world. Every visualisation carries the warning "scheme, not reality".
+3. **Mandatory ontological typing of entities** (Table 2): every detected entity is classed as *physical*, *ideal* or *social*, with its three coordinates (space, time, dependence on consciousness). No entity stays untyped.
+4. **Nothing social exists outside the text (thesis 6).** The pipeline works on *inscriptions*; what is not inscribed is not a computable social object. No "latent", unattested social objects are inferred. The corpus is an archive of records, not "communication".
+5. **The algorithm is thirdness (Table 3).** Technology — this pipeline included — is a *factor of truth* mediating between ontology and epistemology. The project documents its own effects reflexively (which facts it produces, which interpretations it enables); it never presents itself as a neutral mirror.
+6. **Emergentist realism.** Competing realities are modelled as *emergence* from many non-programmatic inscriptions (Copernicanism of the Web, point 5), not as deliberate constructions by a subject.
+7. **Individuation by signature/style (thesis 11).** The identity of an emitter or a discursive community is tracked through stylometric traits, not only through metadata.
+8. **Strong document ≠ weak document (thesis 9).** Inscriptions of acts (constitutions, statutes, rulings, contracts) and records of facts (press, social media, testimony) form separate sub-corpora with separate treatments; they are never mixed in one model without saying so.
+9. **Temporality and hysteresis.** Every social object is tracked as a dated trajectory; the persistence of frames after the causal event, and their decay, are measured. There is no purely synchronic analysis.
+10. **No interpretability by decree.** No component (attention heads, matrix factors, dimensionality-reduction axes) is declared a "perspective axis" without empirical validation: human annotation, robustness, ablations, contrast with known communities.
+11. **Perspectives are inscribed ideologies.** A "perspective" is not a mental state but a social object (thesis 4): an ideological signature recognisable in inscriptions, modelled with Romero's tuple and the hermeneutic operators already defined in the SOCE / *Ideological Architectures* ecosystem (C.4).
+
+### A.3 Canonical vocabulary (always use these terms, in this sense)
+
+| Term | Meaning in this project | Never used as a synonym of… |
 |---|---|---|
-| Ciencia / Experiencia | lingüística, histórica, libre, infinita, teleológica | no necesariamente lingüística, no histórica, no necesaria, finita, no necesariamente teleológica |
-| Verdad / Realidad | no nace de la experiencia; se orienta teleológicamente hacia ella | no está naturalmente orientada hacia la ciencia |
-| Mundo interno / externo | el esquema conceptual está en la cabeza y habla del mundo → enmendable | lo que no es enmendable está en el mundo y no se cambia con el pensamiento |
-| **Traducción al pipeline** | Modelos, embeddings, factorizaciones, clústeres, etiquetas de perspectiva/ideología, visualizaciones, métricas | Corpus congelado (hash, versión, fecha), inscripciones tal como quedaron, metadatos de registro, identidad documental |
+| **Inscription / record** | A trace accessible to at least two people; the support of a social object | "raw data", "the text itself" |
+| **Social object** | An inscribed act involving ≥2 subjects and depending on there being subjects who recognise it | "opinion", "sentiment" |
+| **Unamendable** | What cannot be corrected by the mere force of thought (the record as it stands) | "true" |
+| **Amendable** | What we know about what exists; correctable; the model and its outputs | "subjective" |
+| **Reality** | The domain of individuals (ontology, firstness) | "truth" |
+| **Truth** | The domain of objects of knowledge (epistemology, secondness) | "reality" |
+| **Interpretation / fact** | The product of technological mediation (thirdness) | "opinion" |
+| **Strong document** | The inscription of an *act* (statute, contract, constitution, ruling, promise) | — |
+| **Weak document** | The record of a *fact* (news item, post, testimony, log) | — |
+| **Community of inscription** | The set of emitters/supports sharing a signature (style + ideological signature) over a social object | "audience", "bubble" |
+| **Ideology** | A technology of direction (Romero): the structural tuple I = ⟨C,S,D,G,B,A,P,V,I,O,M⟩ inscribed in documents; a social object | "bias", "political opinion" |
+| **Ideological signature** | The pair ⟨ω_I, operator chain⟩ that individuates an ideology over the matrix M = C×S | "party label" |
+| **Naturalisation (↓)** | The operator that presents an amendable scheme as unamendable reality ("beliefs wearing the costume of plain facts"; ontological mimicry) | "lie", "disinformation" |
+| **Field of sense (Gabriel)** | The domain in which an object appears; auxiliary resource for modelling perspectives | "objective truth", "core truth" |
+| **Hysteresis** | Persistence of an event's effects beyond its causes | "trend" |
 
-Regla derivada: el corpus se *congela* (versionado, checksum, procedencia) antes de cualquier modelado; nada del modelado retro-escribe el corpus. La única forma de "enmendar" el corpus es una nueva inscripción (nueva versión), coherente con la tesis 5.
+### A.4 Working rules for Claude in this project
 
-### Tabla 2 (p. 21) — Tipos de objeto → esquema de tipado de entidades (NER ontológico)
+- **Language: multilingual, as Luis asks.** Reply in the language of the message (Spanish, English or Italian; Japanese only on explicit request). Mixed messages get the dominant language. Deliverables are produced in the language Luis names for that deliverable; otherwise in the language of the message. NLP terminology may stay in English in any language; Ferraris's terms are quoted in Italian/Spanish as in the source, with an equivalent in the language of the text. **English is the canonical language of the repository, the code, the model cards and the OSF record.**
+- Before proposing any technical component, state (a) which row/column of Tables 1-3 it belongs to and (b) which thesis of documentality justifies or constrains it.
+- Never mix Ferraris and Gabriel without marking it: when "field of sense" or *Sinnfeld* is used, prefix "(Gabriel, neutral realism)". Ferraris warns that this realism can revive the idea that man bestows sense on existence (p. 26).
+- Never attribute ontological interpretability to attention heads, matrix factors or UMAP/t-SNE axes without explicit empirical validation (axiom 10).
+- Every philosophical claim about Ferraris is cited with a page of the anchor PDF or of the original work; without a source it is marked "working hypothesis". The same for Romero, Gabriel and the project's own formalisms (SOCE, *Ideological Architectures*): cite `manifest.json` or the corresponding canonical document.
+- Keep the separation between funding calls (SPReAD / MSCA) already established in the SOCE ecosystem: this project is shared infrastructure; no text is imported from one proposal into another.
+- At the end of every task: self-audit (errors, unfounded assumptions, corrections) and a record of progress in the project (`claude/…`).
+- Consult the official documentation of any platform/library before modifying or recommending it.
+- Commits in `computational-ontology/model` are authored by Luis alone: no co-author trailers.
 
-| Tipo | Espacio | Tiempo | Conciencia | Ejemplos en corpus | Implicación de modelado |
+---
+
+## PART B — The frame: the three tables and their computational translation
+
+### Table 1 (p. 18) — Epistemology vs. Ontology → which pipeline layer belongs to which domain
+
+| Ferraris | EPISTEMOLOGY (amendable) | ONTOLOGY (unamendable) |
+|---|---|---|
+| Science / Experience | linguistic, historical, free, infinite, teleological | not necessarily linguistic, not historical, not necessary, finite, not necessarily teleological |
+| Truth / Reality | does not arise from experience; is teleologically oriented towards it | is not naturally oriented towards science |
+| Inner / outer world | the conceptual scheme is in the head and speaks about the world → amendable | what is not amendable is in the world and cannot be changed by thought |
+| **Pipeline translation** | Models, embeddings, factorisations, clusters, perspective/ideology labels, visualisations, metrics | Frozen corpus (hash, version, date), inscriptions as they stand, record metadata, documentary identity |
+
+Derived rule: the corpus is *frozen* (versioned, checksummed, with provenance) before any modelling; nothing in the modelling writes back into the corpus. The only way to "amend" the corpus is a new inscription (a new version), consistent with thesis 5.
+
+### Table 2 (p. 21) — Types of object → entity typing scheme (ontological NER)
+
+| Type | Space | Time | Consciousness | Corpus examples | Modelling implication |
 |---|---|---|---|---|---|
-| **Físico** | existe en el espacio | existe en el tiempo | independiente | ríos, cuerpos, edificios, artefactos | Referentes estables; sirven de *anclas* para alinear perspectivas (todos hablan del mismo río) |
-| **Ideal** | no existe en el espacio | no existe en el tiempo | independiente | números, teoremas, relaciones lógicas | Se socializan al publicarse (tesis 2); se modelan como relaciones, no como eventos |
-| **Social** | existe en el espacio | existe en el tiempo | **dependiente** | leyes, dinero, promesas, instituciones, ideologías, "la Constitución", "el pueblo" | Sólo existen como inscripciones; son los objetos cuya *construcción en competencia* interesa al proyecto |
+| **Physical** | exists in space | exists in time | independent | rivers, bodies, buildings, artefacts | Stable referents; *anchors* for aligning perspectives (everyone speaks about the same river) |
+| **Ideal** | not in space | not in time | independent | numbers, theorems, logical relations | Socialised on publication (thesis 2); modelled as relations, not events |
+| **Social** | exists in space | exists in time | **dependent** | statutes, money, promises, institutions, ideologies, "the Constitution", "the people" | Exist only as inscriptions; the objects whose *contested construction* the project is about |
 
-Regla derivada: el "Objeto A" de la descripción original (un evento construido en múltiples marcos) es casi siempre un **objeto social**; su núcleo in-enmendable no es una "verdad central" sino el conjunto de **inscripciones fechadas** que lo constituyen. Las ideologías mismas son objetos sociales de esta tabla.
+Derived rule: the "Object A" of the original description (an event built into several frames) is almost always a **social object**; its unamendable core is not a "central truth" but the set of **dated inscriptions** that constitute it. Ideologies themselves are social objects of this table.
 
-### Tabla 3 (p. 29) — Portadores / Enunciadores / Factores de verdad → arquitectura de tres estratos
+### Table 3 (p. 29) — Truth-bearers / Truth-makers / Truth-factors → three-stratum architecture
 
-| Ferraris (Peirce) | Dominio | Correlato | Unidad | **Estrato del pipeline** |
+| Ferraris (Peirce) | Domain | Correlate | Unit | **Pipeline stratum** |
 |---|---|---|---|---|
-| Portadores de verdad — *Primeridad* | Ontología | Realidad | Individuos | **E1 · Registro**: ingesta, congelación, tipado ontológico de entidades e inscripciones, clasificación fuerte/débil |
-| Enunciadores de verdad — *Segundidad* | Epistemología | Verdad | Objetos (conceptos relacionales que presuponen sujetos) | **E2 · Enunciación**: proposiciones, claims, marcos, posturas, firmas ideológicas, embeddings contextuales, trayectoria temporal |
-| Factores de verdad — *Terceridad* | Tecnología | Interpretación | Hechos | **E3 · Mediación**: el propio algoritmo, la visualización, la producción de "hechos" y su documentación reflexiva |
+| Truth-bearers — *firstness* | Ontology | Reality | Individuals | **E1 · Record**: ingestion, freezing, ontological typing of entities and inscriptions, strong/weak classification |
+| Truth-makers — *secondness* | Epistemology | Truth | Objects (relational concepts presupposing subjects) | **E2 · Enunciation**: propositions, claims, frames, stances, ideological signatures, contextual embeddings, temporal trajectory |
+| Truth-factors — *thirdness* | Technology | Interpretation | Facts | **E3 · Mediation**: the algorithm itself, the visualisation, the production of "facts" and their reflexive documentation |
 
-Regla derivada: la terceridad es transversal (resultado ya establecido en *Arquitecturas ideológicas*: la tecnología no es un quinto subsistema sino producto cultural transversal). El pipeline *produce hechos* y debe registrar cómo.
+Derived rule: thirdness is transversal (a result already established in *Ideological Architectures*: technology is not a fifth subsystem but a transversal cultural product). The pipeline *produces facts* and must record how.
 
-### Las once tesis de la documentalidad como restricciones de diseño (pp. 22-24)
+### The eleven theses of documentality as design constraints (pp. 22-24)
 
-| Tesis | Restricción / oportunidad computacional |
+| Thesis | Computational constraint / opportunity |
 |---|---|
-| 1. La ontología cataloga el mundo de la vida | El output principal es un **catálogo** (individuos → clases → ejemplares), no una puntuación |
-| 2. Tres tipos de objetos | Tipado obligatorio (Tabla 2) |
-| 3. Ontología ≠ epistemología | Etiquetado enmendable/in-enmendable de cada artefacto (Tabla 1) |
-| 4. Los objetos sociales dependen de sujetos pero no son subjetivos | Las "perspectivas" son objetivas en cuanto inscritas: se modelan como *comunidades de inscripción* con firma ideológica, no como estados mentales |
-| 5. Objeto = Acto Inscrito | Unidad mínima de análisis: el **acto inscrito** (quién, qué acto, en qué soporte, cuándo), no el token |
-| 6. Nada social existe fuera del texto | Sin inscripción no hay entidad social; prohibido inferir objetos sociales "latentes" no atestiguados |
-| 7. Registro, no comunicación | Se privilegia la estructura de archivo (persistencia, citabilidad, versiones) sobre métricas de difusión |
-| 8. La mente es una tabla de inscripciones | Jerarquía huella → registro → inscripción como jerarquía de niveles de evidencia |
-| 9. Documentos fuertes vs. débiles | Dos sub-corpus: actos (performativos) y registros de hechos (constatativos) |
-| 10. La letra es el fundamento del espíritu | Instituciones, arte, religión, filosofía e ideologías se analizan como resultado de inscripciones, nunca como "ideas" flotantes |
-| 11. La individualidad se manifiesta en la firma | Módulo de estilometría para individuar autores/comunidades; la firma ideológica es su correlato en el plano del contenido |
+| 1. Ontology catalogues the life-world | The main output is a **catalogue** (individuals → classes → instances), not a score |
+| 2. Three types of object | Mandatory typing (Table 2) |
+| 3. Ontology ≠ epistemology | Amendable/unamendable tag on every artefact (Table 1) |
+| 4. Social objects depend on subjects but are not subjective | "Perspectives" are objective in so far as inscribed: modelled as *communities of inscription* with an ideological signature, not as mental states |
+| 5. Object = Inscribed Act | Minimal unit of analysis: the **inscribed act** (who, which act, on which support, when), not the token |
+| 6. Nothing social exists outside the text | No inscription, no social entity; inferring "latent" unattested social objects is forbidden |
+| 7. Record, not communication | Archive structure (persistence, citability, versions) is privileged over diffusion metrics |
+| 8. The mind is a tablet of inscriptions | The hierarchy trace → record → inscription is used as a hierarchy of evidence levels |
+| 9. Strong vs. weak documents | Two sub-corpora: acts (performative) and records of facts (constative) |
+| 10. The letter is the foundation of spirit | Institutions, art, religion, philosophy and ideologies are analysed as results of inscriptions, never as free-floating "ideas" |
+| 11. Individuality shows in the signature | Stylometry module to individuate authors/communities; the ideological signature is its correlate at the level of content |
 
 ---
 
-## PARTE C — Auditoría del texto original: errores, corrección aplicada y arquitectura resultante
+## PART C — Audit of the original text: errors, corrections applied, resulting architecture
 
-### C.1 Registro de errores y correcciones (cerrado en v0.2)
+### C.1 Register of errors and corrections (closed in v0.2)
 
-| # | Error o debilidad en el texto original | Corrección aplicada | Dónde queda |
+| # | Error or weakness in the original text | Correction applied | Where it lives |
 |---|---|---|---|
-| 1 | Mezcla dos nuevos realismos: la definición de partida y el uso de *Sinnfeld* son de Gabriel (realismo neutral), no de Ferraris; el PDF (p. 26) recoge la reserva de Ferraris | Ferraris como marco primario; Gabriel como auxiliar declarado y etiquetado | A.1, A.3, A.4 |
-| 2 | Capa 1 «tokenización ontológica establece los objetos independientes que existen antes de la interpretación»: error de categoría — el parsing accede a inscripciones (objetos sociales), no a objetos físicos independientes | Capa rebautizada **E1 · Registro**; lo in-enmendable es el registro tal como quedó; unidad mínima = acto inscrito | A.2.1, A.2.4, B-Tabla 3, C.2 |
-| 3 | Capa 3 «separa core truths de lentes subjetivas»: invierte la Tabla 1 (verdad es epistemológica y enmendable) y contradice la tesis 4 (las perspectivas no son subjetivas) | Sustituida por **E2 · Enunciación**: claims, marcos y firmas ideológicas objetivamente inscritas, agrupadas por comunidad de inscripción | A.2.11, A.3, C.2-C.3 |
-| 4 | Atribuye interpretabilidad a cabezas de atención / factorización matricial como "dimensiones de punto de vista" sin respaldo | Axioma 10: nada es eje de perspectiva sin validación (anotación humana, robustez, ablaciones) | A.2.10, C.3 fase 9 |
-| 5 | UMAP/t-SNE presentados como "topología de la realidad colectiva": reducciones no fieles; leerlas así es la falacia trascendental | UMAP sólo vista exploratoria con advertencia; topología ⇒ TDA (homología persistente / Mapper); salida siempre etiquetada enmendable | A.2.2, C.3 fase 8 |
-| 6 | Omite la terceridad: el algoritmo es un factor de verdad que produce hechos | **E3 · Mediación** reflexiva; registro de hechos producidos y supuestos | A.2.5, B-Tabla 3, C.2 |
-| 7 | No distingue documento fuerte / débil | Axioma 8; sub-corpus separados; fase 2 los clasifica | A.2.8, C.3 fase 2 |
-| 8 | Corpus tratado como sincrónico; sin histéresis | Axioma 9; fase 7 (trayectoria e histéresis) | A.2.9, C.3 fase 7 |
-| 9 | "Realidades en competencia" sin operacionalizar | Definidas como firmas ideológicas sobre un mismo objeto social, rastreadas por comunidad de inscripción y tiempo | A.1, A.2.11, C.4 |
-| 10 | "Sinnfeld" usado como si fuera la unidad de perspectiva | Unidad de perspectiva = comunidad de inscripción + firma ideológica; *campo de sentido* queda como hipótesis auxiliar a contrastar | A.3, C.4 |
+| 1 | Two new realisms conflated: the opening definition and the use of *Sinnfeld* are Gabriel's (neutral realism), not Ferraris's; the PDF (p. 26) records Ferraris's reservation | Ferraris as primary frame; Gabriel as declared, labelled auxiliary | A.1, A.3, A.4 |
+| 2 | Layer 1, "ontological tokenisation establishes the independent objects that exist before interpretation": category error — parsing reaches inscriptions (social objects), not independent physical objects | Layer renamed **E1 · Record**; the unamendable item is the record as it stands; minimal unit = inscribed act | A.2.1, A.2.4, B-Table 3, C.2 |
+| 3 | Layer 3, "separates core truths from subjective lenses": inverts Table 1 (truth is epistemological and amendable) and contradicts thesis 4 (perspectives are not subjective) | Replaced by **E2 · Enunciation**: objectively inscribed claims, frames and ideological signatures, grouped by community of inscription | A.2.11, A.3, C.2-C.3 |
+| 4 | Attributes interpretability to attention heads / matrix factorisation as "viewpoint dimensions" without support | Axiom 10: nothing is a perspective axis without validation (human annotation, robustness, ablations) | A.2.10, C.3 phase 9 |
+| 5 | UMAP/t-SNE presented as "the topology of collective reality": unfaithful reductions; reading them that way is the transcendental fallacy | UMAP only as an exploratory view with a warning; topology ⇒ TDA (persistent homology / Mapper); output always tagged amendable | A.2.2, C.3 phase 8 |
+| 6 | Omits thirdness: the algorithm is a factor of truth producing facts | **E3 · Mediation**, reflexive; record of produced facts and assumptions | A.2.5, B-Table 3, C.2 |
+| 7 | No strong/weak document distinction | Axiom 8; separate sub-corpora; phase 2 classifies them | A.2.8, C.3 phase 2 |
+| 8 | Corpus treated as synchronic; no hysteresis | Axiom 9; phase 7 (trajectory and hysteresis) | A.2.9, C.3 phase 7 |
+| 9 | "Competing realities" not operationalised | Defined as ideological signatures over one social object, tracked by community of inscription and over time | A.1, A.2.11, C.4 |
+| 10 | *Sinnfeld* used as if it were the unit of perspective | Unit of perspective = community of inscription + ideological signature; *field of sense* kept as an auxiliary hypothesis to be tested | A.3, C.4 |
 
-### C.2 Arquitectura corregida (sustituye al diagrama original)
+### C.2 Corrected architecture (replaces the original diagram)
 
 ```
-[ Corpus congelado: inscripciones fechadas y versionadas ]        ← IN-ENMENDABLE
+[ Frozen corpus: dated, versioned inscriptions ]                 ← UNAMENDABLE
             │
             ▼
-E1 · REGISTRO (Primeridad · Ontología · Individuos)
-   1a. Segmentación en actos inscritos (quién / qué acto / soporte / fecha)
-   1b. Tipado ontológico de entidades: físico · ideal · social
-   1c. Clasificación documental: fuerte (acto) · débil (registro de hecho)
+E1 · RECORD (firstness · ontology · individuals)
+   1a. Segmentation into inscribed acts (who / which act / support / date)
+   1b. Ontological typing of entities: physical · ideal · social
+   1c. Document classification: strong (act) · weak (record of fact)
             │
             ▼
-E2 · ENUNCIACIÓN (Segundidad · Epistemología · Objetos)           ← ENMENDABLE
-   2a. Embeddings contextuales (transformers) etiquetados como esquema conceptual
-   2b. Extracción de claims / marcos / posturas sobre cada objeto social
-   2c. Firma ideológica: proyección sobre M = C×S y detección de operadores (⇒ ⊕ ↓ ∅ ✦ ∥)
-   2d. Agrupación por comunidad de inscripción (estilometría + firma ideológica)
-   2e. Eje temporal: trayectoria de cada objeto social; medidas de histéresis
+E2 · ENUNCIATION (secondness · epistemology · objects)          ← AMENDABLE
+   2a. Contextual embeddings (transformers) tagged as conceptual scheme
+   2b. Extraction of claims / frames / stances on each social object
+   2c. Ideological signature: projection on M = C×S and operator detection (⇒ ⊕ ↓ ∅ ✦ ∥)
+   2d. Grouping by community of inscription (stylometry + ideological signature)
+   2e. Time axis: trajectory of each social object; hysteresis measures
             │
             ▼
-E3 · MEDIACIÓN (Terceridad · Tecnología · Hechos)                  ← ENMENDABLE + REFLEXIVO
-   3a. Catálogo de realidades en competencia (mundo de la vida catalogado)
-   3b. Visualización con advertencia "esquema, no realidad"; TDA si se reclama topología
-   3c. Registro reflexivo: qué hechos produce el pipeline, con qué supuestos, validación humana
+E3 · MEDIATION (thirdness · technology · facts)                  ← AMENDABLE + REFLEXIVE
+   3a. Catalogue of competing realities (the life-world catalogued)
+   3b. Visualisation with the warning "scheme, not reality"; TDA if topology is claimed
+   3c. Reflexive record: which facts the pipeline produces, under which assumptions, human validation
 ```
 
-### C.3 Tabla de fases corregida
+### C.3 Corrected phase table
 
-| Fase | Mecanismo técnico | Objetivo en clave de Nuevo realismo (Ferraris) | Dominio (Tabla 1) |
+| Phase | Technical mechanism | Objective in New-Realist terms (Ferraris) | Domain (Table 1) |
 |---|---|---|---|
-| 1. Congelación del corpus | Versionado, checksum, procedencia, fecha de cada inscripción | Fijar lo in-enmendable: el registro tal como quedó | In-enmendable |
-| 2. Segmentación en actos inscritos y clasificación fuerte/débil | Segmentación discursiva + extracción de emisor, acto (performativo/constatativo), soporte, fecha | Unidad mínima = Objeto = Acto Inscrito (tesis 5, 9) | In-enmendable (identificación) / enmendable (etiquetas) |
-| 3. Tipado ontológico de entidades | NER + clasificador físico/ideal/social con las tres coordenadas de la Tabla 2 | Catalogar el mundo de la vida (tesis 1-2) | Enmendable |
-| 4. Embedding contextual | Encoders multilingües (español/italiano/inglés) con ventana de contexto | Representar el esquema conceptual con que *sabemos* del registro; nunca el registro mismo | Enmendable |
-| 5. Extracción de enunciados y marcos | Claim detection, frame/stance classification, argument mining, relaciones entre entidades tipadas | Segundidad: los objetos del conocimiento presuponen sujetos | Enmendable |
-| 6. Firma ideológica y comunidades de inscripción | Proyección sobre M = C×S; detección de operadores hermenéuticos; grafos emisor–objeto social–marco; detección de comunidades; estilometría (tesis 11) | Perspectivas como objetos sociales, no como lentes subjetivas (tesis 4) | Enmendable |
-| 7. Trayectoria temporal e histéresis | Series por objeto social; persistencia y decaimiento de marcos tras el evento causal | Los efectos sobreviven a las causas (*Metafísica de la Web*, p. 48) | Enmendable |
-| 8. Catálogo y visualización | Catálogo estructurado; TDA (homología persistente / Mapper) si se reclama topología; UMAP sólo exploratorio | Terceridad: el pipeline produce hechos e interpretaciones y lo declara | Enmendable + reflexivo |
-| 9. Validación y registro reflexivo | Anotación humana, robustez, ablaciones; informe de supuestos | Evitar la falacia trascendental; el modelo es enmendable por diseño | — |
+| 1. Freezing the corpus | Versioning, checksum, provenance, date of every inscription | Fix the unamendable: the record as it stands | Unamendable |
+| 2. Segmentation into inscribed acts and strong/weak classification | Discourse segmentation + extraction of emitter, act (performative/constative), support, date | Minimal unit = Object = Inscribed Act (theses 5, 9) | Unamendable (identification) / amendable (labels) |
+| 3. Ontological typing of entities | NER + physical/ideal/social classifier with Table 2's three coordinates | Catalogue the life-world (theses 1-2) | Amendable |
+| 4. Contextual embedding | Multilingual encoders (Spanish/Italian/English) with a context window | Represent the conceptual scheme with which we *know* the record; never the record itself | Amendable |
+| 5. Claim and frame extraction | Claim detection, frame/stance classification, argument mining, relations between typed entities | Secondness: objects of knowledge presuppose subjects | Amendable |
+| 6. Ideological signature and communities of inscription | Projection on M = C×S; detection of hermeneutic operators; emitter–social object–frame graphs; community detection; stylometry (thesis 11) | Perspectives as social objects, not subjective lenses (thesis 4) | Amendable |
+| 7. Temporal trajectory and hysteresis | Series per social object; persistence and decay of frames after the causal event | Effects survive their causes (*Metafísica de la Web*, p. 48) | Amendable |
+| 8. Catalogue and visualisation | Structured catalogue; TDA (persistent homology / Mapper) if topology is claimed; UMAP exploratory only | Thirdness: the pipeline produces facts and interpretations and declares it | Amendable + reflexive |
+| 9. Validation and reflexive record | Human annotation, robustness, ablations; report of assumptions | Avoid the transcendental fallacy; the model is amendable by design | — |
 
-### C.4 Ideologías: cómo entran en el modelo (y qué queda por decidir)
+### C.4 Ideologies: how they enter the model (and what remains to decide)
 
-**Tesis de enlace.** Una ideología, en este marco, es un objeto social (Tabla 2: en el espacio y el tiempo, dependiente de sujetos) que existe únicamente como inscripción (tesis 6) y que se individualiza por su firma (tesis 11). No es una "lente" ni un "sesgo": es una tecnología de dirección (Romero) inscrita en documentos fuertes y débiles. Por eso las "realidades en competencia" del proyecto se definen como **distintas firmas ideológicas sobre un mismo objeto social**.
+**Bridging thesis.** In this frame an ideology is a social object (Table 2: in space and time, dependent on subjects) that exists only as inscription (thesis 6) and is individuated by its signature (thesis 11). It is not a "lens" or a "bias": it is a technology of direction (Romero) inscribed in strong and weak documents. The project's "competing realities" are therefore defined as **distinct ideological signatures over one and the same social object**.
 
-**Puente con Ferraris.** El operador de *naturalización* (↓) del sistema formal de *Arquitecturas ideológicas* es, en términos de la Tabla 1, la operación que presenta un esquema enmendable como realidad in-enmendable —exactamente la estructura de la falacia trascendental, pero ejecutada por un actor social sobre un público. El *mimetismo ontológico* ("creencias con el disfraz de hechos", CPSS 2026) es su nombre computacional. El operador de *revelación* (✦) es la operación inversa. Esto convierte la Tabla 1 en instrumento de detección: medir cuánto de lo que un corpus presenta como "hecho" es acto inscrito naturalizado.
+**Bridge to Ferraris.** The *naturalisation* operator (↓) of the formal system in *Ideological Architectures* is, in Table 1 terms, the operation that presents an amendable scheme as unamendable reality — exactly the structure of the transcendental fallacy, but performed by a social actor upon a public. *Ontological mimicry* ("beliefs wearing the costume of plain facts", CPSS 2026) is its computational name. The *revelation* operator (✦) is the inverse operation. This turns Table 1 into a detection instrument: measuring how much of what a corpus presents as "fact" is a naturalised inscribed act.
 
-**Formalismos ya disponibles en el ecosistema (no reinventar):**
+**Formalisms already available in the ecosystem (do not reinvent):**
 
-| Componente | Origen | Uso en este proyecto |
+| Component | Origin | Use in this project |
 |---|---|---|
-| Tupla I = ⟨C,S,D,G,B,A,P,V,I,O,M⟩ (once componentes) | Romero, *Beyond Nature and Nurture* (Springer 2025); integrado en SOCE | Esquema de anotación de la firma ideológica por acto inscrito |
-| Matriz M = C×S (cinco conflictos existenciales × cuatro subsistemas materiales) | *Arquitecturas ideológicas* (`manifest.json` como fuente única de verdad) | Espacio sobre el que se proyectan los claims (fase 6) |
-| Seis operadores hermenéuticos ⇒ ⊕ ↓ ∅ ✦ ∥ | *Arquitecturas ideológicas* | Etiquetas de operación detectables en texto; ↓ y ✦ conectan con Tabla 1 |
-| Firma ideológica ⟨ω_I, cadena de operadores⟩ | *Arquitecturas ideológicas* | Identificador de "realidad" en competencia; ω sola es insuficiente (caso Aceleracionismo/Decrecimiento) |
-| Firma estructural Φ = ⟨σ,V,E⟩ y familias topológicas (τ₁, τ₂, τ₃, puente, aislado) | SOCE | Nivel de sistema: cómo se ensamblan las firmas en un ciclo de exclusión; invariancia topológica (MAGA/MORENA) como predicción a contrastar |
-| Ontología OWL/RDF/SKOS del paper CPSS 2026 | github.com/Luisbourguet/ideology-ontology | Vocabulario formal para el catálogo (E3) y para auditoría de LLMs como *emisores* de inscripciones |
+| Tuple I = ⟨C,S,D,G,B,A,P,V,I,O,M⟩ (eleven components) | Romero, *Beyond Nature and Nurture* (Springer 2025); integrated in SOCE | Annotation scheme for the ideological signature per inscribed act |
+| Matrix M = C×S (five existential conflicts × four material subsystems) | *Ideological Architectures* (`manifest.json` as single source of truth) | Space onto which claims are projected (phase 6) |
+| Six hermeneutic operators ⇒ ⊕ ↓ ∅ ✦ ∥ | *Ideological Architectures* | Operation labels detectable in text; ↓ and ✦ connect with Table 1 |
+| Ideological signature ⟨ω_I, operator chain⟩ | *Ideological Architectures* | Identifier of a competing "reality"; ω alone is insufficient (Accelerationism/Degrowth case) |
+| Structural signature Φ = ⟨σ,V,E⟩ and topological families (τ₁, τ₂, τ₃, bridge, isolated) | SOCE | System level: how signatures assemble into an exclusion cycle; topological invariance (MAGA/MORENA) as a prediction to test |
+| OWL/RDF/SKOS ontology of the CPSS 2026 paper | github.com/Luisbourguet/ideology-ontology | Formal vocabulary for the catalogue (E3) and for auditing LLMs as *emitters* of inscriptions |
 
-**Decisiones abiertas (no bloqueantes):**
+**Open decisions (non-blocking):**
 
-- Corpus piloto: un caso con documentos fuertes y débiles sobre el mismo objeto social (p. ej., una reforma constitucional y su cobertura en prensa y redes) permite probar a la vez la tesis 9, la firma ideológica y la histéresis. Candidatos naturales: los casos ya validados en el corpus SOCE (MAGA/MORENA como par de invariancia topológica).
-- Relación entre "comunidad de inscripción", "familia ideológica" (once perfiles) y "campo de sentido" (Gabriel): hipótesis de trabajo — la comunidad de inscripción es la unidad empírica; la familia ideológica, su clase; el campo de sentido, una lectura filosófica auxiliar a contrastar con datos, no una unidad del pipeline.
-- Granularidad de detección de operadores: ¿a nivel de acto inscrito, de documento o de comunidad? Propuesta inicial: acto inscrito, agregando hacia arriba.
-- Los LLMs como emisores: dado que el paper CPSS 2026 audita modelos de lenguaje por perspectiva, este pipeline debe poder tratar la salida de un LLM como inscripción (documento débil, emisor = modelo, fecha = ejecución) y aplicarle la misma firma ideológica.
-- Stack (pendiente de verificar en documentación oficial antes de fijarlo): Python; Hugging Face para encoders multilingües; spaCy para segmentación/NER base; NetworkX o igraph para comunidades; giotto-tda o ripser para TDA; rdflib/owlready2 para el catálogo OWL/SKOS.
+- Relation between "community of inscription", "ideological family" (eleven profiles) and "field of sense" (Gabriel): working hypothesis — the community of inscription is the empirical unit; the ideological family its class; the field of sense an auxiliary philosophical reading to be tested against data, not a unit of the pipeline.
+- Granularity of operator detection: inscribed act, document or community? Initial proposal: inscribed act, aggregating upwards.
+- LLMs as emitters: since the CPSS 2026 paper audits language models by perspective, this pipeline must be able to treat an LLM's output as an inscription (weak document, emitter = model, date = run) and apply the same ideological signature to it.
+- Pilot corpus, stack and compute are decided in `plan.md` (D1–D3, §3, §5b).
 
 ---
 
-## PARTE D — Autoauditoría de este documento (v0.2)
+## PART D — Self-audit of this document (v0.3)
 
-- El texto de anclaje es un estudio introductorio de Hernández Marcelo, no una obra de Ferraris; las citas de página remiten a ese estudio y, cuando corresponde, a la obra original citada en sus notas. Antes de publicar, contrastar con *Documentalità* (2009), *Manifesto del nuovo realismo* (2012) y *Metafisica della Web* (2020).
-- La lectura de las Tablas 1-3 como estratos de pipeline es una traducción propia del proyecto, no algo que Ferraris afirme; queda como hipótesis de trabajo.
-- El puente "naturalización (↓) = falacia trascendental ejecutada socialmente" es una **propuesta teórica nueva** de este documento, no un resultado ya publicado; conviene tratarlo como conjetura hasta formularlo por escrito en un artículo y contrastarlo con el texto de Ferraris sobre la falacia (*Il mondo esterno*, pp. 19-20, según el PDF).
-- Los componentes de C.4 (tupla de Romero, matriz, operadores, Φ, familias topológicas) se citan según el estado registrado del ecosistema SOCE / *Arquitecturas ideológicas*; si `manifest.json` o el codebook han cambiado, prevalecen esos documentos canónicos.
-- No se ha resuelto todavía la relación entre "campo de sentido" (Gabriel) y "comunidad de inscripción" (derivada de Ferraris); podrían coincidir operativamente, pero conviene mantenerlas separadas hasta tener datos. (Recomendación mantenida de v0.1; la hipótesis de trabajo de C.4 no la cierra.)
-- El stack de C.4 sigue siendo propuesta pendiente de verificación documental (regla A.4).
-- Corrección respecto a v0.1: la regla de lengua decía "comunicarse en español"; ahora es multilingüe según el mensaje. Ninguna otra regla de A.4 cambió de sentido.
+- The anchor text is an introductory study by Hernández Marcelo, not a work by Ferraris; page citations refer to that study and, where relevant, to the original work cited in its notes. Before publishing, check against *Documentalità* (2009), *Manifesto del nuovo realismo* (2012) and *Metafisica della Web* (2020).
+- Reading Tables 1-3 as pipeline strata is the project's own translation, not something Ferraris asserts; it stands as a working hypothesis.
+- The bridge "naturalisation (↓) = the transcendental fallacy performed socially" is a **new theoretical proposal** of this document, not a published result; treat it as a conjecture until written up in an article and checked against Ferraris's text on the fallacy (*Il mondo esterno*, pp. 19-20, per the PDF).
+- The C.4 components (Romero's tuple, matrix, operators, Φ, topological families) are cited according to the recorded state of the SOCE / *Ideological Architectures* ecosystem; if `manifest.json` or the codebook have changed, those canonical documents prevail.
+- The relation between "field of sense" (Gabriel) and "community of inscription" (derived from Ferraris) is still unresolved; they may coincide operationally, but they should be kept separate until there is data. (Recommendation kept from v0.1; the C.4 working hypothesis does not close it.)
+- The stack remains as verified in `plan.md` §3 (rule A.4).
+- English terms for Ferraris's *emendabile / inemendabile*: this document uses *amendable / unamendable*, following the SUNY Press translation of the *Manifesto*; earlier drafts used "emendable / in-emendable" — the two are synonyms here, and the repository code keeps `emendable` as the field name.
