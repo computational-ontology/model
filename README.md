@@ -1,5 +1,7 @@
 # model — New-Realism Analyzer
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22748194.svg)](https://doi.org/10.5281/zenodo.22748194)
+
 Computational-ontology model for mapping *competing realities* in constitutional texts, built on Maurizio Ferraris's New Realism (ontology ≠ epistemology; documentality: *Object = Inscribed Act*). Part of the [Computational Ontology](https://computational-ontology.com/) ecosystem alongside `soce`, `constitutionsplus` and `herder-companion`.
 
 The analyzer takes a text and returns a structured breakdown in three strata:
@@ -42,4 +44,4 @@ GitHub releases are archived on Zenodo under one concept DOI (`CITATION.cff` car
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). Constitute texts must be cited as: Elkins, Zachary, Tom Ginsburg, James Melton. *Constitute: The World's Constitutions to Read, Search, and Compare.* constituteproject.org.
+See [`CITATION.cff`](CITATION.cff). Concept DOI (all versions): [10.5281/zenodo.22748194](https://doi.org/10.5281/zenodo.22748194); v1.0.0: [10.5281/zenodo.22748195](https://doi.org/10.5281/zenodo.22748195). Constitute texts must be cited as: Elkins, Zachary, Tom Ginsburg, James Melton. *Constitute: The World's Constitutions to Read, Search, and Compare.* constituteproject.org.

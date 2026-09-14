@@ -1,6 +1,7 @@
 # Codebook — v1.0
 
-Licence: CC BY 4.0. The codebook is frozen at v1.0, deposited on Zenodo (DOI), and only then is
+Licence: CC BY 4.0. Frozen as part of release v1.0.0 — DOI [10.5281/zenodo.22748195](https://doi.org/10.5281/zenodo.22748195)
+(concept DOI for all versions: [10.5281/zenodo.22748194](https://doi.org/10.5281/zenodo.22748194)). Only then is
 the OSF preregistration sealed and annotation started. Changes after freezing produce v1.x with
 a changelog; the sealed registration names the exact version used.
 
@@ -167,4 +168,4 @@ gated in campaign 1.
 - v0.2 — 2026-09-14 — worked examples from 17 original-language constitutions; proposed decision
   rules and boundary cases; output format; adjudication protocol.
 - v1.0 — 2026-09-14 — decision rules, decision test and example readings confirmed by the annotation
-  lead; frozen for the pilot; tagged release → Zenodo DOI.
+  lead; frozen for the pilot; release v1.0.0, DOI 10.5281/zenodo.22748195.
