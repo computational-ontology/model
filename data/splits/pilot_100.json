@@ -1,0 +1,909 @@
+{
+  "seed": 20260914,
+  "n": 100,
+  "classifier": "chapter_type v3",
+  "snapshot_dump_date": "2026-09-14",
+  "note": "a section may appear in both languages (translation pair); the unit is (constitution_id, section_id, lang)",
+  "sections": [
+    {
+      "constitution_id": "Myanmar_2015",
+      "section_id": "3041",
+      "lang": "en",
+      "chapter_type": "emergency/defence chapter",
+      "header": "Chapter XI. Provisions on State of Emergency",
+      "article": "412",
+      "sha256": "18fb6483617ed7ade8f4634208db10e60a0c2c2a8df251879dd425553183dddb"
+    },
+    {
+      "constitution_id": "Switzerland_2014",
+      "section_id": "1582-1",
+      "lang": "en",
+      "chapter_type": "emergency/defence chapter",
+      "header": "Title Five. Federal Authorities > Chapter 3. Federal Council and Federal Administration > Section 2. Powers > Art 185. External and internal security",
+      "article": "",
+      "sha256": "c66e75cf5cd3dc40ac8b279c58f567653dd258474739e628239946b52ec753ce"
+    },
+    {
+      "constitution_id": "Myanmar_2015",
+      "section_id": "3089-1",
+      "lang": "en",
+      "chapter_type": "emergency/defence chapter",
+      "header": "Chapter XI. Provisions on State of Emergency",
+      "article": "",
+      "sha256": "32657517913a76414df7b33e13b8e40e2bcd29ce94f831215a738db81d502168"
+    },
+    {
+      "constitution_id": "Tuvalu_2023",
+      "section_id": "587",
+      "lang": "en",
+      "chapter_type": "emergency/defence chapter",
+      "header": "PART II. BILL OF RIGHTS > DIVISION 4. PUBLIC EMERGENCIES",
+      "article": "DIVISION 4. PUBLIC EMERGENCIES",
+      "sha256": "6ddd1502afeeab35784f35253088298c0b9a51543a2e4da3f8a0c208211544c6"
+    },
+    {
+      "constitution_id": "Lithuania_2022",
+      "section_id": "710",
+      "lang": "en",
+      "chapter_type": "emergency/defence chapter",
+      "header": "CHAPTER XIII. FOREIGN POLICY AND NATIONAL DEFENCE",
+      "article": "Article 144",
+      "sha256": "e80a3a33265f156b28378cac043a04d510df9eb71fe76e8cc13b3f7c3ea5dd5d"
+    },
+    {
+      "constitution_id": "South_Sudan_2013",
+      "section_id": "2227",
+      "lang": "en",
+      "chapter_type": "emergency/defence chapter",
+      "header": "PART THIRTEEN. STATE OF EMERGENCY AND DECLARATION OF WAR",
+      "article": "189. Declaration of a State of Emergency",
+      "sha256": "fd4580999c316971d523e7a02debc3ff61832e5626cb97096f7e48b27fa5f486"
+    },
+    {
+      "constitution_id": "Afghanistan_2004",
+      "section_id": "470",
+      "lang": "en",
+      "chapter_type": "emergency/defence chapter",
+      "header": "Chapter IX. State of Emergency",
+      "article": "Article 143",
+      "sha256": "5b34092c83e854e4f478e35b1a6c54fa083960b9fea20aba6d9d3b5f6cd486e7"
+    },
+    {
+      "constitution_id": "Lithuania_2022",
+      "section_id": "714",
+      "lang": "en",
+      "chapter_type": "emergency/defence chapter",
+      "header": "CHAPTER XIII. FOREIGN POLICY AND NATIONAL DEFENCE",
+      "article": "Article 145",
+      "sha256": "a9597b53b581affeb17abf5eb3154ca2df3320a18db263105ba911810d11d7be"
+    },
+    {
+      "constitution_id": "Tanzania_2005",
+      "section_id": "321",
+      "lang": "en",
+      "chapter_type": "emergency/defence chapter",
+      "header": "CHAPTER 1. THE UNITED REPUBLIC, POLITICAL PARTIES, THE PEOPLE AND THE POLICY OF SOCIALISM AND SELF-RELIANCE > PART III. BASIC RIGHTS AND DUTIES > Section 7. Extraordinary Powers of the State Authority",
+      "article": "31. Derogation from rights and freedoms",
+      "sha256": "d9b5ca5a3448388d69ac7daf43007278311b40a8baa67ce9fac287d50b5dd22c"
+    },
+    {
+      "constitution_id": "India_2023",
+      "section_id": "3635",
+      "lang": "en",
+      "chapter_type": "emergency/defence chapter",
+      "header": "PART XVIII. EMERGENCY PROVISIONS",
+      "article": "356. Provisions in case of failure of constitutional machinery in States",
+      "sha256": "7a21ec7ca0edfbec891fa588ca638ad9fb856bfe16d0de8e353eb4512e8c8607"
+    },
+    {
+      "constitution_id": "Poland_2009",
+      "section_id": "1337",
+      "lang": "en",
+      "chapter_type": "emergency/defence chapter",
+      "header": "Chapter XI. EXTRAORDINARY MEASURES",
+      "article": "Chapter XI. EXTRAORDINARY MEASURES",
+      "sha256": "8aaf250313d760da36fa7268410df46f563710a0219bcf62d53473e4e70b8f0b"
+    },
+    {
+      "constitution_id": "Venezuela_2009",
+      "section_id": "1431",
+      "lang": "en",
+      "chapter_type": "emergency/defence chapter",
+      "header": "TITLE VIII. PROTECTION OF THE CONSTITUTION > Chapter II. States of Exception",
+      "article": "Chapter II. States of Exception",
+      "sha256": "911d42f1cd051b9e63a79202be044f3568850bb19d569189e267757a8e9f8c0c"
+    },
+    {
+      "constitution_id": "Georgia_2018",
+      "section_id": "757-1",
+      "lang": "en",
+      "chapter_type": "emergency/defence chapter",
+      "header": "Chapter Eight. State Defence and Security > Article 72. Use of the Defence Forces",
+      "article": "",
+      "sha256": "cec30d1f4341b56f61ee150c9bc0cc12749305c63237508713628bf92296fcb5"
+    },
+    {
+      "constitution_id": "Seychelles_2025",
+      "section_id": "2241-1",
+      "lang": "en",
+      "chapter_type": "emergency/defence chapter",
+      "header": "CHAPTER XIV. DEFENCE FORCES > 163",
+      "article": "",
+      "sha256": "53099f3229ba7a6ee5e6421044aebf91d92589e2a9cef74bb89f039953c48656"
+    },
+    {
+      "constitution_id": "Trinidad_and_Tobago_2007",
+      "section_id": "193",
+      "lang": "en",
+      "chapter_type": "emergency/defence chapter",
+      "header": "CHAPTER 1. THE RECOGNITION AND PROTECTION OF FUNDAMENTAL HUMAN RIGHTS AND FREEDOMS > PART 3. Exceptions for Emergencies",
+      "article": "10. Extension of Proclamation",
+      "sha256": "67f928cac75425861be7f27faaa6c618d6cbf66adb265fe2cf9d775284c69c64"
+    },
+    {
+      "constitution_id": "India_2023",
+      "section_id": "3633",
+      "lang": "en",
+      "chapter_type": "emergency/defence chapter",
+      "header": "PART XVIII. EMERGENCY PROVISIONS",
+      "article": "355. Duty of the Union to protect States against external aggression and internal disturbance",
+      "sha256": "80a1bb09195ae197b689644b5a725bd0e60c7f331c98b8265fbf381c54542b85"
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "2892",
+      "lang": "en",
+      "chapter_type": "emergency/defence chapter",
+      "header": "TITLE V. DEFENSE OF THE STATE AND DEMOCRATIC INSTITUTIONS > CHAPTER I. STATE OF DEFENSE AND STATE OF SIEGE > SECTION II. State of Siege > Art 137",
+      "article": "Art 137",
+      "sha256": "6d07590a8ff5f39727f537060fdd81a419de7bb67b44874820f99063dbe5a4d9"
+    },
+    {
+      "constitution_id": "Malta_2016",
+      "section_id": "508-1",
+      "lang": "en",
+      "chapter_type": "rights catalogue",
+      "header": "CHAPTER IV. Fundamental Rights and Freedoms of the Individual > 47. Interpretation of Chapter IV",
+      "article": "",
+      "sha256": "318afdccba3f6b1f037a0e0c1b28941989b72dd6a6ae3b707e6f2ceeb183ad3f"
+    },
+    {
+      "constitution_id": "Fiji_2013",
+      "section_id": "181",
+      "lang": "en",
+      "chapter_type": "rights catalogue",
+      "header": "CHAPTER 2. BILL OF RIGHTS",
+      "article": "",
+      "sha256": "63415cbefcab0067c164843893cd0e96b857d00c4b911b61a1709847fd246520"
+    },
+    {
+      "constitution_id": "Macedonia_2019",
+      "section_id": "96",
+      "lang": "en",
+      "chapter_type": "rights catalogue",
+      "header": "II. BASIC FREEDOMS AND RIGHTS OF THE INDIVIDUAL AND CITIZEN > 1. Civil and political freedoms and rights",
+      "article": "Article 21",
+      "sha256": "39f826ff0932ff594c171104164231db80f6b0a2cc40f13ec120a00f798d6e2f"
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "99-1",
+      "lang": "en",
+      "chapter_type": "rights catalogue",
+      "header": "I. Basic Rights > Article 12a. [Compulsory military and alternative civilian service]",
+      "article": "",
+      "sha256": "0cd31bc7acdf4aa24530d4b7441788fe91b4b81cd322e9d989e60d44b231090f"
+    },
+    {
+      "constitution_id": "Cape_Verde_1992",
+      "section_id": "208",
+      "lang": "en",
+      "chapter_type": "rights catalogue",
+      "header": "PART II. RIGHTS AND DUTIES OF CITIZENS > TITLE I. GENERAL PRINCIPLES",
+      "article": "Article 25. Suspension of Rights, Liberties and Guarantees",
+      "sha256": "55ff4f69fecbbe6631c9735cd5ce11744f8cc781300940f2584a35a2a28bd76c"
+    },
+    {
+      "constitution_id": "Botswana_2021",
+      "section_id": "79-1",
+      "lang": "en",
+      "chapter_type": "rights catalogue",
+      "header": "CHAPTER II. Protection of Fundamental Rights and Freedoms of the Individual (ss 3-19) > 6. Protection from slavery and forced labour > 3",
+      "article": "",
+      "sha256": "f040b2a0988d4aab2c666a1739c71593ed1c8434085c1c8cc553be6349d1955b"
+    },
+    {
+      "constitution_id": "Slovenia_2021",
+      "section_id": "51",
+      "lang": "en",
+      "chapter_type": "rights catalogue",
+      "header": "II. Human Rights and Fundamental Freedoms",
+      "article": "Article 16. Temporary Suspension and Restriction of Rights",
+      "sha256": "94b9ac2d7c88cf775a84deac2460257ea7cc2bab004dab3bdfdecf45e4da23b7"
+    },
+    {
+      "constitution_id": "Malta_2016",
+      "section_id": "196-1",
+      "lang": "en",
+      "chapter_type": "rights catalogue",
+      "header": "CHAPTER IV. Fundamental Rights and Freedoms of the Individual > 34. Protection from arbitrary arrest or detention",
+      "article": "",
+      "sha256": "c2ffef78091d2f165b9b3ce1c984ee195fbdfb3b00950584b5ba387864ef3ec0"
+    },
+    {
+      "constitution_id": "Hungary_2016",
+      "section_id": "435-1",
+      "lang": "en",
+      "chapter_type": "rights catalogue",
+      "header": "FREEDOM AND RESPONSIBILITY > Article XXXI",
+      "article": "",
+      "sha256": "031229d08ce840b484c16e95bf1c42517f9d96f62243d251c7b1ebcd324d7fe3"
+    },
+    {
+      "constitution_id": "Russia_2014",
+      "section_id": "334",
+      "lang": "en",
+      "chapter_type": "rights catalogue",
+      "header": "SECTION ONE > CHAPTER 2. HUMAN AND CIVIL RIGHTS AND FREEDOMS",
+      "article": "Article 56",
+      "sha256": "433a3272c144891aedf800438440b6aaff3e172dd6d87e6d27d6088c1238a43d"
+    },
+    {
+      "constitution_id": "Portugal_2005",
+      "section_id": "129-1",
+      "lang": "en",
+      "chapter_type": "rights catalogue",
+      "header": "Part I. Fundamental rights and duties > Title I. General principles > Article 19. Suspension of the exercise of rights",
+      "article": "",
+      "sha256": "5d6a61a46e5d7bd3f181f2012c98dca96789f1273658f7cad4d9c07f915d32b2"
+    },
+    {
+      "constitution_id": "Armenia_2020",
+      "section_id": "448",
+      "lang": "en",
+      "chapter_type": "rights catalogue",
+      "header": "CHAPTER 2. FUNDAMENTAL RIGHTS AND FREEDOMS OF THE HUMAN BEING AND THE CITIZEN",
+      "article": "Article 76. Restrictions of Fundamental Rights and Freedoms in Emergency Situations or during Martial Law",
+      "sha256": "3be3983ea7d30bffe86e4106a9daacf9d8293a5b5d374f773c2d1696f0bf29c2"
+    },
+    {
+      "constitution_id": "Republic_of_Korea_1987",
+      "section_id": "132-1",
+      "lang": "en",
+      "chapter_type": "rights catalogue",
+      "header": "CHAPTER II. RIGHTS AND DUTIES OF CITIZENS > Article 27",
+      "article": "",
+      "sha256": "3d175cc87f43b8377c2db28d80f6be9d0297b5c3041715159b95d0c7250101b6"
+    },
+    {
+      "constitution_id": "Botswana_2021",
+      "section_id": "328",
+      "lang": "en",
+      "chapter_type": "rights catalogue",
+      "header": "CHAPTER II. Protection of Fundamental Rights and Freedoms of the Individual (ss 3-19)",
+      "article": "17. Declarations relating to emergencies",
+      "sha256": "dc9a7634ac7e4f50826b969c4baadd62443cedc253d1d16a60cba8b736ebc838"
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "110-1",
+      "lang": "en",
+      "chapter_type": "rights catalogue",
+      "header": "I. Basic Rights > Article 13. [Inviolability of the home]",
+      "article": "",
+      "sha256": "61b935e61c8664be3721ae62c1abd55c37a625bffcbbbc720fde082fb7d3a42d"
+    },
+    {
+      "constitution_id": "Solomon_Islands_2018",
+      "section_id": "310",
+      "lang": "en",
+      "chapter_type": "rights catalogue",
+      "header": "CHAPTER II. PROTECTION OF FUNDAMENTAL RIGHTS AND FREEDOMS OF THE INDIVIDUAL",
+      "article": "16. Provisions for periods of public emergency",
+      "sha256": "39af5c13c9294c7df51de67369abb7ca84a995122d1cac8031b0f75956170104"
+    },
+    {
+      "constitution_id": "Kyrgyz_Republic_2021",
+      "section_id": "448-1",
+      "lang": "en",
+      "chapter_type": "legislature",
+      "header": "SECTION THREE. PUBLIC AUTHORITIES > CHAPTER II THE LEGISLATIVE POWER OF THE KYRGYZ REPUBLIC > Article 80. > 4",
+      "article": "",
+      "sha256": "07d9c50c5beb48db4bec8a536370e1f115dfdd219418031475734ff13495c1d7"
+    },
+    {
+      "constitution_id": "Guinea_Bissau_1996",
+      "section_id": "662-1",
+      "lang": "en",
+      "chapter_type": "legislature",
+      "header": "Part III. Organisation of Political Power > Section IV. Of the National Popular Assembly > Article 94",
+      "article": "",
+      "sha256": "74b3788a1334ff775c568e22e3a9edcf7b4f8e7654d9aade968101d9e544a49e"
+    },
+    {
+      "constitution_id": "Sierra_Leone_2022",
+      "section_id": "1339-1",
+      "lang": "en",
+      "chapter_type": "legislature",
+      "header": "CHAPTER VI. THE LEGISLATURE > PART II. SUMMONING, PROROGATION AND DISSOLUTION > 85. Life of Parliament",
+      "article": "",
+      "sha256": "e145d9d867e6089f088b216968bee2e96759705d45f9e1dccf85efd10196e7a1"
+    },
+    {
+      "constitution_id": "Mongolia_2001",
+      "section_id": "280-1",
+      "lang": "en",
+      "chapter_type": "legislature",
+      "header": "CHAPTER THREE. The State System of Mongolia > ONE. The State Great Hural (Parliament) of Mongolia > Article 27",
+      "article": "",
+      "sha256": "15414678197db15eb72e14ffe3528867d9d80fe2889611c5038d8593ff1d5b22"
+    },
+    {
+      "constitution_id": "Dominican_Republic_2015",
+      "section_id": "607-1",
+      "lang": "en",
+      "chapter_type": "legislature",
+      "header": "Title III. On the Legislative Power > Chapter III. On the Powers of the National Congress > Article 93. Powers > 1",
+      "article": "",
+      "sha256": "161cc2edc41c4871b88bccbf76ca7a75c8e09a1efeb6ee6aaa11c759fe779798"
+    },
+    {
+      "constitution_id": "Tunisia_2022",
+      "section_id": "6713903",
+      "lang": "en",
+      "chapter_type": "legislature",
+      "header": "CHAPTER THREE: THE LEGISLATIVE FUNCTION > Section Two: The Assembly of the People's Representatives",
+      "article": "Article Sixty Three:",
+      "sha256": "f5e9efca5839db6986f9ef69e7a1c25908ae68cda16dbe3e333c181e7aa9f37b"
+    },
+    {
+      "constitution_id": "Cape_Verde_1992",
+      "section_id": "1648-1",
+      "lang": "en",
+      "chapter_type": "legislature",
+      "header": "PART V. ORGANIZATION OF POLITICAL POWER > TITLE III. THE NATIONAL ASSEMBLY > CHAPTER VI. AUTHORITY OF THE NATIONAL ASSEMBLY > SECTION II. LEGISLATIVE AND POLITICAL AUTHORITY > Article 191. Political Authority > 2",
+      "article": "",
+      "sha256": "f24aace794ddebe8487e800b6cb5e441e7f13ff6546fe9f0d0d6cdb3f2529a94"
+    },
+    {
+      "constitution_id": "Israel_2013",
+      "section_id": "215",
+      "lang": "en",
+      "chapter_type": "legislature",
+      "header": "Basic Law The Knesset (1958)",
+      "article": "44. Law not to be affected by emergency regulations",
+      "sha256": "de3f99b53de28fb1332241611509fc53001098131731979e3e351d51a4a2574d"
+    },
+    {
+      "constitution_id": "Bangladesh_2018",
+      "section_id": "574",
+      "lang": "en",
+      "chapter_type": "legislature",
+      "header": "PART V. THE LEGISLATURE > Chapter I. Parliament > 72. Sessions of Parliament",
+      "article": "",
+      "sha256": "9dc14e6f89d252c9d0a98609d6f34504a98413b28dbbd3fba06d738e7bc81dcb"
+    },
+    {
+      "constitution_id": "Moldova_2024",
+      "section_id": "420-1",
+      "lang": "en",
+      "chapter_type": "legislature",
+      "header": "TITLE III. PUBLIC AUTHORITIES > CHAPTER IV. PARLIAMENT > SECTION I. Organisation and functioning > Article 63. Term of office",
+      "article": "",
+      "sha256": "e6613d35ab21696263f81c2de5f431c17c4bfa736a51a2271f57cc7f8cf6cefd"
+    },
+    {
+      "constitution_id": "Portugal_2005",
+      "section_id": "1796-1",
+      "lang": "en",
+      "chapter_type": "legislature",
+      "header": "Part III. Organisation of political power > Title III. Assembly of the Republic > Chapter III. Organisation and proceedings > Article 172. Dissolution",
+      "article": "",
+      "sha256": "d3291da3723a107cd51404e053641fa222f22b6b7e7c216c018fbb2dd5725eb1"
+    },
+    {
+      "constitution_id": "Peru_2023",
+      "section_id": "669",
+      "lang": "en",
+      "chapter_type": "legislature",
+      "header": "TITLE IV. THE STRUCTURE OF THE STATE > CHAPTER VI. RELATIONS WITH THE LEGISLATIVE BRANCH",
+      "article": "Article 134",
+      "sha256": "3eb18347dbbee598f894f641b8d201a27963aea6ad8d89f52c0818c56adc6967"
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "1592-1",
+      "lang": "en",
+      "chapter_type": "legislature",
+      "header": "TITLE IV. ORGANIZATION OF THE BRANCHES > CHAPTER I. THE LEGISLATIVE BRANCH > SECTION VIII. The Legislative Process > Subsection II. Amendments to the Constitution > Art 60",
+      "article": "",
+      "sha256": "d710198ed8035a2a84ba5bb6d83c05c73bcd4a56358b346848c3808425e166b9"
+    },
+    {
+      "constitution_id": "Russia_2014",
+      "section_id": "720-1",
+      "lang": "en",
+      "chapter_type": "legislature",
+      "header": "SECTION ONE > CHAPTER 5. THE FEDERAL ASSEMBLY > Article 102 > 1",
+      "article": "",
+      "sha256": "fa6d385a235e237ff65e543787c9fa01d8d734c61f1b937e4143812e290a33fa"
+    },
+    {
+      "constitution_id": "Lithuania_2022",
+      "section_id": "317-1",
+      "lang": "en",
+      "chapter_type": "legislature",
+      "header": "CHAPTER V. THE SEIMAS > Article 67",
+      "article": "",
+      "sha256": "470f557d4fa26ed6a0055ad82f62ed42342b0c50e493d0d3e7b96c9a59b72580"
+    },
+    {
+      "constitution_id": "Niger_2017",
+      "section_id": "519",
+      "lang": "en",
+      "chapter_type": "legislature",
+      "header": "TITLE V. OF THE RELATIONS BETWEEN THE EXECUTIVE AND THE LEGISLATIVE POWERS",
+      "article": "Article 105",
+      "sha256": "7fd62bada352bd889f63c9109a77d9e37c20da3c8f02bd0209ebe51d613c68de"
+    },
+    {
+      "constitution_id": "Madagascar_2010",
+      "section_id": "262",
+      "lang": "en",
+      "chapter_type": "executive/organisation of powers",
+      "header": "TITLE III. OF THE ORGANIZATION OF THE STATE > SUB-TITLE I. OF THE EXECUTIVE > CHAPTER I. Of the President of the Republic",
+      "article": "Article 61",
+      "sha256": "9435a06ff9e95e0b576be3304559dbb0698159c161883df7a17fd802ec0548ba"
+    },
+    {
+      "constitution_id": "Mozambique_2007",
+      "section_id": "1110",
+      "lang": "en",
+      "chapter_type": "executive/organisation of powers",
+      "header": "TITLE VI. PRESIDENT OF THE REPUBLIC > CHAPTER II. POWERS",
+      "article": "Article 161. In Matters of Defence and Public Order",
+      "sha256": "7c11747f6f08dece2ee93d510c58c836d3acb79a5229cba8bd7dec6f54063f78"
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "589-1",
+      "lang": "en",
+      "chapter_type": "executive/organisation of powers",
+      "header": "TITLE III. ORGANIZATION OF THE STATE > CHAPTER II. THE UNION > Art 21",
+      "article": "",
+      "sha256": "2bd397d313de49e3a95a10b7a1d6892eaa8c5a9ce9398ac7e7c4c0e79cf65948"
+    },
+    {
+      "constitution_id": "Kyrgyz_Republic_2021",
+      "section_id": "367-1",
+      "lang": "en",
+      "chapter_type": "executive/organisation of powers",
+      "header": "SECTION THREE. PUBLIC AUTHORITIES > CHAPTER I. PRESIDENT OF THE KYRGYZ REPUBLIC > Article 70. > 9",
+      "article": "",
+      "sha256": "be36e02d34ba9e2bbaaa930f5225fdebbe81db38a22069edb212a4f2dfd84944"
+    },
+    {
+      "constitution_id": "Slovakia_2017",
+      "section_id": "788-1",
+      "lang": "en",
+      "chapter_type": "executive/organisation of powers",
+      "header": "CHAPTER SIX. Executive Power > Part One. The President of the Slovak Republic > Article 102 > 1",
+      "article": "",
+      "sha256": "cb042cfc8452b2a860a90f83cb9b631cb8af5711293768d7c2a05a6b714ad56b"
+    },
+    {
+      "constitution_id": "Taiwan_2005",
+      "section_id": "667-1",
+      "lang": "en",
+      "chapter_type": "executive/organisation of powers",
+      "header": "The Additional Articles of the Constitution of the Republic of China > Article 2",
+      "article": "",
+      "sha256": "5cb9b550686d6600d984162d11b8024bb274adcfc0cce6cc5f01079b51d7e06e"
+    },
+    {
+      "constitution_id": "Democratic_Republic_of_the_Congo_2011",
+      "section_id": "399",
+      "lang": "en",
+      "chapter_type": "executive/organisation of powers",
+      "header": "TITLE III. OF THE ORGANIZATION AND OF THE EXERCISE OF POWER > Chapter 1. Of the Institutions of the Republic > Section 1. Of the Executive Power > Paragraph 1. Of the President of the Republic",
+      "article": "Article 85",
+      "sha256": "b8708b59e5d73b85d239cfb78aeace6c30389287b3b6594f01c850a63de433a4"
+    },
+    {
+      "constitution_id": "Argentina_1994",
+      "section_id": "365-1",
+      "lang": "en",
+      "chapter_type": "executive/organisation of powers",
+      "header": "PART 2. AUTHORITIES OF THE NATION > TITLE I. FEDERAL GOVERNMENT > SECTION II. THE EXECUTIVE POWER > CHAPTER III. THE POWERS OF THE EXECUTIVE > Article 99",
+      "article": "",
+      "sha256": "3b47421373d65d98ce51304f70e33f92b3d4233b2d4b0d445c1004c6702d63b0"
+    },
+    {
+      "constitution_id": "Algeria_2020",
+      "section_id": "575",
+      "lang": "en",
+      "chapter_type": "executive/organisation of powers",
+      "header": "TITLE III. ORGANISATION AND SEPARATION OF POWERS > CHAPTER II. THE GOVERNMENT",
+      "article": "ART 112",
+      "sha256": "84723bfa7d733d15a550d7177e2cea254d5f2935b3ae879646bfa939136d7b7c"
+    },
+    {
+      "constitution_id": "Niger_2017",
+      "section_id": "282",
+      "lang": "en",
+      "chapter_type": "executive/organisation of powers",
+      "header": "Title III. OF THE EXECUTIVE POWER > Section 1. Of The President of the Republic",
+      "article": "Article 68",
+      "sha256": "3b9802005aed3b572811254465ae0304bf3adb1af78ba47d7fd07f65f9b49563"
+    },
+    {
+      "constitution_id": "Tajikistan_2016",
+      "section_id": "363-1",
+      "lang": "en",
+      "chapter_type": "executive/organisation of powers",
+      "header": "Chapter 4. THE PRESIDENT > Article 69",
+      "article": "",
+      "sha256": "ad1e2cb251e0ebbfc48208b4436e2d6e3031f77b9ffbca7857038147336fc595"
+    },
+    {
+      "constitution_id": "Algeria_2020",
+      "section_id": "578",
+      "lang": "en",
+      "chapter_type": "executive/organisation of powers",
+      "header": "TITLE III. ORGANISATION AND SEPARATION OF POWERS > CHAPTER II. THE GOVERNMENT",
+      "article": "ART 113",
+      "sha256": "4901079085496b8006a99c9487398e8869807c4e2921e020da49c3589349aa6b"
+    },
+    {
+      "constitution_id": "Lithuania_2022",
+      "section_id": "407-1",
+      "lang": "en",
+      "chapter_type": "executive/organisation of powers",
+      "header": "CHAPTER VI. THE PRESIDENT OF THE REPUBLIC > Article 84",
+      "article": "",
+      "sha256": "a1261d56481c4176b1a65c9b791ffa2eae4350729f7515c003cff0f956382bf9"
+    },
+    {
+      "constitution_id": "Serbia_2006",
+      "section_id": "590-1",
+      "lang": "en",
+      "chapter_type": "executive/organisation of powers",
+      "header": "PART 5. ORGANIZATION OF GOVERNMENT > 2. The President of the Republic > Article 116. Term of office",
+      "article": "",
+      "sha256": "a5411666e27a5f555cdbd4a7a3cee9403386858ec39b5a74b4f08600522e988b"
+    },
+    {
+      "constitution_id": "Lithuania_2022",
+      "section_id": "405-1",
+      "lang": "en",
+      "chapter_type": "executive/organisation of powers",
+      "header": "CHAPTER VI. THE PRESIDENT OF THE REPUBLIC > Article 84",
+      "article": "",
+      "sha256": "79837eaa5d8928f20b82cc195f145496c3f05ddd342a7e92961d239a3e1f9175"
+    },
+    {
+      "constitution_id": "Honduras_2013",
+      "section_id": "1594",
+      "lang": "es",
+      "chapter_type": "executive/organisation of powers",
+      "header": "TÍTULO VI. DEL REGIMEN ECONÓMICO > CAPÍTULO V. DE LA HACIENDA PÚBLICA",
+      "article": "Artículo 360",
+      "sha256": "1fbdf3dcd31049957c745107fc20e94e8096df44e55297d15dd9181fb06d4914"
+    },
+    {
+      "constitution_id": "Portugal_2005",
+      "section_id": "1351-1",
+      "lang": "es",
+      "chapter_type": "executive/organisation of powers",
+      "header": "Parte III. Organización del Poder Político > Título II. El Presidente de la República > Capítulo II. Competencias > Artículo 134. Competencias para realizar actos propios",
+      "article": "",
+      "sha256": "b918aaa811fd605d2f60a8bf75dc534cda1815893718e55c146b4c245d329dcf"
+    },
+    {
+      "constitution_id": "Portugal_2005",
+      "section_id": "1390",
+      "lang": "es",
+      "chapter_type": "executive/organisation of powers",
+      "header": "Parte III. Organización del Poder Político > Título II. El Presidente de la República > Capítulo II. Competencias",
+      "article": "Artículo 138. Declaración del estado de Sitio o del estado de Excepción",
+      "sha256": "b88aa76d8be52d6066d36e53862c20c2c53c1ec8329376207046f9fd0054a955"
+    },
+    {
+      "constitution_id": "Nigeria_2011",
+      "section_id": "1614-1",
+      "lang": "es",
+      "chapter_type": "executive/organisation of powers",
+      "header": "Capítulo VI. El Poder Ejecutivo > Parte I. El Poder Ejecutivo federal > A. El Presidente de la Federación > 135",
+      "article": "",
+      "sha256": "238a50c81cc12785f4ea6b30fb6e5c694421a1b05c59a32ac25dc1e65408d01c"
+    },
+    {
+      "constitution_id": "El_Salvador_2014",
+      "section_id": "97",
+      "lang": "es",
+      "chapter_type": "emergency/defence chapter",
+      "header": "TÍTULO II. LOS DERECHOS Y GARANTÍAS FUNDAMENTALES DE LA PERSONA > CAPÍTULO I. DERECHOS INDIVIDUALES Y SU RÉGIMEN DE EXCEPCIÓN > SECCIÓN SEGUNDA. RÉGIMEN DE EXCEPCIÓN",
+      "article": "Artículo 29",
+      "sha256": "e0bba0c6ea864b5cf03f0e42c7b4ba6a45b2f7ef6360802ba325bf3254d51a12"
+    },
+    {
+      "constitution_id": "Chile_2021",
+      "section_id": "377",
+      "lang": "es",
+      "chapter_type": "emergency/defence chapter",
+      "header": "Capítulo IV. GOBIERNO > Estados de excepción constitucional",
+      "article": "Estados de excepción constitucional",
+      "sha256": "e154313aeace092a8fa804d2c54565317c67f53098c2b16d27026bb30ceb16bc"
+    },
+    {
+      "constitution_id": "Lithuania_2019",
+      "section_id": "705",
+      "lang": "es",
+      "chapter_type": "emergency/defence chapter",
+      "header": "CAPÍTULO XIII. POLÍTICA EXTERIOR Y DEFENSA NACIONAL",
+      "article": "Artículo 142",
+      "sha256": "f179e335b7c4e4fcc30dee2a4b1fecc71555b22ba6596b67cface190778d583a"
+    },
+    {
+      "constitution_id": "Nepal_2016",
+      "section_id": "1315-1",
+      "lang": "en",
+      "chapter_type": "judiciary / review / amendment",
+      "header": "PART 11. Judiciary > 130. Conditions of service and benefits of the Chief Justice and Justices > 4",
+      "article": "",
+      "sha256": "3b1810ec8ed281269559fa6d02661dce210cee1867f6eed38eb65ec216873ede"
+    },
+    {
+      "constitution_id": "Guinea_Bissau_1996",
+      "section_id": "908",
+      "lang": "en",
+      "chapter_type": "judiciary / review / amendment",
+      "header": "Part IV. Guarantees and Review of the Constitution > Section II. Of Constitutional Revision",
+      "article": "Article 131",
+      "sha256": "642dda4b81ab2073b04fb76fc74a8ec69ede0f1c59a9062d340d34be048db7d2"
+    },
+    {
+      "constitution_id": "Armenia_2020",
+      "section_id": "1426",
+      "lang": "en",
+      "chapter_type": "judiciary / review / amendment",
+      "header": "CHAPTER 15. ADOPTING AND AMENDING THE CONSTITUTION; THE REFERENDUM",
+      "article": "Article 208. Prohibition of Conducting a Referendum",
+      "sha256": "c090cacb1074591e7dc01c769bebfd43d89479736c3b4c3be3c6988f9cccaa5a"
+    },
+    {
+      "constitution_id": "Netherlands_2008",
+      "section_id": "493",
+      "lang": "es",
+      "chapter_type": "legislature",
+      "header": "CAPÍTULO 5. De la legislación y administración > §2. Otras materias",
+      "article": "Artículo 103",
+      "sha256": "ae353f0ba137c998d2672fe4c286addea69bec1588ff92f4f9c3ce3f25e735ea"
+    },
+    {
+      "constitution_id": "Estonia_2015",
+      "section_id": "515-1",
+      "lang": "es",
+      "chapter_type": "legislature",
+      "header": "Capítulo VII. LEGISLACIÓN > Artículo 106",
+      "article": "",
+      "sha256": "8c4563f93221a452f79733b8a94e9652a5f61ce30e8f7d669655d05f055066e5"
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "688-1",
+      "lang": "es",
+      "chapter_type": "legislature",
+      "header": "VII. LEGISLACIÓN DE LA FEDERACIÓN > Artículo 80a. Aplicación de determinadas disposiciones jurídicas en el caso de tensión",
+      "article": "",
+      "sha256": "2b9637dbe1eb1190de9601a68fe943ac63667113a88f3dcfc3ef9db5e3708451"
+    },
+    {
+      "constitution_id": "Honduras_2013",
+      "section_id": "404",
+      "lang": "es",
+      "chapter_type": "rights catalogue",
+      "header": "TÍTULO III. DE LAS DECLARACIONES, DERECHOS Y GARANTIAS > CAPÍTULO II. DE LOS DERECHOS INDIVIDUALES",
+      "article": "Artículo 106",
+      "sha256": "842e159137913e59c357b4a65235c84f6916fd9534c53a799d9f7c30f8de3260"
+    },
+    {
+      "constitution_id": "Portugal_2005",
+      "section_id": "131-1",
+      "lang": "es",
+      "chapter_type": "rights catalogue",
+      "header": "Parte I. De los derechos y deberes fundamentales > Título I. Principios Generales > Artículo 19. Suspensión del ejercicio de los derechos",
+      "article": "",
+      "sha256": "950dc453e3379a701ddc19c7bbc1f5c33e288aa00093381b84c3f38827756072"
+    },
+    {
+      "constitution_id": "Panama_2004",
+      "section_id": "161",
+      "lang": "es",
+      "chapter_type": "rights catalogue",
+      "header": "TÍTULO III. DERECHOS Y DEBERES INDIVIDUALES Y SOCIALES > CAPÍTULO 1. GARANTIAS FUNDAMENTALES",
+      "article": "Artículo 55",
+      "sha256": "fbaebbd51462e8adecf3578ef34e3e9f7721ca83455ad3deed70e686113b9434"
+    },
+    {
+      "constitution_id": "Hungary_2016",
+      "section_id": "159-1",
+      "lang": "en",
+      "chapter_type": "general / final provisions",
+      "header": "FOUNDATION > Article T",
+      "article": "",
+      "sha256": "d9760da95ef1bb08dbb283b96aa1268fce3d700268475945e1cd0986f35c364d"
+    },
+    {
+      "constitution_id": "United_Arab_Emirates_2009",
+      "section_id": "622",
+      "lang": "en",
+      "chapter_type": "general / final provisions",
+      "header": "PART X. FINAL PROVISIONS",
+      "article": "Article 146",
+      "sha256": "a5065684e7d092d3e90319c391a5c3d6ff4de1b34f60c1c9ed1599f0cdf60f99"
+    },
+    {
+      "constitution_id": "Qatar_2003",
+      "section_id": "405",
+      "lang": "en",
+      "chapter_type": "general / final provisions",
+      "header": "CHAPTER V. CONCLUDING PROVISIONS",
+      "article": "Article 149",
+      "sha256": "44543e49c3a9cda571af07b8068a77074183b829968c3dba5bf51798b3e8e181"
+    },
+    {
+      "constitution_id": "Nepal_2016",
+      "section_id": "2725-1",
+      "lang": "en",
+      "chapter_type": "other",
+      "header": "PART 27. Other Commissions > 252. National Women Commission > 7",
+      "article": "",
+      "sha256": "71b4ce5c5726bf05e66510c9dcecdcb2f8c3eff03d59a8b2709a68856ba84634"
+    },
+    {
+      "constitution_id": "Nepal_2016",
+      "section_id": "2452-1",
+      "lang": "en",
+      "chapter_type": "other",
+      "header": "PART 23. Public Service Commission > 242. Public Service Commission > 8",
+      "article": "",
+      "sha256": "2a306cc77acdb49ef81cc85238eee6b5959d7822e5737b5db1ad0f650a7bf712"
+    },
+    {
+      "constitution_id": "Nepal_2016",
+      "section_id": "2786-1",
+      "lang": "en",
+      "chapter_type": "other",
+      "header": "PART 27. Other Commissions > 255. National Dalit Commission > 7",
+      "article": "",
+      "sha256": "f6a96d0619b5140e6c78aa9d3a1d59bf4c52018b49f82f9d00f72055581181ea"
+    },
+    {
+      "constitution_id": "Nicaragua_2014",
+      "section_id": "1026",
+      "lang": "es",
+      "chapter_type": "judiciary / review / amendment",
+      "header": "TÍTULO X. SUPREMACIA DE LA CONSTITUCION. SU REFORMA Y DE LAS LEYES CONSTITUCIONALES > CAPÍTULO I. DE LA CONSTITUCION POLITICA",
+      "article": "Artículo 186",
+      "sha256": "bc3f063f2cf4f5392479fa874ae851ba74014bf2d98a26a523a2a88f5e533827"
+    },
+    {
+      "constitution_id": "Estonia_2015",
+      "section_id": "697-1",
+      "lang": "es",
+      "chapter_type": "judiciary / review / amendment",
+      "header": "Capítulo XV. LA REFORMA CONSTITUCIONAL > Artículo 161",
+      "article": "",
+      "sha256": "788ae8c3c095452d186da1aff911029c9e14c61f03149b513ca21501930f567b"
+    },
+    {
+      "constitution_id": "Spain_2011",
+      "section_id": "1198",
+      "lang": "es",
+      "chapter_type": "judiciary / review / amendment",
+      "header": "TÍTULO X. De la reforma constitucional",
+      "article": "Artículo 169",
+      "sha256": "f9c52e990f310712d89c0dc4050d6bcf36ac03d1c542dc8081796cada86b59be"
+    },
+    {
+      "constitution_id": "Chile_2021",
+      "section_id": "1226",
+      "lang": "es",
+      "chapter_type": "general / final provisions",
+      "header": "DISPOSICIONES TRANSITORIAS",
+      "article": "TRIGÉSIMA SEGUNDA",
+      "sha256": "f72ff440eedf89b78927818b777702bdad7b897075f8a5a17579949a0aefd6bc"
+    },
+    {
+      "constitution_id": "Haiti_2012",
+      "section_id": "1462",
+      "lang": "es",
+      "chapter_type": "general / final provisions",
+      "header": "TITULO XII. DISPOSICIONES GENERALES",
+      "article": "Artículo 278-1",
+      "sha256": "1168ab5421a05f2a6c161a0267ee0ea6dc91f1b94657664e6f0e8a95d4a96977"
+    },
+    {
+      "constitution_id": "Haiti_2012",
+      "section_id": "1464",
+      "lang": "es",
+      "chapter_type": "general / final provisions",
+      "header": "TITULO XII. DISPOSICIONES GENERALES",
+      "article": "Artículo 278-2",
+      "sha256": "98c9794e4b4a2c7493bf30babee6ab5b61fa0ce74a38efb7265a3c668d9756fa"
+    },
+    {
+      "constitution_id": "Denmark_1953",
+      "section_id": "70-1",
+      "lang": "en",
+      "chapter_type": "no heading",
+      "header": "Part III",
+      "article": "",
+      "sha256": "c6aa533259420ea8d53f75eb329cb947c09b730af220a982190588563d6eadda"
+    },
+    {
+      "constitution_id": "Bhutan_2008",
+      "section_id": "974",
+      "lang": "en",
+      "chapter_type": "no heading",
+      "header": "",
+      "article": "Article 33. Emergency",
+      "sha256": "4b489e4f6c663a6310a65878e46074fa01f928ec239c0a2ce6cae17261feeadf"
+    },
+    {
+      "constitution_id": "Sri_Lanka_2015",
+      "section_id": "2234",
+      "lang": "en",
+      "chapter_type": "no heading",
+      "header": "CHAPTER XVIIA",
+      "article": "154J. Public Security",
+      "sha256": "2c2884c7b921e5254797a55ed81d051baf7250644ba99b270317771d78983454"
+    },
+    {
+      "constitution_id": "Denmark_1953",
+      "section_id": "70-1",
+      "lang": "es",
+      "chapter_type": "no heading",
+      "header": "Parte III",
+      "article": "",
+      "sha256": "e73f4ad5cd940c0cbe50dc80bb65998fd2f0294a77465e9e61ba87080e5d3687"
+    },
+    {
+      "constitution_id": "Denmark_1953",
+      "section_id": "182-1",
+      "lang": "es",
+      "chapter_type": "no heading",
+      "header": "Parte V > 42",
+      "article": "",
+      "sha256": "7a306eb3628b080f986bff71627b695d836835126347226abe0b3efce80ae976"
+    },
+    {
+      "constitution_id": "Bhutan_2008",
+      "section_id": "974",
+      "lang": "es",
+      "chapter_type": "no heading",
+      "header": "",
+      "article": "Artículo 33. Emergencias",
+      "sha256": "7c7ec535066404a61ee4f806012e0a203c5c727e05c90e269e1cf856263c14a8"
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "1124",
+      "lang": "es",
+      "chapter_type": "other",
+      "header": "X. HACIENDA",
+      "article": "Artículo 115. Límites de la toma de créditos",
+      "sha256": "c2550604bbf93f3fb20f634486020b3dcafd50dfffaf9c98e4e452ec9f39bb96"
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "401-1",
+      "lang": "es",
+      "chapter_type": "other",
+      "header": "IVa. LA COMISIÓN CONJUNTA > Artículo 53a. Composición, reglamento interno",
+      "article": "",
+      "sha256": "ba187625f7b23f97faf4656d9d0bf27f479532f28e7478b0425a27cd0141d01c"
+    }
+  ]
+}
