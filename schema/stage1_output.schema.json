@@ -1,0 +1,108 @@
+{
+  "$defs": {
+    "Claim": {
+      "additionalProperties": false,
+      "properties": {
+        "claim": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "operator": {
+          "$ref": "#/$defs/Operator"
+        },
+        "markers": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "secondary": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SecondaryOperator"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "claim",
+        "operator",
+        "markers",
+        "secondary"
+      ],
+      "type": "object"
+    },
+    "EntityType": {
+      "enum": [
+        "physical",
+        "ideal",
+        "social"
+      ],
+      "type": "string"
+    },
+    "Mention": {
+      "additionalProperties": false,
+      "properties": {
+        "mention": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "type": {
+          "$ref": "#/$defs/EntityType"
+        }
+      },
+      "required": [
+        "mention",
+        "type"
+      ],
+      "type": "object"
+    },
+    "Operator": {
+      "enum": [
+        "naturalised",
+        "revealed",
+        "other"
+      ],
+      "type": "string"
+    },
+    "SecondaryOperator": {
+      "enum": [
+        "implication",
+        "aggregation",
+        "naturalisation",
+        "erasure",
+        "revelation",
+        "parallel"
+      ],
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "t2": {
+      "items": {
+        "$ref": "#/$defs/Mention"
+      },
+      "type": "array"
+    },
+    "t5": {
+      "items": {
+        "$ref": "#/$defs/Claim"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "t2",
+    "t5",
+    "notes"
+  ],
+  "type": "object"
+}
