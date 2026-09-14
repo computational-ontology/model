@@ -31,11 +31,11 @@ md("""## 0 · Environment
 Installs the current `transformers` (Gemma 4 and Qwen3.5 use `AutoModelForMultimodalLM`, which
 older versions lack), `xgrammar` (the constrained decoder, Apache-2.0, the same backend vLLM
 uses), the project package straight from GitHub so `nra.schema` is the code CI tests, and the
-two optimised kernels Qwen3.5 warned about in v1. Then prints the GPUs. T4s have no native bf16, so everything below
+`flash-linear-attention` kernel Qwen3.5 warned about in v1 (`causal-conv1d` needs a CUDA build and is skipped). Then prints the GPUs. T4s have no native bf16, so everything below
 is loaded in **float16**.""")
 code("""%pip install -q -U "transformers>=5.17" accelerate "pydantic>=2" huggingface_hub "xgrammar>=0.2.6"
 %pip install -q "nra @ git+https://github.com/computational-ontology/model.git@main"
-%pip install -q causal-conv1d flash-linear-attention  # optimised kernels Qwen3.5 asks for (v1 fell back to reference kernels)
+%pip install -q flash-linear-attention  # Triton kernel Qwen3.5 asks for; causal-conv1d needs a CUDA build (failed on Kaggle in v2) — skipped
 import torch, transformers, time, json, gc, os
 print("transformers", transformers.__version__, "| torch", torch.__version__)
 for i in range(torch.cuda.device_count()):
@@ -209,20 +209,26 @@ for model_id, kind in CANDIDATES:
     print("=" * 100); print(model_id)
     free()
     try:
-        tok, model = load(model_id, kind)
+        tok, model, grammar = load(model_id, kind)
     except Exception as e:  # noqa: BLE001
         print("LOAD FAILED:", type(e).__name__, str(e)[:300])
         results.append({"model": model_id, "loaded": False, "error": str(e)[:200]}); continue
     for s in samples:
-        raw, n_in, n_out, dt = generate(tok, model, kind, s["text"])
-        obj, verdict = parse(raw, s["text"])
-        print(f"\\n[{s['lang']}] {s['constitution_id']} §{s['section_id']} | {n_in} in → {n_out} out | {dt:.0f}s | {verdict}")
-        print(raw[:1500])
-        results.append({"model": model_id, "loaded": True, "lang": s["lang"], "in": n_in, "out": n_out,
-                        "sec": round(dt, 1), "parsed": obj is not None,
-                        "n_t2": len(obj.t2) if obj else None, "n_t5": len(obj.t5) if obj else None,
-                        "verdict": verdict, "mem": gpu_mem()})
-    del model, tok; free()
+        for mode, g in (("constrained", grammar), ("free", None)):
+            try:
+                raw, n_in, n_out, dt = generate(tok, model, kind, s["text"], grammar=g)
+            except Exception as e:  # noqa: BLE001
+                print(f"\\n[{s['lang']}] {mode}: GENERATION FAILED {type(e).__name__}: {str(e)[:300]}")
+                results.append({"model": model_id, "loaded": True, "lang": s["lang"], "mode": mode, "error": str(e)[:200]}); continue
+            obj, verdict = parse(raw, s["text"])
+            print(f"\\n[{s['lang']}] {s['constitution_id']} §{s['section_id']} | {mode} | {n_in} in → {n_out} out | {dt:.0f}s | {verdict}")
+            print(raw[:1200])
+            results.append({"model": model_id, "loaded": True, "lang": s["lang"], "mode": mode, "in": n_in, "out": n_out,
+                            "sec": round(dt, 1), "tok_s": round(n_out / dt, 1), "parsed": obj is not None,
+                            "n_t2": len(obj.t2) if obj else None, "n_t5": len(obj.t5) if obj else None,
+                            "labels": [c.operator.value for c in obj.t5] if obj else None,
+                            "verdict": verdict, "mem": gpu_mem()})
+    del model, tok, grammar; free()
     print("freed:", gpu_mem())""")
 
 md("""## 6 · Summary table
