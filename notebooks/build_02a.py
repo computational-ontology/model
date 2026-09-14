@@ -8,16 +8,20 @@ nb = nbf.v4.new_notebook()
 C: list = []
 md, code = (lambda s: C.append(nbf.v4.new_markdown_cell(s))), (lambda s: C.append(nbf.v4.new_code_cell(s)))
 
-md("""# 02a · Stage 1 load check — three candidates on 2×T4
+md("""# 02a · Stage 1 load check — three candidates on 2×T4 (v2: constrained decoding)
 
-Check 2 of sprint 0 for the New-Realism Analyzer (github.com/computational-ontology/model).
+Checks 2 and 3 of sprint 0 for the New-Realism Analyzer (github.com/computational-ontology/model).
 Question: do the three bake-off candidates fixed in decision D15 load in fp16 across Kaggle's two
 T4 GPUs and return one parseable `Stage1Output` JSON for one EN and one ES pilot section?
 
 Nothing here is a result. No metric is computed; a single generation per model only tells us
 whether the machinery works (memory, dtype, chat template, thinking switch, JSON discipline).
-Constrained decoding is check 3 (open decision O4); here the model is *asked* for JSON and we
-measure how often it obeys.
+
+v1 (Version 1, 959 s) showed: all three load in fp16 without anomalies; two of six generations
+were cut off at 900 tokens because the models pretty-print the JSON. v2 therefore decodes under
+the JSON Schema with **XGrammar** (decision D16): the grammar forbids anything but a compact,
+schema-valid object, so no fence, no indentation, no invented keys — and the budget goes to
+content. Each model runs twice per section, free and constrained, so the two can be compared.
 
 Settings: Accelerator **GPU T4 ×2**, Internet **on**, secret `HF_TOKEN` attached, dataset
 `luisdscientist/nra-snapshot-em` attached.""")
@@ -25,11 +29,13 @@ Settings: Accelerator **GPU T4 ×2**, Internet **on**, secret `HF_TOKEN` attache
 md("""## 0 · Environment
 
 Installs the current `transformers` (Gemma 4 and Qwen3.5 use `AutoModelForMultimodalLM`, which
-older versions lack) plus the project package straight from GitHub, so `nra.schema` is the
-same code that CI tests. Then prints the GPUs. T4s have no native bf16, so everything below
+older versions lack), `xgrammar` (the constrained decoder, Apache-2.0, the same backend vLLM
+uses), the project package straight from GitHub so `nra.schema` is the code CI tests, and the
+two optimised kernels Qwen3.5 warned about in v1. Then prints the GPUs. T4s have no native bf16, so everything below
 is loaded in **float16**.""")
-code("""%pip install -q -U "transformers>=5.17" accelerate "pydantic>=2" huggingface_hub
+code("""%pip install -q -U "transformers>=5.17" accelerate "pydantic>=2" huggingface_hub "xgrammar>=0.2.6"
 %pip install -q "nra @ git+https://github.com/computational-ontology/model.git@main"
+%pip install -q causal-conv1d flash-linear-attention  # optimised kernels Qwen3.5 asks for (v1 fell back to reference kernels)
 import torch, transformers, time, json, gc, os
 print("transformers", transformers.__version__, "| torch", torch.__version__)
 for i in range(torch.cuda.device_count()):
@@ -94,7 +100,7 @@ T5 — split the section into claims (each enumerated item is a claim) and label
 - other: purely procedural or definitional, or neither reading applies
 Test: for the state of affairs the claim relies on, ask "who says so, and could anyone check?" — answered → revealed; treated as simply existing → naturalised.
 
-Every "mention", "claim" and marker must be copied VERBATIM from the section, in its original language. "secondary" may be null.
+Every "mention", "claim" and marker must be copied VERBATIM from the section, in its original language. List each distinct mention once. "secondary" may be null. Write the JSON on ONE line, without indentation or code fences.
 
 JSON Schema of the answer:
 {json.dumps(SCHEMA, ensure_ascii=False)}\"\"\"
@@ -111,9 +117,11 @@ md("""## 4 · Loader and one-shot generator
 Gemma 4 and Qwen3.5 are multimodal checkpoints (`AutoModelForMultimodalLM` + `AutoProcessor`)
 with a thinking mode that is switched **off** through the chat template; EuroLLM is a plain
 causal LM. All three load with `dtype=torch.float16, device_map="auto"`, which shards layers
-across the two T4s. Decoding is greedy (`do_sample=False`) so the run is reproducible; the JSON
-is parsed after stripping any code fence, validated against `Stage1Output`, and its spans are
-checked to be verbatim.""")
+across the two T4s. Decoding is greedy (`do_sample=False`) so the run is reproducible. `compile_grammar` turns the
+schema into an XGrammar grammar for that model's tokenizer (compact JSON, strict); passing it as
+a `LogitsProcessor` masks every token that would leave the grammar. A fresh processor is built
+per call because it carries the matcher state. The output is parsed (any fence stripped, for
+the free run), validated against `Stage1Output`, and its spans are checked to be verbatim.""")
 code("""from transformers import AutoProcessor, AutoTokenizer, AutoModelForCausalLM
 try:
     from transformers import AutoModelForMultimodalLM
@@ -132,6 +140,20 @@ def free():
 def gpu_mem():
     return {f"cuda:{i}": round(torch.cuda.memory_allocated(i)/2**30, 2) for i in range(torch.cuda.device_count())}
 
+import xgrammar as xgr
+
+def text_vocab_size(model):
+    cfg = model.config
+    return getattr(cfg, "vocab_size", None) or getattr(cfg.text_config, "vocab_size")
+
+def compile_grammar(tok, model):
+    # Grammar for Stage1Output: compact JSON, schema-strict. vocab_size comes from the model
+    # config, not the tokenizer (Qwen3.5: 248 077 tokens vs 248 320 logits).
+    base = getattr(tok, "tokenizer", tok)  # AutoProcessor wraps the tokenizer
+    info = xgr.TokenizerInfo.from_huggingface(base, vocab_size=text_vocab_size(model))
+    return xgr.GrammarCompiler(info).compile_json_schema(
+        json.dumps(SCHEMA), any_whitespace=False, indent=None, separators=(",", ":"))
+
 def load(model_id, kind):
     t0 = time.time()
     if kind == "multimodal":
@@ -143,17 +165,20 @@ def load(model_id, kind):
     model.eval()
     devs = sorted({str(d) for d in model.hf_device_map.values()})
     print(f"loaded in {time.time()-t0:.0f}s | devices {devs} | allocated {gpu_mem()}")
-    return tok, model
+    t0 = time.time(); grammar = compile_grammar(tok, model)
+    print(f"grammar compiled in {time.time()-t0:.2f}s | logits vocab {text_vocab_size(model)}")
+    return tok, model, grammar
 
-def generate(tok, model, kind, text, max_new_tokens=900):
+def generate(tok, model, kind, text, grammar=None, max_new_tokens=1600):
     kw = dict(tokenize=True, return_dict=True, return_tensors="pt", add_generation_prompt=True)
     if kind == "multimodal":
         kw["enable_thinking"] = False
     inputs = tok.apply_chat_template(messages_for(text), **kw).to(model.device)
     n_in = inputs["input_ids"].shape[-1]
     t0 = time.time()
+    lp = [xgr.contrib.hf.LogitsProcessor(grammar)] if grammar is not None else None
     with torch.no_grad():
-        out = model.generate(**inputs, max_new_tokens=max_new_tokens, do_sample=False)
+        out = model.generate(**inputs, max_new_tokens=max_new_tokens, do_sample=False, logits_processor=lp)
     dt = time.time() - t0
     raw = tok.decode(out[0][n_in:], skip_special_tokens=True) if kind == "causal" \\
         else tok.batch_decode(out[:, n_in:], skip_special_tokens=True)[0]
@@ -174,8 +199,9 @@ def parse(raw, text):
 
 md("""## 5 · Run the three candidates
 
-One model at a time: load, generate for the EN and the ES sample, print the raw answer and the
-verdict, then free both GPUs before the next. Expect roughly 24 GB (Gemma) / 19 GB (Qwen) /
+One model at a time: load, compile its grammar, then for each sample generate twice —
+**constrained** (grammar on) and **free** (grammar off, the model merely asked for one-line JSON)
+— print the raw answer and the verdict, then free both GPUs before the next. Expect roughly 24 GB (Gemma) / 19 GB (Qwen) /
 18 GB (EuroLLM) of weights plus the KV cache. If a model overflows in fp16 (NaN logits, empty or
 garbage output), that is exactly what this check is for — see §6.""")
 code("""results = []
@@ -201,7 +227,8 @@ for model_id, kind in CANDIDATES:
 
 md("""## 6 · Summary table
 
-One row per (model, sample). `parsed` = valid `Stage1Output`; `verdict` = verbatim check.
+One row per (model, sample, mode). `parsed` = valid `Stage1Output`; `verdict` = verbatim check;
+`labels` = the T5 operators in order, so the constrained and free runs can be compared claim by claim.
 Copy this table into the sprint log; it is the input to check 3 (which constrained decoder) and
 to the bake-off protocol (D6).""")
 code("""import pandas as pd
@@ -215,7 +242,9 @@ md("""## 7 · What this notebook establishes
 Fill in after the run:
 
 - Loads in fp16 on 2×T4: Gemma-4-12B-it __ · Qwen3.5-9B __ · EuroLLM-9B __ (time, memory per GPU).
-- Returned valid `Stage1Output` unconstrained: __/6 generations; verbatim spans: __/6.
+- Constrained runs: valid `Stage1Output` __/6, verbatim spans __/6, tokens saved vs. free __.
+- Free runs (one-line instruction): valid __/6, verbatim __/6.
+- Did the grammar change the labels vs. the free run on the same section? __ (if yes, note where).
 - fp16 anomalies (NaN, empty, repeated tokens): __ → if any, rerun that model in 4-bit
   (`BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_compute_dtype=torch.float16)`) and note it.
 - Tokens per generation and seconds per section → budget for 100 sections × 3 models × 3 seeds
