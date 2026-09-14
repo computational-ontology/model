@@ -1,0 +1,25 @@
+model — New-Realism Analyzer
+Copyright 2026 Luis Felipe Bourguet González
+
+Code in this repository is licensed under the Apache License, Version 2.0 (LICENSE).
+The codebook, ontology and documentation are licensed under CC BY 4.0 (LICENSE-DOCS).
+
+THIRD-PARTY TEXTS ARE NOT DISTRIBUTED HERE.
+
+Constitutional texts used by this project are obtained from the Constitute Project
+(constituteproject.org), whose content is provided under a Creative Commons
+Attribution-NonCommercial 3.0 Unported licence (About page, checked 2026-09-14), with
+some texts held under third-party copyright (HeinOnline, Oxford University Press,
+International IDEA). For that reason:
+
+  * no constitutional text is committed to this repository or shipped in any release;
+  * the dataset release contains annotations keyed to Constitute constitution id and
+    section id, plus a fetch script that retrieves the texts through the documented
+    API (https://www.constituteproject.org/service/), respecting robots.txt;
+  * any deployment of the analyzer that serves Constitute text must be non-commercial;
+  * users must cite: Elkins, Zachary, Tom Ginsburg, James Melton. Constitute: The
+    World's Constitutions to Read, Search, and Compare. Online at constituteproject.org.
+
+The Comparative Constitutions Project coded dataset ("Characteristics of National
+Constitutions", v5.0) states no explicit licence and requires citation of
+Elkins & Ginsburg (2025); it is not redistributed here either.

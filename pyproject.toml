@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nra"
+version = "0.0.1"
+description = "New-Realism Analyzer — computational-ontology model for mapping competing realities in constitutional texts"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+authors = [{ name = "Luis Felipe Bourguet González", email = "luisfelipe.bourgetgonzalez@unito.it" }]
+keywords = ["new realism", "documentality", "social ontology", "constitutions", "nlp"]
+
+# Versions verified against official docs / PyPI on 2026-09-14 (see docs/plan.md §3).
+# Pinned as lower bounds; a lock file is produced per release.
+dependencies = [
+  "requests>=2.31",
+  "pydantic>=2",
+  "rdflib>=7.6",
+  "igraph>=1.0",
+  "krippendorff>=0.8.2",
+]
+
+[project.optional-dependencies]
+train = [
+  "transformers>=5.17",
+  "datasets>=5.0",
+  "torch",
+  "accelerate",
+  "scikit-learn",
+]
+serve = [
+  "fastapi>=0.141",
+  "uvicorn",
+  "vllm>=0.29",
+]
+tda = ["ripser>=0.6.15"]
+dev = ["pytest", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
