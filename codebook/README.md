@@ -1,4 +1,4 @@
-# Codebook — v0.2 (scaffold with worked examples; not yet frozen)
+# Codebook — v1.0
 
 Licence: CC BY 4.0. The codebook is frozen at v1.0, deposited on Zenodo (DOI), and only then is
 the OSF preregistration sealed and annotation started. Changes after freezing produce v1.x with
@@ -13,8 +13,8 @@ Worked examples below quote official constitutional texts in their original lang
 Constitute records with no copyright or translator field (India, Kenya, Liberia, Antigua and
 Barbuda, Dominica, Fiji, Ireland, Namibia, Nigeria, Gambia, Ghana, Sierra Leone; Bolivia, Chile,
 Argentina, Dominican Republic). Cite: Elkins, Ginsburg & Melton, *Constitute*, constituteproject.org.
-Readings marked **[proposed]** are the drafter's proposals and become rules only when the
-annotation lead confirms them.
+Decision rules, the T5 decision test and the readings of the worked examples were confirmed by the
+annotation lead (L. F. Bourguet González) on 2026-09-14. Rules born in pilot adjudication go into v1.1.
 
 ---
 
@@ -55,7 +55,7 @@ Ferraris's three types (Hernández Marcelo 2020, p. 21), with the three coordina
 | **ideal** | no | no | no | numbers, time limits as quantities ("six months"), logical relations |
 | **social** | yes | yes | **yes** | the State, the President (as office), Parliament, a proclamation, a state of emergency, public order, war (as a legal status), a right |
 
-Decision rules **[proposed]**:
+Decision rules (confirmed):
 
 1. Type the *referent as used in the clause*, not the word. "War" in "Sierra Leone is at war" is a
    social object (a legal status that exists only because it is declared and recognised); "armed
@@ -71,9 +71,8 @@ Decision rules **[proposed]**:
 Worked examples (mention → type):
 
 - *India, art. 352 Explanation*: "security of India" → social · "territory thereof" → physical ·
-  "war", "external aggression" → social **[proposed: social, as legal statuses]** · "armed
-  rebellion" → physical · "the President" → social · "imminent danger" → social
-  **[proposed; the danger is an assessed condition, not a body]**.
+  "war", "external aggression" → social · "armed
+  rebellion" → physical · "the President" → social · "imminent danger" → social.
 - *Kenya, art. 29(b)*: "every person" → physical · "right to freedom and security of the person"
   → social · "state of emergency" → social · "Article 58" → social (an inscription).
 - *Bolivia, art. 137*: "seguridad del Estado" → social · "amenaza externa" → social · "conmoción
@@ -95,7 +94,7 @@ Label each claim by **how it presents what it asserts**, not by whether it is tr
 | **✦ revealed** | The claim exposes its own act character: it names who declares, that an assessment or satisfaction is required, a procedure, a limit, a review or a consent | "if the President is satisfied", "may declare", "subject to Article 58", "with the consent of the Senate", "reasonably justifiable" only when tied to a reviewer, "con acuerdo del Senado", "aprobar", definitions of the emergency *as* a proclamation |
 | **other** | Purely procedural or definitional claims that neither state a situation as fact nor expose an act (e.g. summoning rules with no trigger), or claims where neither reading applies | — |
 
-Decision test **[proposed]**: for the state of affairs the claim relies on, ask *"who says so, and
+Decision test (confirmed): for the state of affairs the claim relies on, ask *"who says so, and
 could anyone check?"*. If the clause answers (an actor, an assessment, a limit, a review), ✦.
 If the clause treats it as simply existing, ↓. If the clause relies on no such state of affairs,
 *other*. A section usually mixes both: **label at claim level and let the mix be the datum**.
@@ -106,12 +105,12 @@ Worked examples (claim → label → why):
   … if the President is satisfied that there is imminent danger" → **✦** (declaring actor +
   explicit satisfaction test). Inside it, "the security of India … is threatened by war or by
   external aggression or by armed rebellion" is quoted as the *content* of the proclamation, so it
-  is not a separate naturalised claim **[proposed]**.
+  is not a separate naturalised claim.
 - *Antigua and Barbuda, s. 16* and *Dominica, s. 14* (near-identical): "measures that are
   reasonably justifiable for dealing with the situation that exists … during that period" →
   **↓**: the "situation that exists" is given; "reasonably justifiable" names a standard but no
-  reviewer **[proposed; alternative reading: ✦ because "reasonably justifiable" is justiciable —
-  decide in the pilot; this is the kind of case that fixes the rule]**.
+  reviewer. Ruling (v1.0): this Commonwealth derogation formula is ↓ wherever it appears; a variant
+  that names the reviewing court or a procedure is ✦.
 - *Kenya, art. 29(b)*: "detained without trial, except during a state of emergency, in which case
   the detention is subject to Article 58" → **✦** (the exception is tied to a review regime).
 - *Sierra Leone, s. 171*: "'Public Emergency' includes any period during which … there is in force
@@ -127,7 +126,7 @@ Worked examples (claim → label → why):
 - *Chile, art. 39*: "sólo puede ser afectado bajo las siguientes situaciones de excepción: guerra
   externa o interna, conmoción interior, emergencia y calamidad pública, cuando afecten gravemente
   el normal desenvolvimiento de las instituciones" → **↓** (situations listed as conditions of the
-  world; no actor in this clause) **[proposed]**.
+  world; no actor in this clause).
 - *Argentina, art. 23*: "En caso de conmoción interior o de ataque exterior que pongan en peligro el
   ejercicio de esta Constitución … se declarará en estado de sitio" → **↓** for the trigger
   (impersonal "se declarará", danger given); "no podrá el presidente … condenar por sí ni aplicar
@@ -167,4 +166,5 @@ gated in campaign 1.
 - v0.1 — 2026-09-14 — scaffold.
 - v0.2 — 2026-09-14 — worked examples from 17 original-language constitutions; proposed decision
   rules and boundary cases; output format; adjudication protocol.
-- v1.0 — *pending*: rules confirmed by the annotation lead; frozen; Zenodo DOI.
+- v1.0 — 2026-09-14 — decision rules, decision test and example readings confirmed by the annotation
+  lead; frozen for the pilot; tagged release → Zenodo DOI.
