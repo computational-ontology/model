@@ -1,0 +1,2618 @@
+{
+  "dump_date": "2026-09-14",
+  "api_base": "https://www.constituteproject.org/service/",
+  "query": {
+    "key": "em",
+    "lang": "es",
+    "in_force": "true"
+  },
+  "notice": "Texts are CC BY-NC 3.0 (Constitute) with third-party exceptions; not redistributed. Cite Elkins, Ginsburg & Melton, Constitute, constituteproject.org.",
+  "sections": [
+    {
+      "constitution_id": "Argentina_1994",
+      "section_id": "54",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "PRIMERA PARTE > CAPÍTULO PRIMERO. DECLARACIONES, DERECHOS Y GARANTÍAS",
+      "article": "Artículo 23",
+      "copyright": null,
+      "translator": null,
+      "sha256": "a12ce91374c9daec56acc1102fbdc6cee5ee2a1c8b78d1ed418f85b56477dbec",
+      "n_chars": 587
+    },
+    {
+      "constitution_id": "Argentina_1994",
+      "section_id": "157",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "uhspleg,em"
+      ],
+      "header": "SEGUNDA PARTE. AUTORIDADES DE LA NACIÓN > TÍTULO PRIMERO. GOBIERNO FEDERAL > SECCIÓN PRIMERA. DEL PODER LEGISLATIVO > CAPÍTULO SEGUNDO. Del Senado",
+      "article": "Artículo 61",
+      "copyright": null,
+      "translator": null,
+      "sha256": "315f5d97f2fd7fdfc1d1a45aaa60151ad69362b1032ba52593f6ea0b6cf75660",
+      "n_chars": 167
+    },
+    {
+      "constitution_id": "Argentina_1994",
+      "section_id": "259-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "SEGUNDA PARTE. AUTORIDADES DE LA NACIÓN > TÍTULO PRIMERO. GOBIERNO FEDERAL > SECCIÓN PRIMERA. DEL PODER LEGISLATIVO > CAPÍTULO CUARTO. Atribuciones del Congreso > Artículo 75",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "56d59a3cc0fe7f4f031ad9e54c338d1bc8da0d70bc0fbdf0c39b8e7a65c859c2",
+      "n_chars": 215
+    },
+    {
+      "constitution_id": "Argentina_1994",
+      "section_id": "365-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "SEGUNDA PARTE. AUTORIDADES DE LA NACIÓN > TÍTULO PRIMERO. GOBIERNO FEDERAL > SECCIÓN SEGUNDA. DEL PODER EJECUTIVO > CAPÍTULO TERCERO. Atribuciones del Poder Ejecutivo > Artículo 99",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "226293e4f4b29c4e1aff47058617a9753d333a061c7f73fd085dc8d95c4961da",
+      "n_chars": 422
+    },
+    {
+      "constitution_id": "Bhutan_2008",
+      "section_id": "297-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Artículo 7. Derechos fundamentales > 22",
+      "article": "",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducida por Carlos Morales de Setién Ravina",
+      "sha256": "b13dceda5903569a9c9612308eb1a611d8ea1c64d79f9f6270655dfa65cba61d",
+      "n_chars": 283
+    },
+    {
+      "constitution_id": "Bhutan_2008",
+      "section_id": "618-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Artículo 18. El partido de la oposición",
+      "article": "",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducida por Carlos Morales de Setién Ravina",
+      "sha256": "85d1107e1cac47fef626ed52cd12fdf8cd3ddb08672585349d9e54cb46a6bbd9",
+      "n_chars": 207
+    },
+    {
+      "constitution_id": "Bhutan_2008",
+      "section_id": "974",
+      "lang": "es",
+      "topic_keys": [
+        "amend",
+        "em",
+        "legjoint",
+        "legjoint,em"
+      ],
+      "header": "",
+      "article": "Artículo 33. Emergencias",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducida por Carlos Morales de Setién Ravina",
+      "sha256": "7c7ec535066404a61ee4f806012e0a203c5c727e05c90e269e1cf856263c14a8",
+      "n_chars": 2501
+    },
+    {
+      "constitution_id": "Bolivia_2009",
+      "section_id": "875",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "PRIMERA PARTE. BASES FUNDAMENTALES DEL ESTADO DERECHOS, DEBERES Y GARANTÍAS > TÍTULO IV. GARANTÍAS JURISDICCIONALES Y ACCIONES DE DEFENSA > CAPÍTULO TERCERO. ESTADOS DE EXCEPCIÓN",
+      "article": "CAPÍTULO TERCERO. ESTADOS DE EXCEPCIÓN",
+      "copyright": null,
+      "translator": null,
+      "sha256": "d1a6793db5d9272abd17e43c2b83a187822442cebc029669104c66dbe199d033",
+      "n_chars": 505
+    },
+    {
+      "constitution_id": "Bolivia_2009",
+      "section_id": "1109-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "SEGUNDA PARTE. ESTRUCTURA Y ORGANIZACIÓN FUNCIONAL DEL ESTADO > TÍTULO I. ÓRGANO LEGISLATIVO > CAPÍTULO PRIMERO. COMPOSICIÓN Y ATRIBUCIONES DE LA ASAMBLEA LEGISLATIVA PLURINACIONAL > Artículo 161",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "279cc42eee0505d1fd2f1894ecb1007787282fbae06dba52286d96e7ade5b80a",
+      "n_chars": 181
+    },
+    {
+      "constitution_id": "Bolivia_2009",
+      "section_id": "1241-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "SEGUNDA PARTE. ESTRUCTURA Y ORGANIZACIÓN FUNCIONAL DEL ESTADO > TÍTULO II. ÓRGANO EJECUTIVO > CAPÍTULO PRIMERO. COMPOSICIÓN Y ATRIBUCIONES DEL ÓRGANO EJECUTIVO > SECCIÓN II. PRESIDENCIA Y VICEPRESIDENCIA DEL ESTADO > Artículo 172",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "d9b9a6e4d620adcd23bb481a135b7121521ce073ab7eec94c0f95b80281a7d40",
+      "n_chars": 155
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "589-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO III. DE LA ORGANIZACIÓN DEL ESTADO > CAPÍTULO II. DE LA UNIÓN > Art 21",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "81c0fabfc349e40745d0c45e4c721aa681659d82de4186641233bc530d5bf261",
+      "n_chars": 99
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "1344-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO IV. LA ORGANIZACIÓN DE LOS PODERES > CAPÍTULO I. EL PODER LEGISLATIVO > Sección II. Atribuciones del Congreso Nacional > Art 49",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "0321a69425209cc60fbc8aec11d30a0a28b9eaa84a6374ec82f3329d04aec866",
+      "n_chars": 187
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "1455-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO IV. LA ORGANIZACIÓN DE LOS PODERES > CAPÍTULO I. EL PODER LEGISLATIVO > Sección V. Diputados y Senadores > Art 53",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "a33cab351ecc52a1bf5c5a4c000d1805c0c4fd47f4968036b0103898b7a5d1c9",
+      "n_chars": 303
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "1532-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO IV. LA ORGANIZACIÓN DE LOS PODERES > CAPÍTULO I. EL PODER LEGISLATIVO > Sección VI. Sesiones > Art 57 > §6°",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "219b643cb60db9b696343caa7474584426a7bface659eb50dc3b18adc4d2d689",
+      "n_chars": 315
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "1592-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO IV. LA ORGANIZACIÓN DE LOS PODERES > CAPÍTULO I. EL PODER LEGISLATIVO > Sección VIII. El Proceso Legislativo > Sub-sección II. Enmiendas a la Constitución > Art 60",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "3af830a867a15857451a21890272ae7b433e581b699acec3c7b523ee1c2b51f1",
+      "n_chars": 110
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "1871-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO IV. LA ORGANIZACIÓN DE LOS PODERES > CAPÍTULO II. EL PODER EJECUTIVO > Sección II. Atribuciones del Presidente de la República > Art 84",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "744adae2ad7ce4d07cc8f9f029b21f49b5694affd1ea5c03e9add135b721d9a3",
+      "n_chars": 110
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "1979-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO IV. LA ORGANIZACIÓN DE LOS PODERES > CAPÍTULO II. EL PODER EJECUTIVO > Sección V. Consejo de la República y Consejo de Defensa Nacional > Sub-sección I. Consejo de la República > Art 90",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "0d3cd85a197c81bcc7d087b75d656438895b094a0332f5fc7570972dc35c1c56",
+      "n_chars": 129
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "2010-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO IV. LA ORGANIZACIÓN DE LOS PODERES > CAPÍTULO II. EL PODER EJECUTIVO > Sección V. Consejo de la República y Consejo de Defensa Nacional > Sub-sección II. Consejo de Defensa Nacional > Art 91 > §1°",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "e9e28007591bad1c6dddb969b0dcc57894587052cd7d5eab4c33933724084b14",
+      "n_chars": 156
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "2857",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "telecom"
+      ],
+      "header": "TÍTULO V. DEFENSA DEL ESTADO E INSTITUCIONES DEMOCRÁTICAS > CAPÍTULO I. ESTADO DE DEFENSA Y ESTADO DE SITIO > Sección I. Estado de Defensa",
+      "article": "Art 136",
+      "copyright": null,
+      "translator": null,
+      "sha256": "a31930ccf214bae7c866afc275736ca24844b1fe802e66a7e584fdaa3f54c34f",
+      "n_chars": 369
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "2892",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO V. DEFENSA DEL ESTADO E INSTITUCIONES DEMOCRÁTICAS > CAPÍTULO I. ESTADO DE DEFENSA Y ESTADO DE SITIO > Sección II. Estado de sitio > Art 137",
+      "article": "Art 137",
+      "copyright": null,
+      "translator": null,
+      "sha256": "f7b8dcc07694f89ad84cb53a30c1458fca551b2cbd341cced957f9129c6063a9",
+      "n_chars": 411
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "2900",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "exsess"
+      ],
+      "header": "TÍTULO V. DEFENSA DEL ESTADO E INSTITUCIONES DEMOCRÁTICAS > CAPÍTULO I. ESTADO DE DEFENSA Y ESTADO DE SITIO > Sección II. Estado de sitio",
+      "article": "Art 138",
+      "copyright": null,
+      "translator": null,
+      "sha256": "02414e34ae9c252d770805816a5703bb89d5f21896762e8f6a99fb86c434eb1d",
+      "n_chars": 293
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "2908",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "evidence",
+        "exprop",
+        "radio,tv",
+        "stdcom"
+      ],
+      "header": "TÍTULO V. DEFENSA DEL ESTADO E INSTITUCIONES DEMOCRÁTICAS > CAPÍTULO I. ESTADO DE DEFENSA Y ESTADO DE SITIO > Sección II. Estado de sitio > Art 139",
+      "article": "Art 139",
+      "copyright": null,
+      "translator": null,
+      "sha256": "6bea58846947512b6e53c3ca316638afc3438d8dceec12a0f729e63f3abc8de0",
+      "n_chars": 671
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "2927",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "stdcom,em"
+      ],
+      "header": "TÍTULO V. DEFENSA DEL ESTADO E INSTITUCIONES DEMOCRÁTICAS > CAPÍTULO I. ESTADO DE DEFENSA Y ESTADO DE SITIO > Sección III. Disposiciones generales",
+      "article": "Art 140",
+      "copyright": null,
+      "translator": null,
+      "sha256": "28c598f79e1f4e11c8b5e8e5a32d26b5150b0926a2872de55284a36f964c4347",
+      "n_chars": 263
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "2929",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO V. DEFENSA DEL ESTADO E INSTITUCIONES DEMOCRÁTICAS > CAPÍTULO I. ESTADO DE DEFENSA Y ESTADO DE SITIO > Sección III. Disposiciones generales > Art 141",
+      "article": "Art 141",
+      "copyright": null,
+      "translator": null,
+      "sha256": "deb0e05c8c3a5d31b968949ee1eb7ac9e28beef00dae2b490e3993777d9913e0",
+      "n_chars": 178
+    },
+    {
+      "constitution_id": "Chile_2021",
+      "section_id": "307-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Capítulo IV. GOBIERNO > Presidente de la República > Artículo 32",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "c9785be6cd540023dc13839f88556b3fb422a564dc607c45b9c0cdcc14955836",
+      "n_chars": 170
+    },
+    {
+      "constitution_id": "Chile_2021",
+      "section_id": "377",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Capítulo IV. GOBIERNO > Estados de excepción constitucional",
+      "article": "Estados de excepción constitucional",
+      "copyright": null,
+      "translator": null,
+      "sha256": "e154313aeace092a8fa804d2c54565317c67f53098c2b16d27026bb30ceb16bc",
+      "n_chars": 323
+    },
+    {
+      "constitution_id": "Chile_2021",
+      "section_id": "503-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Capítulo V. CONGRESO NACIONAL > Atribuciones exclusivas del Congreso > Artículo 54",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "d89bf75d17665b088136333034e235208b99dd1d97a89014acabf2b3d9f30100",
+      "n_chars": 181
+    },
+    {
+      "constitution_id": "Chile_2021",
+      "section_id": "1226",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "telecom,em"
+      ],
+      "header": "DISPOSICIONES TRANSITORIAS",
+      "article": "TRIGÉSIMA SEGUNDA",
+      "copyright": null,
+      "translator": null,
+      "sha256": "f72ff440eedf89b78927818b777702bdad7b897075f8a5a17579949a0aefd6bc",
+      "n_chars": 576
+    },
+    {
+      "constitution_id": "China_2004",
+      "section_id": "308-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "CAPÍTULO III. ESTRUCTURA DEL ESTADO > SECCIÓN 1. ASAMBLEA POPULAR NACIONAL > Artículo 67",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "64bffb93cb11e3c4e3a3461eab8b2855e7674caf2ea2dbbe5190fa84a566481a",
+      "n_chars": 236
+    },
+    {
+      "constitution_id": "China_2004",
+      "section_id": "343",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "em,execnum,hogelect,war,hogdiss,hospow,pardon"
+      ],
+      "header": "CAPÍTULO III. ESTRUCTURA DEL ESTADO > SECCIÓN 2. EL PRESIDENTE DE LA REPÚBLICA POPULAR CHINA",
+      "article": "Artículo 80",
+      "copyright": null,
+      "translator": null,
+      "sha256": "020b3786478f7aadd34c3acdc0daeb0c9ed8f50538609ac99bb5c223ce37dd35",
+      "n_chars": 566
+    },
+    {
+      "constitution_id": "China_2004",
+      "section_id": "402-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "CAPÍTULO III. ESTRUCTURA DEL ESTADO > SECCIÓN 3. EL CONSEJO DE ESTADO > Artículo 89",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "bd08fd42e868fbb52cdaba7061b850ecc5c51f9cb732b67025cddc637540ac58",
+      "n_chars": 231
+    },
+    {
+      "constitution_id": "Colombia_2015",
+      "section_id": "1079",
+      "lang": "es",
+      "topic_keys": [
+        "conpow",
+        "conpow,hosdec",
+        "em",
+        "hosdec",
+        "intlaw"
+      ],
+      "header": "TITULO VII. DE LA RAMA EJECUTIVA > CAPITULO 6. DE LOS ESTADOS DE EXCEPCIÓN > Artículo 215",
+      "article": "CAPITULO 6. DE LOS ESTADOS DE EXCEPCIÓN",
+      "copyright": null,
+      "translator": null,
+      "sha256": "c726a16bfd813d1c593f5e93d6a32532487b48c647fa50ef957292a1f1c36a7e",
+      "n_chars": 336
+    },
+    {
+      "constitution_id": "Costa_Rica_2020",
+      "section_id": "452-1",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "war,em"
+      ],
+      "header": "TÍTULO IX. EL PODER LEGISLATIVO > Capítulo II. Atribuciones de la Asamblea Legislativa > ARTÍCULO 121",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "a4e2e457b4135abe1ee978450220cb414f0736756aa4aaff63ea6af759701451",
+      "n_chars": 222
+    },
+    {
+      "constitution_id": "Costa_Rica_2020",
+      "section_id": "454",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "em,legsupr"
+      ],
+      "header": "TÍTULO IX. EL PODER LEGISLATIVO > Capítulo II. Atribuciones de la Asamblea Legislativa > ARTÍCULO 121",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "495436adcb80328dbe6adbf4ab454b61d683ad66e4c60be78911646a3d216255",
+      "n_chars": 98
+    },
+    {
+      "constitution_id": "Costa_Rica_2020",
+      "section_id": "596",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "hosdec,em"
+      ],
+      "header": "TÍTULO X. EL PODER EJECUTIVO > Capítulo II. Deberes y Atribuciones de quienes ejercen el Poder Ejecutivo > ARTÍCULO 140",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "c3a625e8470573303b9f3cc14d40a909f4355e33d885879b553ef49d8d20e48c",
+      "n_chars": 248
+    },
+    {
+      "constitution_id": "Cuba_2019",
+      "section_id": "768-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO VI. ESTRUCTURA DEL ESTADO > CAPÍTULO III. PRESIDENTE Y VICEPRESIDENTE DE LA REPÚBLICA > ARTÍCULO 128",
+      "article": "",
+      "copyright": "Proyecto del 2018 con enmiendas resultantes de la consulta popular, publicado el 5 de enero de 2019; aprobado por el público en un referéndum nacional el 24 de febrero de 2019.",
+      "translator": null,
+      "sha256": "2163d45da11e7b758a6156e92e0a3432cefadfd2c8ebeef0a8fa502d8e8fc5ca",
+      "n_chars": 430
+    },
+    {
+      "constitution_id": "Cuba_2019",
+      "section_id": "1296",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "hosstaff"
+      ],
+      "header": "TÍTULO X. DEFENSA Y SEGURIDAD NACIONAL > CAPÍTULO IV. SITUACIONES EXCEPCIONALES Y DE DESASTRE",
+      "article": "CAPÍTULO IV. SITUACIONES EXCEPCIONALES Y DE DESASTRE",
+      "copyright": "Proyecto del 2018 con enmiendas resultantes de la consulta popular, publicado el 5 de enero de 2019; aprobado por el público en un referéndum nacional el 24 de febrero de 2019.",
+      "translator": null,
+      "sha256": "0e1f4ad7fe14083420c5480611d90381cf6064bf5d6fad6ffd4d44d9b4e02ed8",
+      "n_chars": 435
+    },
+    {
+      "constitution_id": "Denmark_1953",
+      "section_id": "70-1",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "hosdec,em"
+      ],
+      "header": "Parte III",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "e73f4ad5cd940c0cbe50dc80bb65998fd2f0294a77465e9e61ba87080e5d3687",
+      "n_chars": 286
+    },
+    {
+      "constitution_id": "Denmark_1953",
+      "section_id": "182-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Parte V > 42",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "7a306eb3628b080f986bff71627b695d836835126347226abe0b3efce80ae976",
+      "n_chars": 729
+    },
+    {
+      "constitution_id": "Dominican_Republic_2015",
+      "section_id": "281-1",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "em,exprop"
+      ],
+      "header": "TÍTULO II. DE LOS DERECHOS, GARANTÍAS Y DEBERES FUNDAMENTALES > CAPÍTULO I. DE LOS DERECHOS FUNDAMENTALES > SECCIÓN II. DE LOS DERECHOS ECONÓMICOS Y SOCIALES > Artículo 51. Derecho de propiedad",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "64c499844badada3a88a90895d8747104fbb7eda7ae77f2d6ac37f3368599679",
+      "n_chars": 568
+    },
+    {
+      "constitution_id": "Dominican_Republic_2015",
+      "section_id": "468",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO II. DE LOS DERECHOS, GARANTÍAS Y DEBERES FUNDAMENTALES > CAPÍTULO II. DE LAS GARANTÍAS A LOS DERECHOS FUNDAMENTALES > Artículo 72. Acción de amparo",
+      "article": "Párrafo",
+      "copyright": null,
+      "translator": null,
+      "sha256": "d2978b14ff3409bae44550f78bbad470969775d79220009a9d211e81e2f0d378",
+      "n_chars": 172
+    },
+    {
+      "constitution_id": "Dominican_Republic_2015",
+      "section_id": "607-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO III. DEL PODER LEGISLATIVO > CAPÍTULO III. DE LAS ATRIBUCIONES DEL CONGRESO NACIONAL > Artículo 93. Atribuciones > 1",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "6d846e5c8365454a3e30a6fc55e1c45a944883438572d39d104db2026e8b6e3a",
+      "n_chars": 268
+    },
+    {
+      "constitution_id": "Dominican_Republic_2015",
+      "section_id": "609-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO III. DEL PODER LEGISLATIVO > CAPÍTULO III. DE LAS ATRIBUCIONES DEL CONGRESO NACIONAL > Artículo 93. Atribuciones > 1",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "92c4e2b5e5c2e834d2f6d28cc428ca3128938581dad9125134c146bfcca30139",
+      "n_chars": 666
+    },
+    {
+      "constitution_id": "Dominican_Republic_2015",
+      "section_id": "780-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO IV. DEL PODER EJECUTIVO > CAPÍTULO I. DEL PRESIDENTE Y VICEPRESIDENTE DE LA REPÚBLICA > SECCIÓN II. DE LAS ATRIBUCIONES > Artículo 128. Atribuciones del Presidente de la República > 1",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "77e645375af4ce9e09776a9969b7f713784b05a24a777e86edecbf836e16d611",
+      "n_chars": 607
+    },
+    {
+      "constitution_id": "Dominican_Republic_2015",
+      "section_id": "782-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO IV. DEL PODER EJECUTIVO > CAPÍTULO I. DEL PRESIDENTE Y VICEPRESIDENTE DE LA REPÚBLICA > SECCIÓN II. DE LAS ATRIBUCIONES > Artículo 128. Atribuciones del Presidente de la República > 1",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "b3f3a4223fc4f665d681fb260424853c28c1834844da9f1059dd1612e77af5d0",
+      "n_chars": 462
+    },
+    {
+      "constitution_id": "Dominican_Republic_2015",
+      "section_id": "1420",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO XIII. DE LOS ESTADOS DE EXCEPCIÓN",
+      "article": "TÍTULO XIII. DE LOS ESTADOS DE EXCEPCIÓN",
+      "copyright": null,
+      "translator": null,
+      "sha256": "d3b411b5f15836e32ce3aa9018ffb894e42f1c5de8b31ee0235b83ba6760beec",
+      "n_chars": 441
+    },
+    {
+      "constitution_id": "Ecuador_2021",
+      "section_id": "1005-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Título IV. Participación y Organización del Poder > CAPÍTULO 2. Función Legislativa > SECCIÓN 2. Control de la acción de gobierno > Artículo 130",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "759dfd4f29fda3bbc7d1084050bca005c8a8961706f4888b9fd23405b78599f3",
+      "n_chars": 156
+    },
+    {
+      "constitution_id": "Ecuador_2021",
+      "section_id": "1147",
+      "lang": "es",
+      "topic_keys": [
+        "conpow",
+        "econplan,hosdec,legdiss,em",
+        "em"
+      ],
+      "header": "Título IV. Participación y Organización del Poder > CAPÍTULO 3. Función Ejecutiva > SECCIÓN 1. Organización y funciones",
+      "article": "Artículo 148",
+      "copyright": null,
+      "translator": null,
+      "sha256": "4f58e753c5c1225be30edf3f7b093ec1808408aac312274607053a20e4d457fa",
+      "n_chars": 372
+    },
+    {
+      "constitution_id": "Ecuador_2021",
+      "section_id": "1210",
+      "lang": "es",
+      "topic_keys": [
+        "comchief",
+        "em",
+        "exprop",
+        "hosdec",
+        "inalrght,hosdec",
+        "intlaw",
+        "intorgs,conpow",
+        "press",
+        "resenex"
+      ],
+      "header": "Título IV. Participación y Organización del Poder > CAPÍTULO 3. Función Ejecutiva > SECCIÓN 4. Estados de excepción",
+      "article": "SECCIÓN 4. Estados de excepción",
+      "copyright": null,
+      "translator": null,
+      "sha256": "11d0c254a73610880236d26b5deab4d106c46b97842b142b056c21397400815e",
+      "n_chars": 354
+    },
+    {
+      "constitution_id": "Ecuador_2021",
+      "section_id": "2754-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Título IX. Supremacía de la Constitución > CAPÍTULO 2. Corte Constitucional > Artículo 436",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "aefe987878bc784b8428dff0deefb3eec125bd4dd62883e11257ebc0cd141f64",
+      "n_chars": 286
+    },
+    {
+      "constitution_id": "Egypt_2019",
+      "section_id": "500",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Parte V. Sistema de Gobierno > Capítulo 2. Poder Ejecutivo > División I. Mandato",
+      "article": "Artículo 154.",
+      "copyright": null,
+      "translator": null,
+      "sha256": "a283f21f6f4f0dda2c48c46e7cb504c78bd52dafd9f132e5909fd7f35e93003d",
+      "n_chars": 264
+    },
+    {
+      "constitution_id": "El_Salvador_2014",
+      "section_id": "97",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO II. LOS DERECHOS Y GARANTÍAS FUNDAMENTALES DE LA PERSONA > CAPÍTULO I. DERECHOS INDIVIDUALES Y SU RÉGIMEN DE EXCEPCIÓN > SECCIÓN SEGUNDA. RÉGIMEN DE EXCEPCIÓN",
+      "article": "Artículo 29",
+      "copyright": null,
+      "translator": null,
+      "sha256": "e0bba0c6ea864b5cf03f0e42c7b4ba6a45b2f7ef6360802ba325bf3254d51a12",
+      "n_chars": 568
+    },
+    {
+      "constitution_id": "El_Salvador_2014",
+      "section_id": "100",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO II. LOS DERECHOS Y GARANTÍAS FUNDAMENTALES DE LA PERSONA > CAPÍTULO I. DERECHOS INDIVIDUALES Y SU RÉGIMEN DE EXCEPCIÓN > SECCIÓN SEGUNDA. RÉGIMEN DE EXCEPCIÓN",
+      "article": "Artículo 30",
+      "copyright": null,
+      "translator": null,
+      "sha256": "4e211c24f56563afff09910251bdd40c40dd2def69d763a1fc15068a11b72069",
+      "n_chars": 325
+    },
+    {
+      "constitution_id": "El_Salvador_2014",
+      "section_id": "102",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO II. LOS DERECHOS Y GARANTÍAS FUNDAMENTALES DE LA PERSONA > CAPÍTULO I. DERECHOS INDIVIDUALES Y SU RÉGIMEN DE EXCEPCIÓN > SECCIÓN SEGUNDA. RÉGIMEN DE EXCEPCIÓN",
+      "article": "Artículo 31",
+      "copyright": null,
+      "translator": null,
+      "sha256": "3df36cccb7eb81ddcb006fc101998f262de1034a234fd8b122005aec6bd29a80",
+      "n_chars": 204
+    },
+    {
+      "constitution_id": "Equatorial_Guinea_2012",
+      "section_id": "341",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO SEGUNDO > CAPÍTULO II. DEL PRESIDENTE DE LA REPÚBLICA",
+      "article": "Artículo 43",
+      "copyright": null,
+      "translator": null,
+      "sha256": "fabd7bcec57783bc973bba8c668e4ddea7bd8a3328ac22da629e4a7e802dfbf0",
+      "n_chars": 578
+    },
+    {
+      "constitution_id": "Equatorial_Guinea_2012",
+      "section_id": "343",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "terror"
+      ],
+      "header": "TÍTULO SEGUNDO > CAPÍTULO II. DEL PRESIDENTE DE LA REPÚBLICA",
+      "article": "Artículo 44",
+      "copyright": null,
+      "translator": null,
+      "sha256": "778cb47ec96136eb6cb56d35bd5d62ef94cb7efd2d4223cffba44dc0ff22a8ca",
+      "n_chars": 968
+    },
+    {
+      "constitution_id": "Estonia_2015",
+      "section_id": "266-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Capítulo IV. EL RIIGIKOGU > Artículo 65",
+      "article": "",
+      "copyright": null,
+      "translator": "Este texto fue traducido del estonio al español por la Fundación Max Planck para la Paz Internacional y el Estado de Derecho en el marco de la asistencia de la Fundación al proceso constituyente chileno, con fondos del Ministerio Federal de Relaciones Exteriores de Alemania.",
+      "sha256": "bd53fc24ca3f294ad39ba22d3f0d0490bfbe4895554859d98cde4aa219e0b381",
+      "n_chars": 117
+    },
+    {
+      "constitution_id": "Estonia_2015",
+      "section_id": "335-1",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "war,em"
+      ],
+      "header": "Capítulo V. EL PRESIDENTE DE LA REPÚBLICA > Artículo 78",
+      "article": "",
+      "copyright": null,
+      "translator": "Este texto fue traducido del estonio al español por la Fundación Max Planck para la Paz Internacional y el Estado de Derecho en el marco de la asistencia de la Fundación al proceso constituyente chileno, con fondos del Ministerio Federal de Relaciones Exteriores de Alemania.",
+      "sha256": "121e4d08713f044fd6a4fa29bf8ba927cebe7a506b9df0c5aab401abf54359d9",
+      "n_chars": 228
+    },
+    {
+      "constitution_id": "Estonia_2015",
+      "section_id": "396-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Capítulo VI. EL GOBIERNO DE LA REPÚBLICA > Artículo 87",
+      "article": "",
+      "copyright": null,
+      "translator": "Este texto fue traducido del estonio al español por la Fundación Max Planck para la Paz Internacional y el Estado de Derecho en el marco de la asistencia de la Fundación al proceso constituyente chileno, con fondos del Ministerio Federal de Relaciones Exteriores de Alemania.",
+      "sha256": "da810887eeb96d350ea26a799cb463db436068430d3979b10527f8289622be61",
+      "n_chars": 199
+    },
+    {
+      "constitution_id": "Estonia_2015",
+      "section_id": "515-1",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "intlaw,em"
+      ],
+      "header": "Capítulo VII. LEGISLACIÓN > Artículo 106",
+      "article": "",
+      "copyright": null,
+      "translator": "Este texto fue traducido del estonio al español por la Fundación Max Planck para la Paz Internacional y el Estado de Derecho en el marco de la asistencia de la Fundación al proceso constituyente chileno, con fondos del Ministerio Federal de Relaciones Exteriores de Alemania.",
+      "sha256": "8c4563f93221a452f79733b8a94e9652a5f61ce30e8f7d669655d05f055066e5",
+      "n_chars": 266
+    },
+    {
+      "constitution_id": "Estonia_2015",
+      "section_id": "587",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Capítulo X. DEFENSA NACIONAL",
+      "article": "Artículo 129",
+      "copyright": null,
+      "translator": "Este texto fue traducido del estonio al español por la Fundación Max Planck para la Paz Internacional y el Estado de Derecho en el marco de la asistencia de la Fundación al proceso constituyente chileno, con fondos del Ministerio Federal de Relaciones Exteriores de Alemania.",
+      "sha256": "9d45b8b245228e130b309db7719ee5dda5f29f0b4f536e37fd4cb543276c4aa6",
+      "n_chars": 279
+    },
+    {
+      "constitution_id": "Estonia_2015",
+      "section_id": "590",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Capítulo X. DEFENSA NACIONAL",
+      "article": "Artículo 130",
+      "copyright": null,
+      "translator": "Este texto fue traducido del estonio al español por la Fundación Max Planck para la Paz Internacional y el Estado de Derecho en el marco de la asistencia de la Fundación al proceso constituyente chileno, con fondos del Ministerio Federal de Relaciones Exteriores de Alemania.",
+      "sha256": "af111e53f81666ac2c0e0f0342d46e6c5789178f3b3090c520b1715563c0285e",
+      "n_chars": 557
+    },
+    {
+      "constitution_id": "Estonia_2015",
+      "section_id": "592",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Capítulo X. DEFENSA NACIONAL",
+      "article": "Artículo 131",
+      "copyright": null,
+      "translator": "Este texto fue traducido del estonio al español por la Fundación Max Planck para la Paz Internacional y el Estado de Derecho en el marco de la asistencia de la Fundación al proceso constituyente chileno, con fondos del Ministerio Federal de Relaciones Exteriores de Alemania.",
+      "sha256": "b02d40821b5ee56e0b8c97273843193fcd46936fd87ec68e8d714fd3c6caad88",
+      "n_chars": 193
+    },
+    {
+      "constitution_id": "Estonia_2015",
+      "section_id": "697-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Capítulo XV. LA REFORMA CONSTITUCIONAL > Artículo 161",
+      "article": "",
+      "copyright": null,
+      "translator": "Este texto fue traducido del estonio al español por la Fundación Max Planck para la Paz Internacional y el Estado de Derecho en el marco de la asistencia de la Fundación al proceso constituyente chileno, con fondos del Ministerio Federal de Relaciones Exteriores de Alemania.",
+      "sha256": "788ae8c3c095452d186da1aff911029c9e14c61f03149b513ca21501930f567b",
+      "n_chars": 119
+    },
+    {
+      "constitution_id": "France_2008",
+      "section_id": "74",
+      "lang": "es",
+      "topic_keys": [
+        "conpow,em",
+        "em",
+        "intlaw"
+      ],
+      "header": "Título II. DEL PRESIDENTE DE LA REPÚBLICA",
+      "article": "ARTÍCULO 16",
+      "copyright": null,
+      "translator": null,
+      "sha256": "25a53f50b1314d396fd58c2b5eefff0781427090fabf6ea6b40cdbece12c4e84",
+      "n_chars": 483
+    },
+    {
+      "constitution_id": "France_2008",
+      "section_id": "179",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Título V. DE LAS RELACIONES ENTRE EL PARLAMENTO Y EL GOBIERNO",
+      "article": "ARTÍCULO 36",
+      "copyright": null,
+      "translator": null,
+      "sha256": "f4e6e1761f46e2bd38057f0ad05eee449cc71aa28c78f3204c4bf32abecf67f1",
+      "n_chars": 62
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "76-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "I. DERECHOS FUNDAMENTALES > Artículo 10. Secreto epistolar, postal y de telecomunicaciones",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "5f1998e981e9f75f6193a603e9d840a538fcb9b87eda569f46d7132c9f79a8ad",
+      "n_chars": 415
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "81-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "I. DERECHOS FUNDAMENTALES > Artículo 11. Libertad de circulación y de residencia",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "b86ea19d096ba66098ee379733f5324347d5b00377fa1e21caa04bd653945149",
+      "n_chars": 561
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "95-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "I. DERECHOS FUNDAMENTALES > Artículo 12a. Servicio militar y civil obligatorio",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "fc5f4040567987403ef2eda1514ab852c2b7acb2bb464ef85be957b281934932",
+      "n_chars": 1005
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "97-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "I. DERECHOS FUNDAMENTALES > Artículo 12a. Servicio militar y civil obligatorio",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "906340070421fb623afce30cfe3067507702e6cfb4af50150264e097f8f20062",
+      "n_chars": 441
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "99-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "I. DERECHOS FUNDAMENTALES > Artículo 12a. Servicio militar y civil obligatorio",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "a026471d022f4dd4b2d784b072b0bf0d19833e6677b4655042877079108a946e",
+      "n_chars": 472
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "101-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "I. DERECHOS FUNDAMENTALES > Artículo 12a. Servicio militar y civil obligatorio",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "1e45d9db00631a670d07a35058790a4d56cff26972d83965fc43d732a6b054ce",
+      "n_chars": 454
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "110-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "I. DERECHOS FUNDAMENTALES > Artículo 13. Inviolabilidad del domicilio",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "c76943dfb65e73850dd64c9286ce688fdb6ddffe2990b92d4d63ac87279c9f91",
+      "n_chars": 436
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "116-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "I. DERECHOS FUNDAMENTALES > Artículo 13. Inviolabilidad del domicilio",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "7f74158292b4cf3459d6269d8bee76ea646dd1160e00e7115150607e856a908d",
+      "n_chars": 410
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "271-1",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "sub,em"
+      ],
+      "header": "II. LA FEDERACIÓN Y LOS LÄNDER > Artículo 35. Asistencia judicial y administrativa; ayuda en caso de catástrofe",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "9b695f2db0b2dc18d296e3994a71feabab4ec660f5e5bfb89417b8a0ea219962",
+      "n_chars": 656
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "273-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "II. LA FEDERACIÓN Y LOS LÄNDER > Artículo 35. Asistencia judicial y administrativa; ayuda en caso de catástrofe",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "a33ba1646c4e503ce7ca5b95a1c38fcebdf7dff7993892d91f47be5800e452dc",
+      "n_chars": 654
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "401-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "IVa. LA COMISIÓN CONJUNTA > Artículo 53a. Composición, reglamento interno",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "ba187625f7b23f97faf4656d9d0bf27f479532f28e7478b0425a27cd0141d01c",
+      "n_chars": 214
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "688-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "VII. LEGISLACIÓN DE LA FEDERACIÓN > Artículo 80a. Aplicación de determinadas disposiciones jurídicas en el caso de tensión",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "2b9637dbe1eb1190de9601a68fe943ac63667113a88f3dcfc3ef9db5e3708451",
+      "n_chars": 670
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "745-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "VIII. LA EJECUCIÓN DE LAS LEYES FEDERALES Y LA ADMINISTRACIÓN FEDERAL > Artículo 87a. Organización y atribuciones de las Fuerzas Armadas",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "fa6ee3de318e187275069150dc5bac6ae06cd32213993a23c0fe39c9451b8b6d",
+      "n_chars": 471
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "747-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "VIII. LA EJECUCIÓN DE LAS LEYES FEDERALES Y LA ADMINISTRACIÓN FEDERAL > Artículo 87a. Organización y atribuciones de las Fuerzas Armadas",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "901636c0081c60d7e75965dedd1e1805b507b697aec0670d22004c008d7776f9",
+      "n_chars": 654
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "795",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "sub"
+      ],
+      "header": "VIII. LA EJECUCIÓN DE LAS LEYES FEDERALES Y LA ADMINISTRACIÓN FEDERAL",
+      "article": "Artículo 91. Estado de emergencia interior",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "6258eb5d3d269e98d9e33278e78e51737a7416864c70860aa1f3ce499f1b0784",
+      "n_chars": 1077
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "1075-1",
+      "lang": "es",
+      "topic_keys": [
+        "balbudgt,em,budget",
+        "em"
+      ],
+      "header": "X. HACIENDA > Artículo 109. Gestión presupuestaria de la Federación y de los Länder",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "60200529b2b7e1a49802b26eadb4aeeaa90cca3b8790c739ddb70458082e766e",
+      "n_chars": 1117
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "1124",
+      "lang": "es",
+      "topic_keys": [
+        "balbudgt,budget",
+        "em",
+        "finance"
+      ],
+      "header": "X. HACIENDA",
+      "article": "Artículo 115. Límites de la toma de créditos",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "c2550604bbf93f3fb20f634486020b3dcafd50dfffaf9c98e4e452ec9f39bb96",
+      "n_chars": 1885
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "1130",
+      "lang": "es",
+      "topic_keys": [
+        "commit,intlaw",
+        "em",
+        "quorum",
+        "quorum,commit"
+      ],
+      "header": "Xa. EL CASO DE DEFENSA",
+      "article": "Artículo 115a. Concepto y declaración",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "35409cc8805109333230bcf87442c309fbab42972d4c7efa04fdd6da8e74f6b0",
+      "n_chars": 1877
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "1144-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Xa. EL CASO DE DEFENSA > Artículo 115c. Competencia legislativa ampliada de la Federación",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "9fe9cee0e35224f5abb2effa593b21f70b2f74cf2a81cc3f2132d2eb7c517eb9",
+      "n_chars": 201
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "1146",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Xa. EL CASO DE DEFENSA > Artículo 115c. Competencia legislativa ampliada de la Federación",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "642cdd7eae650ae8be84c199a1df14951c51fba2db913a46a97b3ce1de8b230b",
+      "n_chars": 443
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "1156",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Xa. EL CASO DE DEFENSA",
+      "article": "Artículo 115d. Procedimiento legislativo aplicable a los proyectos urgentes de ley",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "8350cd17068919f14664461b8c63f1104b82f1efc656a97166bf4880b208a126",
+      "n_chars": 972
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "1166-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Xa. EL CASO DE DEFENSA > Artículo 115e. Atribuciones de la Comisión Conjunta",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "bb0f61252e8069456c6222065aef15fa6f43b6e5eae28263bfb6f52422ee17a6",
+      "n_chars": 344
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "1169",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Xa. EL CASO DE DEFENSA > Artículo 115f. Atribuciones del Gobierno Federal",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "a9da4c116edbb298ab4cb2d4f686dbb5150400a2c31ba4fd08b046bf4bcb066b",
+      "n_chars": 353
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "1180-1",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "sub,em"
+      ],
+      "header": "Xa. EL CASO DE DEFENSA > Artículo 115h. Funcionamiento de los órganos constitucionales",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "89cc1206bc5a5cadba2af940472ee778630c9f0daed66977555c0b64e961b9ad",
+      "n_chars": 637
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "1184-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Xa. EL CASO DE DEFENSA > Artículo 115h. Funcionamiento de los órganos constitucionales",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "5bb77837f7009fc6b44d74651260a2f97e9188b0c6fa57fa25086bae6443c9e9",
+      "n_chars": 72
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "1198",
+      "lang": "es",
+      "topic_keys": [
+        "commit",
+        "em"
+      ],
+      "header": "Xa. EL CASO DE DEFENSA",
+      "article": "Artículo 115l. Derogación de las leyes y medidas extraordinarias, terminación del caso de defensa, conclusión de la paz",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "444de578ce8ef8f8a243521479c65d1d94c2830345993e600b661063791b0f7a",
+      "n_chars": 980
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "1335-1",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "prevcond,em"
+      ],
+      "header": "XI. DISPOSICIONES TRANSITORIAS Y FINALES > Artículo 135a. Obligaciones anteriores > 1",
+      "article": "",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "9925d42b2d537cbe0025a081222647cfb85618d0e5376a610a6fd9f521b1807c",
+      "n_chars": 629
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "1397",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "em,balbudgt,budget"
+      ],
+      "header": "XI. DISPOSICIONES TRANSITORIAS Y FINALES",
+      "article": "Artículo 143d. Preceptos transitorios en el marco de las ayudas de consolidación",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "8561cd4191427778688cfc52a96a6c0f378bbeb7a5253c6f2857e0759f8566a0",
+      "n_chars": 2879
+    },
+    {
+      "constitution_id": "Greece_2019",
+      "section_id": "488",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "PARTE 3. ORGANIZACION Y FUNCIONES DEL ESTADO > SECCIÓN II. EL PRESIDENTE DE LA REPUBLICA > CAPÍTULO 2. Poderes del Presidente de la República y responsabilidad por sus actos > Artículo 48",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "b1cce5da0383e2bb68d72b7780bf0713e8d91801997521cdb3c303f6e45031aa",
+      "n_chars": 113
+    },
+    {
+      "constitution_id": "Guatemala_1993",
+      "section_id": "562",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO II. DERECHOS HUMANOS > CAPÍTULO IV. LIMITACIÓN A LOS DERECHOS CONSTITUCIONALES",
+      "article": "Artículo 138. Limitación a los derechos constitucionales",
+      "copyright": null,
+      "translator": null,
+      "sha256": "5776d80a8cc4557c337210c7f9cc1e92bffd5e27c1e75070624bec8c58191b91",
+      "n_chars": 501
+    },
+    {
+      "constitution_id": "Haiti_2012",
+      "section_id": "601-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TITULO V. DE LA SOBERANÍA NACIONAL > CAPITULO II. DEL PODER LEGISLATIVO > Sección C. De la Asamblea Nacional > Artículo 98-3",
+      "article": "",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducción editada y actualizada por Carlos Morales de Setién Ravina",
+      "sha256": "d7661b5e4ff82771b4f001db34d56e100866e54bfb5b52a7450c2a1f44422534",
+      "n_chars": 246
+    },
+    {
+      "constitution_id": "Haiti_2012",
+      "section_id": "1462",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TITULO XII. DISPOSICIONES GENERALES",
+      "article": "Artículo 278-1",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducción editada y actualizada por Carlos Morales de Setién Ravina",
+      "sha256": "1168ab5421a05f2a6c161a0267ee0ea6dc91f1b94657664e6f0e8a95d4a96977",
+      "n_chars": 248
+    },
+    {
+      "constitution_id": "Haiti_2012",
+      "section_id": "1464",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TITULO XII. DISPOSICIONES GENERALES",
+      "article": "Artículo 278-2",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducción editada y actualizada por Carlos Morales de Setién Ravina",
+      "sha256": "98c9794e4b4a2c7493bf30babee6ab5b61fa0ce74a38efb7265a3c668d9756fa",
+      "n_chars": 179
+    },
+    {
+      "constitution_id": "Haiti_2012",
+      "section_id": "1466",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TITULO XII. DISPOSICIONES GENERALES",
+      "article": "Artículo 278-3",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducción editada y actualizada por Carlos Morales de Setién Ravina",
+      "sha256": "6f7e80a278535e4924f7e3b9e6c79b7693515d4750a2898803cd7594859fce71",
+      "n_chars": 129
+    },
+    {
+      "constitution_id": "Haiti_2012",
+      "section_id": "1468",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TITULO XII. DISPOSICIONES GENERALES",
+      "article": "Artículo 278-4",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducción editada y actualizada por Carlos Morales de Setién Ravina",
+      "sha256": "fefc568a5e56ebb7474b033f5770cec7d3ff2049c460808987edc80fd6912087",
+      "n_chars": 62
+    },
+    {
+      "constitution_id": "Honduras_2013",
+      "section_id": "404",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "exprop,em"
+      ],
+      "header": "TÍTULO III. DE LAS DECLARACIONES, DERECHOS Y GARANTIAS > CAPÍTULO II. DE LOS DERECHOS INDIVIDUALES",
+      "article": "Artículo 106",
+      "copyright": null,
+      "translator": null,
+      "sha256": "842e159137913e59c357b4a65235c84f6916fd9534c53a799d9f7c30f8de3260",
+      "n_chars": 193
+    },
+    {
+      "constitution_id": "Honduras_2013",
+      "section_id": "691",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "hosdec,em"
+      ],
+      "header": "TÍTULO IV. DE LAS GARANTIAS CONSTITUCIONALES > CAPÍTULO III. DE LA RESTRICCIÓN O LA SUSPENSIÓN DE DERECHOS",
+      "article": "Artículo 187",
+      "copyright": null,
+      "translator": null,
+      "sha256": "956abff8cde87bdd6a51a06b477f735122901ffbc3c75b024b0072ca30a3a04b",
+      "n_chars": 686
+    },
+    {
+      "constitution_id": "Honduras_2013",
+      "section_id": "705",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO IV. DE LAS GARANTIAS CONSTITUCIONALES > CAPÍTULO III. DE LA RESTRICCIÓN O LA SUSPENSIÓN DE DERECHOS",
+      "article": "Artículo 188",
+      "copyright": null,
+      "translator": null,
+      "sha256": "6edfbf1e6870f6d35593112766e2ce592bab5485afbb2e58376679bec1e580d0",
+      "n_chars": 266
+    },
+    {
+      "constitution_id": "Honduras_2013",
+      "section_id": "1594",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO VI. DEL REGIMEN ECONÓMICO > CAPÍTULO V. DE LA HACIENDA PÚBLICA",
+      "article": "Artículo 360",
+      "copyright": null,
+      "translator": null,
+      "sha256": "1fbdf3dcd31049957c745107fc20e94e8096df44e55297d15dd9181fb06d4914",
+      "n_chars": 240
+    },
+    {
+      "constitution_id": "Indonesia_2002",
+      "section_id": "102",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Capítulo III. El Poder Ejecutivo",
+      "article": "Artículo 12",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducida por Carlos Morales de Setién Ravina",
+      "sha256": "3d8a48a7d1ae92e12491a56b93c126e319b2d24a78fb2ba1b007f40bcb7ea095",
+      "n_chars": 192
+    },
+    {
+      "constitution_id": "Indonesia_2002",
+      "section_id": "188",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Capítulo VII. El Consejo Representante del Pueblo (Dewan Perwakilan Rakyat o DPR)",
+      "article": "Artículo 22",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducida por Carlos Morales de Setién Ravina",
+      "sha256": "763fb7b6d8cb35c6fb2d8676c304fb8e9b89da2353166920b752706e110b87d7",
+      "n_chars": 351
+    },
+    {
+      "constitution_id": "Iran_1989",
+      "section_id": "279",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "pubmin,em,radio,pubmeet,recvote,conpow"
+      ],
+      "header": "Capítulo VI. El Poder Legislativo Primera > Parte 1. La Asamblea Consultiva Islámica [Parlamento",
+      "article": "Principio 69",
+      "copyright": "© Agencia de Noticias de la República Islámica de Irán",
+      "translator": null,
+      "sha256": "5ca10eb3f4578ccc6a069203c8d1c4732149b9b3e4f7e84ef4b89fb812fca7ef",
+      "n_chars": 669
+    },
+    {
+      "constitution_id": "Iran_1989",
+      "section_id": "300",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Capítulo VI. El Poder Legislativo Primera > Parte 2. Poderes y Competencias de la Asamblea Consultiva Islámica",
+      "article": "Principio 79",
+      "copyright": "© Agencia de Noticias de la República Islámica de Irán",
+      "translator": null,
+      "sha256": "8817a13c21374b09324359b276ff2c87a3099a37731cb7836dbdb8d3a92fc738",
+      "n_chars": 427
+    },
+    {
+      "constitution_id": "Iraq_2005",
+      "section_id": "406",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "war"
+      ],
+      "header": "CAPÍTULO III. LOS PODERES FEDERALES > PARTE 1. EL PODER LEGISLATIVO > APARTADO 1. LA ASAMBLEA > Artículo 61",
+      "article": "",
+      "copyright": "Publicado originalmente en el Journal of International Mediterranean Studies (REIM)",
+      "translator": "Traducido por Waleed Saleh",
+      "sha256": "9af8a3ea7fa9a423fc879bd857665aa38f6bd664c26c91eb67a44cc4a4789c17",
+      "n_chars": 759
+    },
+    {
+      "constitution_id": "Ireland_2019",
+      "section_id": "582-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "DEL GOBIERNO > Artículo 28 > 3",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": "Texto de http://www.congreso.es/consti/otras/europea/flash.html, con actualizaciones de Carlos Morales de Setién Ravina y el Proyecto de Constituciones Comparadas",
+      "sha256": "7ab420b6060791e58c99ee9e9946cc2cbc7d4b2a50636da7caf239429e08b410",
+      "n_chars": 292
+    },
+    {
+      "constitution_id": "Ireland_2019",
+      "section_id": "584-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "DEL GOBIERNO > Artículo 28 > 3",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": "Texto de http://www.congreso.es/consti/otras/europea/flash.html, con actualizaciones de Carlos Morales de Setién Ravina y el Proyecto de Constituciones Comparadas",
+      "sha256": "285779b9ebe9c558081d71cdded479f5b0a669fa84d98d6e2962023f855796ff",
+      "n_chars": 1148
+    },
+    {
+      "constitution_id": "Ireland_2019",
+      "section_id": "954-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "DERECHOS FUNDAMENTALES > DERECHOS PERSONALES > Artículo 40 > 4",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": "Texto de http://www.congreso.es/consti/otras/europea/flash.html, con actualizaciones de Carlos Morales de Setién Ravina y el Proyecto de Constituciones Comparadas",
+      "sha256": "65b0e9c96da6866f0e290a70eff7ac05cbb6aefce35fad6a8c51aadf3b17364b",
+      "n_chars": 214
+    },
+    {
+      "constitution_id": "Italy_2020",
+      "section_id": "41-1",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "em,habcorp"
+      ],
+      "header": "PARTE PRIMERA. DERECHOS Y DEBERES DE LOS CIUDADANOS > TÍTULO I. DE LAS RELACIONES CIVILES > Art 13",
+      "article": "",
+      "copyright": null,
+      "translator": "El texto de las enmiendas de 2020, que afectó a los artículos 56, 57, y 59, fue traducido del italiano al español por la Fundación Max Planck para la Paz Internacional y el Estado de Derecho, en el marco de la asistencia de la Fundación al proceso constituyente chileno, con fondos del Ministerio Federal de Relaciones Exteriores de Alemania.",
+      "sha256": "8b7d242a395416708e8cc255f7ca22f00b18211154db5bcd2d80fa0e2a3c2f75",
+      "n_chars": 371
+    },
+    {
+      "constitution_id": "Italy_2020",
+      "section_id": "272",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "em,hogdec"
+      ],
+      "header": "PARTE SEGUNDA. ORDENAMIENTO DE LA REPÚBLICA > TÍTULO I. DEL PARLAMENTO > Sección II. De la elaboración de las leyes",
+      "article": "Art 77",
+      "copyright": null,
+      "translator": "El texto de las enmiendas de 2020, que afectó a los artículos 56, 57, y 59, fue traducido del italiano al español por la Fundación Max Planck para la Paz Internacional y el Estado de Derecho, en el marco de la asistencia de la Fundación al proceso constituyente chileno, con fondos del Ministerio Federal de Relaciones Exteriores de Alemania.",
+      "sha256": "45638f238d088552cfd89bac22aa906d2b4158dd57b1dce3e68fa307e423183e",
+      "n_chars": 110
+    },
+    {
+      "constitution_id": "Kenya_2010",
+      "section_id": "396-1",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "habcorp,em"
+      ],
+      "header": "CAPÍTULO 4. DECLARACIÓN DE DERECHOS > Segunda parte. Derechos y libertades fundamentales > 29. Libertad y seguridad de la persona",
+      "article": "",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducida por Carlos Morales de Setién Ravina",
+      "sha256": "68b21de213fc28a54eaae649674994414c06fa6e5d8b8ec55b2ac991b2ed0694",
+      "n_chars": 226
+    },
+    {
+      "constitution_id": "Kenya_2010",
+      "section_id": "858",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "CAPÍTULO 4. DECLARACIÓN DE DERECHOS > Cuarta parte. Estado de emergencia",
+      "article": "58. Estado de emergencia",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducida por Carlos Morales de Setién Ravina",
+      "sha256": "d242f5cba9c58e1d0cb839d2df7b4ef81260120d2046c98a77e09fe98fe435b7",
+      "n_chars": 2290
+    },
+    {
+      "constitution_id": "Kenya_2010",
+      "section_id": "2082-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "CAPÍTULO 9. El Poder Ejecutivo > Segunda parte. El Presidente y el vicepresidente > 132. Funciones del presidente > 4",
+      "article": "",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducida por Carlos Morales de Setién Ravina",
+      "sha256": "a662929037be63e796bb95eeb0a166255487a6e927799f563dac5a3dc372159d",
+      "n_chars": 102
+    },
+    {
+      "constitution_id": "Kenya_2010",
+      "section_id": "3315-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "CAPÍTULO 11. DESCENTRALIZACIÓN DEL GOBIERNO > Sexta parte. Suspensión del gobierno de un condado > 192. Suspensión del gobierno de un condado > 1",
+      "article": "",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducida por Carlos Morales de Setién Ravina",
+      "sha256": "4bd13af95642e98555a24ae5b1b28923e44706e49f339d89d8324d4154055be0",
+      "n_chars": 137
+    },
+    {
+      "constitution_id": "Kenya_2010",
+      "section_id": "4232-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "CAPÍTULO 14. SEGURIDAD NACIONAL > Segunda parte. Las Fuerzas de Defensa de Kenia > 241. Establecimiento de las Fuerzas de Defensa y el Consejo de Defensa > 3",
+      "article": "",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducida por Carlos Morales de Setién Ravina",
+      "sha256": "33c40d9712617d1586171d9a37121fba692b5aa0bc8e30ef79f22b645dac8aba",
+      "n_chars": 211
+    },
+    {
+      "constitution_id": "Lithuania_2019",
+      "section_id": "317-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "CAPÍTULO V. EL PARLAMENTO [En la lengua original, se denomina Seimas] > Artículo 67",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": "Texto de http://www.congreso.es/consti/otras/europea/flash.html, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "056f3781efcbc64234658095f95899ed66fd5cd861ae320e8fced9a287c0e05b",
+      "n_chars": 194
+    },
+    {
+      "constitution_id": "Lithuania_2019",
+      "section_id": "405-1",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "war,em"
+      ],
+      "header": "CAPÍTULO VI. EL PRESIDENTE DE LA REPÚBLICA > Artículo 84",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": "Texto de http://www.congreso.es/consti/otras/europea/flash.html, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "2b31e913ea0ab7888f320db0df07d9ce96a504a8098385a7679baacb8d15598f",
+      "n_chars": 377
+    },
+    {
+      "constitution_id": "Lithuania_2019",
+      "section_id": "407-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "CAPÍTULO VI. EL PRESIDENTE DE LA REPÚBLICA > Artículo 84",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": "Texto de http://www.congreso.es/consti/otras/europea/flash.html, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "1616409364b551519d7d866796f347b834782fe56cacb06838a73e3b8986267a",
+      "n_chars": 228
+    },
+    {
+      "constitution_id": "Lithuania_2019",
+      "section_id": "705",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "exsess",
+        "intlaw,em,war"
+      ],
+      "header": "CAPÍTULO XIII. POLÍTICA EXTERIOR Y DEFENSA NACIONAL",
+      "article": "Artículo 142",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": "Texto de http://www.congreso.es/consti/otras/europea/flash.html, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "f179e335b7c4e4fcc30dee2a4b1fecc71555b22ba6596b67cface190778d583a",
+      "n_chars": 269
+    },
+    {
+      "constitution_id": "Lithuania_2019",
+      "section_id": "710",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "em,exsess"
+      ],
+      "header": "CAPÍTULO XIII. POLÍTICA EXTERIOR Y DEFENSA NACIONAL",
+      "article": "Artículo 144",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": "Texto de http://www.congreso.es/consti/otras/europea/flash.html, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "07c40e985a9f198d33a3004bd06c9f306ede45f00ccf54d7f08be5ad7d40b2f7",
+      "n_chars": 219
+    },
+    {
+      "constitution_id": "Lithuania_2019",
+      "section_id": "714",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "CAPÍTULO XIII. POLÍTICA EXTERIOR Y DEFENSA NACIONAL",
+      "article": "Artículo 145",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": "Texto de http://www.congreso.es/consti/otras/europea/flash.html, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "f867b98af21933c44d2c6d8570e052368bb948e3002c372f190b468f3392664c",
+      "n_chars": 218
+    },
+    {
+      "constitution_id": "Lithuania_2019",
+      "section_id": "722-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "CAPÍTULO XIV. REFORMA DE LA CONSTITUCIÓN > Artículo 147",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": "Texto de http://www.congreso.es/consti/otras/europea/flash.html, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "c04d4eb82a610301e8c25c4d7457410309b8dc050272e5a40b57a8e3a5c2997e",
+      "n_chars": 83
+    },
+    {
+      "constitution_id": "Luxembourg_2009",
+      "section_id": "105-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Capítulo III. Del Poder Soberano > Artículo 32",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "e419987f228c2c42f95c8b2276a065bbc137688bf9fe5222e5c0f05b7c69ad3a",
+      "n_chars": 245
+    },
+    {
+      "constitution_id": "Mexico_2015",
+      "section_id": "545",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "em,hosdec",
+        "life,parents",
+        "stdcom",
+        "suppow,interp"
+      ],
+      "header": "Título Primero > Capítulo I. De los Derechos Humanos y sus Garantías",
+      "article": "Artículo 29",
+      "copyright": null,
+      "translator": null,
+      "sha256": "966795b360031c7f63a4441865c0ab7817bca2c27151366846117e71c1aaa715",
+      "n_chars": 929
+    },
+    {
+      "constitution_id": "Netherlands_2008",
+      "section_id": "493",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "CAPÍTULO 5. De la legislación y administración > §2. Otras materias",
+      "article": "Artículo 103",
+      "copyright": null,
+      "translator": null,
+      "sha256": "ae353f0ba137c998d2672fe4c286addea69bec1588ff92f4f9c3ce3f25e735ea",
+      "n_chars": 1020
+    },
+    {
+      "constitution_id": "Nicaragua_2014",
+      "section_id": "624-1",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "em,hosdec"
+      ],
+      "header": "TÍTULO VIII. DE LA ORGANIZACIÓN DEL ESTADO > CAPÍTULO II. PODER LEGISLATIVO > Artículo 138",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "192902bf46704cfa944610571cd2d15ae52c20006efc11c5e8209eafe38819d9",
+      "n_chars": 218
+    },
+    {
+      "constitution_id": "Nicaragua_2014",
+      "section_id": "742-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO VIII. DE LA ORGANIZACIÓN DEL ESTADO > CAPÍTULO III. PODER EJECUTIVO > Artículo 150",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "b1a26d2c73d32820eaf81b8fac9124059856f25a2ed949e25d1b5091a0a0699d",
+      "n_chars": 339
+    },
+    {
+      "constitution_id": "Nicaragua_2014",
+      "section_id": "1024",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "hosdec,em"
+      ],
+      "header": "TÍTULO X. SUPREMACIA DE LA CONSTITUCION. SU REFORMA Y DE LAS LEYES CONSTITUCIONALES > CAPÍTULO I. DE LA CONSTITUCION POLITICA",
+      "article": "Artículo 185",
+      "copyright": null,
+      "translator": null,
+      "sha256": "71e954ad466eb7d61f1bec437ae87d0db9ba4a12467f3e45a22ad6ef05544684",
+      "n_chars": 357
+    },
+    {
+      "constitution_id": "Nicaragua_2014",
+      "section_id": "1026",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO X. SUPREMACIA DE LA CONSTITUCION. SU REFORMA Y DE LAS LEYES CONSTITUCIONALES > CAPÍTULO I. DE LA CONSTITUCION POLITICA",
+      "article": "Artículo 186",
+      "copyright": null,
+      "translator": null,
+      "sha256": "bc3f063f2cf4f5392479fa874ae851ba74014bf2d98a26a523a2a88f5e533827",
+      "n_chars": 437
+    },
+    {
+      "constitution_id": "Nigeria_2011",
+      "section_id": "759",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Capítulo IV. Derechos fundamentales",
+      "article": "45",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducción editada y actualizada por Carlos Morales de Setién Ravina",
+      "sha256": "194402b25f7927ccd6ec4fb9d0fbdfdde941f87b64af5ab27991defb83fcab65",
+      "n_chars": 1178
+    },
+    {
+      "constitution_id": "Nigeria_2011",
+      "section_id": "919-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Capítulo V. El órgano legislativo > Parte I. La Asamblea Nacional > B. Procedimientos para convocar y disolver la Asamblea Nacional > 64",
+      "article": "",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducción editada y actualizada por Carlos Morales de Setién Ravina",
+      "sha256": "502ba63014c25ded8e1e4747cef236a746c22b993d0a593341bf1a0744e74cb7",
+      "n_chars": 342
+    },
+    {
+      "constitution_id": "Nigeria_2011",
+      "section_id": "1614-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Capítulo VI. El Poder Ejecutivo > Parte I. El Poder Ejecutivo federal > A. El Presidente de la Federación > 135",
+      "article": "",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducción editada y actualizada por Carlos Morales de Setién Ravina",
+      "sha256": "238a50c81cc12785f4ea6b30fb6e5c694421a1b05c59a32ac25dc1e65408d01c",
+      "n_chars": 342
+    },
+    {
+      "constitution_id": "Nigeria_2011",
+      "section_id": "3450",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Capítulo VIII. Territorio Capital Federal, Abuya, y normas generales complementarias > Parte II. Normas diversas",
+      "article": "305",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducción editada y actualizada por Carlos Morales de Setién Ravina",
+      "sha256": "273b3c523010f870877f3969898f8733a0c3256575117ae20ed9626662a0d364",
+      "n_chars": 3710
+    },
+    {
+      "constitution_id": "Panama_2004",
+      "section_id": "161",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO III. DERECHOS Y DEBERES INDIVIDUALES Y SOCIALES > CAPÍTULO 1. GARANTIAS FUNDAMENTALES",
+      "article": "Artículo 55",
+      "copyright": null,
+      "translator": null,
+      "sha256": "fbaebbd51462e8adecf3578ef34e3e9f7721ca83455ad3deed70e686113b9434",
+      "n_chars": 302
+    },
+    {
+      "constitution_id": "Panama_2004",
+      "section_id": "635-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO V. EL ÓRGANO LEGISLATIVO > CAPÍTULO 1. ASAMBLEA NACIONAL > Artículo 163",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "bff8272bd439e5d3023731af5bfc68845675a97423e5d79f24892a2ad5869057",
+      "n_chars": 219
+    },
+    {
+      "constitution_id": "Paraguay_2011",
+      "section_id": "1309",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Parte II. Del ordenamiento politico de la republica > Título III. Del estado de excepción",
+      "article": "Artículo 288. De la declaración, de las causales, de la vigencia y de los plazos",
+      "copyright": null,
+      "translator": null,
+      "sha256": "0818d9d3c80d2797b4c7b80f61c83faddcb4844b4b944a42fcf6bd9a16b093ed",
+      "n_chars": 561
+    },
+    {
+      "constitution_id": "Peru_2023",
+      "section_id": "627-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO IV. DE LA ESTRUCTURA DEL ESTADO > CAPÍTULO V. DEL CONSEJO DE MINISTROS > Artículo 123°",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "0f5678123ad975f0662ae0809c242c107c93326b6434c605a74c38da586b1122",
+      "n_chars": 232
+    },
+    {
+      "constitution_id": "Peru_2023",
+      "section_id": "635-1",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "hosdec,em"
+      ],
+      "header": "TÍTULO IV. DE LA ESTRUCTURA DEL ESTADO > CAPÍTULO V. DEL CONSEJO DE MINISTROS > Artículo 125°",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "46eeee62aea540a461f511bbe7c54d831f06fb72db1d1b61dfdeb0de24855b87",
+      "n_chars": 227
+    },
+    {
+      "constitution_id": "Peru_2023",
+      "section_id": "669",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "em,legdiss"
+      ],
+      "header": "TÍTULO IV. DE LA ESTRUCTURA DEL ESTADO > CAPÍTULO VI. DE LAS RELACIONES CON EL PODER LEGISLATIVO",
+      "article": "Artículo 134°",
+      "copyright": null,
+      "translator": null,
+      "sha256": "64cc8a7dcc03f47d136d464301858611e5dbd62308ce729a48f99960e2badcad",
+      "n_chars": 142
+    },
+    {
+      "constitution_id": "Peru_2023",
+      "section_id": "682",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO IV. DE LA ESTRUCTURA DEL ESTADO > CAPÍTULO VII. RÉGIMEN DE EXCEPCIÓN",
+      "article": "Artículo 137°",
+      "copyright": null,
+      "translator": null,
+      "sha256": "49e8006b8379b2093388e90ded865b5541e46d1220f69b7a293b693ed26ac53a",
+      "n_chars": 1431
+    },
+    {
+      "constitution_id": "Philippines_1987",
+      "section_id": "220-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "SECCION VI. DEL PODER LEGISLATIVO > Artículo 23",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": "Traducido por OEC (Organización de Exposiciones y Congresos). Adaptado a las categorías jurídico-constitucionales y parlamentarias por el Letrado de las Cortes Generales D. Mariano Daranas Peláez.",
+      "sha256": "48c34645d2321fb1fdeba4ddde77516c4870f121ffd9e52dc79aff18fea1eb5a",
+      "n_chars": 478
+    },
+    {
+      "constitution_id": "Philippines_1987",
+      "section_id": "325",
+      "lang": "es",
+      "topic_keys": [
+        "comchief",
+        "em"
+      ],
+      "header": "SECCION VII. DEL PODER EJECUTIVO",
+      "article": "Artículo 18",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": "Traducido por OEC (Organización de Exposiciones y Congresos). Adaptado a las categorías jurídico-constitucionales y parlamentarias por el Letrado de las Cortes Generales D. Mariano Daranas Peláez.",
+      "sha256": "e34bcb868a40f5f8b5a6f6f1be64e2179195c151822fbab959fb4551bc0cde9e",
+      "n_chars": 1168
+    },
+    {
+      "constitution_id": "Poland_2009",
+      "section_id": "1337",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Capítulo XI. MEDIDAS DE EXCEPCIÓN",
+      "article": "Capítulo XI. MEDIDAS DE EXCEPCIÓN",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "7d1eabc59c162c01eda73f8c61041d3c0829c5a8ddd8a41084dff961f06dbd9a",
+      "n_chars": 396
+    },
+    {
+      "constitution_id": "Portugal_2005",
+      "section_id": "127-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Parte I. De los derechos y deberes fundamentales > Título I. Principios Generales > Artículo 19. Suspensión del ejercicio de los derechos",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "42da165d0a2f70da0e3ae54664591efdbb221b17661ba640f70b6bf62c3f92f8",
+      "n_chars": 228
+    },
+    {
+      "constitution_id": "Portugal_2005",
+      "section_id": "129-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Parte I. De los derechos y deberes fundamentales > Título I. Principios Generales > Artículo 19. Suspensión del ejercicio de los derechos",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "4f0c6bb00293e7b20190a450f08dcc43d0d618c5bd97c9d7740b703d76cc614d",
+      "n_chars": 263
+    },
+    {
+      "constitution_id": "Portugal_2005",
+      "section_id": "131-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Parte I. De los derechos y deberes fundamentales > Título I. Principios Generales > Artículo 19. Suspensión del ejercicio de los derechos",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "950dc453e3379a701ddc19c7bbc1f5c33e288aa00093381b84c3f38827756072",
+      "n_chars": 241
+    },
+    {
+      "constitution_id": "Portugal_2005",
+      "section_id": "137-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Parte I. De los derechos y deberes fundamentales > Título I. Principios Generales > Artículo 19. Suspensión del ejercicio de los derechos",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "093f3e011cc08a5a82c605235071989d8fcb3d0cf8a61df18a9c0de8e1983572",
+      "n_chars": 310
+    },
+    {
+      "constitution_id": "Portugal_2005",
+      "section_id": "139-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Parte I. De los derechos y deberes fundamentales > Título I. Principios Generales > Artículo 19. Suspensión del ejercicio de los derechos",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "32b336ece6bb4b3096d69c0a10b7a62d9c1f11403d2e7a9e99cec6b78fdb32c8",
+      "n_chars": 428
+    },
+    {
+      "constitution_id": "Portugal_2005",
+      "section_id": "1351-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Parte III. Organización del Poder Político > Título II. El Presidente de la República > Capítulo II. Competencias > Artículo 134. Competencias para realizar actos propios",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "b918aaa811fd605d2f60a8bf75dc534cda1815893718e55c146b4c245d329dcf",
+      "n_chars": 171
+    },
+    {
+      "constitution_id": "Portugal_2005",
+      "section_id": "1390",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Parte III. Organización del Poder Político > Título II. El Presidente de la República > Capítulo II. Competencias",
+      "article": "Artículo 138. Declaración del estado de Sitio o del estado de Excepción",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "b88aa76d8be52d6066d36e53862c20c2c53c1ec8329376207046f9fd0054a955",
+      "n_chars": 559
+    },
+    {
+      "constitution_id": "Portugal_2005",
+      "section_id": "1573-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Parte III. Organización del Poder Político > Título III. Asamblea de la República > Capítulo II. Competencias > Artículo 161. Competencias políticas y legislativas",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "f3072cc2c9095c44fb372f5f99ad8a0daa9d5c12f39b050460ad53b7955de5a4",
+      "n_chars": 123
+    },
+    {
+      "constitution_id": "Portugal_2005",
+      "section_id": "1796-1",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "legdiss,em"
+      ],
+      "header": "Parte III. Organización del Poder Político > Título III. Asamblea de la República > Capítulo III. Organización y funcionamiento > Artículo 172. Disolución",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "e0d45fc6914075c6aca310d29bce9c80d74062f3a24a01e41fd235dea2303897",
+      "n_chars": 232
+    },
+    {
+      "constitution_id": "Portugal_2005",
+      "section_id": "2823",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "Parte IV. Garantía de Revisión Constitución > Título II. Reforma constitucional",
+      "article": "Artículo 289. Limitaciones circunstanciales a la reforma",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "03b4aa1e397e5f1c8e47e54fb0252c0b981db00812d7dc969b9be4c76cd3d648",
+      "n_chars": 129
+    },
+    {
+      "constitution_id": "Romania_2003",
+      "section_id": "379",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO II. LOS DERECHOS, LAS LIBERTADES Y LOS DEBERES FUNDAMENTALES > CAPÍTULO II. LOS DERECHOS Y LAS LIBERTADES FUNDAMENTALES",
+      "article": "Artículo 53. La restricción del ejercicio de algunos derechos o libertades",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "48b7fa366e1e08506bdf8ef15e1382107be7670ebd97086a311cd92df7b58857",
+      "n_chars": 681
+    },
+    {
+      "constitution_id": "Romania_2003",
+      "section_id": "666-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO III. LAS AUTORIDADES PÚBLICAS > CAPÍTULO II. EL PRESIDENTE DE RUMANIA > Artículo 89. La disolución del Parlamento",
+      "article": "",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "76af262339344728df8ef41dd421be1290dc8b6de10189e7bda60b82072b5dae",
+      "n_chars": 196
+    },
+    {
+      "constitution_id": "Romania_2003",
+      "section_id": "677",
+      "lang": "es",
+      "topic_keys": [
+        "comchief",
+        "em",
+        "em,hosdec"
+      ],
+      "header": "TÍTULO III. LAS AUTORIDADES PÚBLICAS > CAPÍTULO II. EL PRESIDENTE DE RUMANIA",
+      "article": "Artículo 92. Atribuciones en materia de defensa",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "49e1e62323210fb8a642a99bdf9d16f2aace669f5683811383db2988aa2d31f8",
+      "n_chars": 1068
+    },
+    {
+      "constitution_id": "Romania_2003",
+      "section_id": "686",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "hosdec,em"
+      ],
+      "header": "TÍTULO III. LAS AUTORIDADES PÚBLICAS > CAPÍTULO II. EL PRESIDENTE DE RUMANIA",
+      "article": "Artículo 93. Medidas excepcionales",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "cb5baaafdcc71ac63c0380a8b473c48940cedbdb443eb7e0dbf590f6a4a4c114",
+      "n_chars": 526
+    },
+    {
+      "constitution_id": "Russia_2014",
+      "section_id": "334",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "SECCIÓN 1 > CAPÍTULO 2. DERECHOS HUMANOS, DERECHOS CIVILES Y LIBERTADES",
+      "article": "Artículo 56",
+      "copyright": null,
+      "translator": null,
+      "sha256": "3e3abf8f770567f03022a9fa17b5caf7d2010a6e873eacaebbbbdf1d47d0247a",
+      "n_chars": 727
+    },
+    {
+      "constitution_id": "Russia_2014",
+      "section_id": "620-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "SECCIÓN 1 > CAPÍTULO 4. EL PRESIDENTE DE LA FEDERACIÓN RUSA > Artículo 87",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "295ffd258ca188816eef280c14f4b7c86472d3904d1881876db1c37a14b65a49",
+      "n_chars": 285
+    },
+    {
+      "constitution_id": "Russia_2014",
+      "section_id": "622-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "SECCIÓN 1 > CAPÍTULO 4. EL PRESIDENTE DE LA FEDERACIÓN RUSA > Artículo 87",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "33e391b82b97337a1199b4b2b7de1992f84939e9e84492bf7fd6a14dbf0abe3d",
+      "n_chars": 118
+    },
+    {
+      "constitution_id": "Russia_2014",
+      "section_id": "624",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "SECCIÓN 1 > CAPÍTULO 4. EL PRESIDENTE DE LA FEDERACIÓN RUSA",
+      "article": "Artículo 88",
+      "copyright": null,
+      "translator": null,
+      "sha256": "e161e82c2e2f32e8fdf0c6d7e76174b18304facd7aaaa2fad9aebc2fd79018d3",
+      "n_chars": 297
+    },
+    {
+      "constitution_id": "Russia_2014",
+      "section_id": "720-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "SECCIÓN 1 > CAPÍTULO 5. LA ASAMBLEA FEDERAL > Artículo 102 > 1",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "e82e9eff97b65ab207c4c85251e337480bc49e6ed1697f0d47f970271de2239b",
+      "n_chars": 153
+    },
+    {
+      "constitution_id": "Russia_2014",
+      "section_id": "722-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "SECCIÓN 1 > CAPÍTULO 5. LA ASAMBLEA FEDERAL > Artículo 102 > 1",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "7bbe8d62b45a7101391b3d5aeb2a370b87d9b8d888965143410261b8368ce60a",
+      "n_chars": 159
+    },
+    {
+      "constitution_id": "Russia_2014",
+      "section_id": "816-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "SECCIÓN 1 > CAPÍTULO 5. LA ASAMBLEA FEDERAL > Artículo 109",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "69943f2ee20fc799b6c01c102c1ecc2071800a542053ff22e00e7360125e0d6d",
+      "n_chars": 245
+    },
+    {
+      "constitution_id": "Rwanda_2015",
+      "section_id": "584-1",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "CAPÍTULO VII. RAMAS DE GOBIERNO > Sección 3. El Poder Ejecutivo > Subsección primera. El Presidente de la República > Artículo 108. Poderes del Presidente de la República en asuntos relativos a la guerra, el estado de sitio y el estado de emergencia",
+      "article": "",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducida por Carlos Morales de Setién Ravina",
+      "sha256": "b45f774b0f4429c8752979be45bf15f10a62721fe6ab3d34e3dd8b2a2cfdd8ad",
+      "n_chars": 134
+    },
+    {
+      "constitution_id": "Rwanda_2015",
+      "section_id": "762",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "expost"
+      ],
+      "header": "CAPÍTULO VII. RAMAS DE GOBIERNO > Sección 3. El Poder Ejecutivo > Subsección 3. Colaboración entre el Poder Legislativo y el Poder Ejecutivo",
+      "article": "Artículo 136. Estado de sitio y estado de emergencia",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducida por Carlos Morales de Setién Ravina",
+      "sha256": "a8f468230e16625c7f0508f1f6786d5b6be4ec0e88088be130f52ea636e4c0fd",
+      "n_chars": 158
+    },
+    {
+      "constitution_id": "Rwanda_2015",
+      "section_id": "771",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "CAPÍTULO VII. RAMAS DE GOBIERNO > Sección 3. El Poder Ejecutivo > Subsección 3. Colaboración entre el Poder Legislativo y el Poder Ejecutivo",
+      "article": "Artículo 137. Declaración de un estado de sitio o de un estado de emergencia",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducida por Carlos Morales de Setién Ravina",
+      "sha256": "98a9fe86cd0c9741652912f5fb3dd68ce5fd075405d3831814123c9ca10bf433",
+      "n_chars": 222
+    },
+    {
+      "constitution_id": "Rwanda_2015",
+      "section_id": "774",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "CAPÍTULO VII. RAMAS DE GOBIERNO > Sección 3. El Poder Ejecutivo > Subsección 3. Colaboración entre el Poder Legislativo y el Poder Ejecutivo",
+      "article": "Artículo 138. El Parlamento durante un estado de sitio o un estado de emergencia",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducida por Carlos Morales de Setién Ravina",
+      "sha256": "f7fe63246c2451496fd44b285b9a307bdb6015d1b593e04f4145e1dc70b41d53",
+      "n_chars": 175
+    },
+    {
+      "constitution_id": "South_Africa_2012",
+      "section_id": "504",
+      "lang": "es",
+      "topic_keys": [
+        "childpro,childwrk",
+        "couns",
+        "dignity",
+        "em",
+        "equal",
+        "evidence,examwit,trilang,doubjep,appeal,pubtri,couns,presinoc,expost,habcorp,miranda",
+        "life",
+        "prisonrg",
+        "slave"
+      ],
+      "header": "CAPÍTULO 2. DECLARACIÓN DE DERECHOS > Ninguna Ley del Parlamento que autorice una declaración de un estado de emergencia, y ninguna Legislación establecida u otra acción tomada como consecuencia de una declaración, puede permitir o autorizar:",
+      "article": "37. ESTADOS DE EMERGENCIA",
+      "copyright": null,
+      "translator": "Traducida por José Luis Alonso Saura, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7",
+      "n_chars": 1
+    },
+    {
+      "constitution_id": "South_Africa_2012",
+      "section_id": "3086",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "exsess",
+        "hospow,hogpow"
+      ],
+      "header": "CAPÍTULO 11. SERVICIOS DE SEGURIDAD > PARTE A. FUERZA DE DEFENSA",
+      "article": "203. ESTADO DE DEFENSA NACIONAL",
+      "copyright": null,
+      "translator": "Traducida por José Luis Alonso Saura, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "d010a3a87bf0d8009cb9c28b601e3b10b0b8042a5435620bb2a6eb1b64b4f935",
+      "n_chars": 699
+    },
+    {
+      "constitution_id": "Spain_2011",
+      "section_id": "311",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO I. De los derechos y deberes fundamentales > CAPÍTULO QUINTO. De la suspensión de los derechos y libertades",
+      "article": "Artículo 55",
+      "copyright": null,
+      "translator": null,
+      "sha256": "0fe4464b1892743fd61c169e2e45dd2ebcb4b04261979f738eb66eff348aa0db",
+      "n_chars": 194
+    },
+    {
+      "constitution_id": "Spain_2011",
+      "section_id": "715",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO V. De las relaciones entre el Gobierno y las Cortes Generales",
+      "article": "Artículo 116",
+      "copyright": null,
+      "translator": null,
+      "sha256": "9ed42a5ff2fc0c1e477f9e9bc0b4bc2fc31dea8edc46cf371fb53b72fb975d95",
+      "n_chars": 206
+    },
+    {
+      "constitution_id": "Spain_2011",
+      "section_id": "1198",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "TÍTULO X. De la reforma constitucional",
+      "article": "Artículo 169",
+      "copyright": null,
+      "translator": null,
+      "sha256": "f9c52e990f310712d89c0dc4050d6bcf36ac03d1c542dc8081796cada86b59be",
+      "n_chars": 133
+    },
+    {
+      "constitution_id": "Uruguay_2004",
+      "section_id": "669",
+      "lang": "es",
+      "topic_keys": [
+        "em"
+      ],
+      "header": "SECCIÓN IX. DEL PODER EJECUTIVO > CAPÍTULO III > Artículo 168",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "486389af7b60854d677abadc0ab9c87fc49fd2869765a28f5af3e6a96aea107c",
+      "n_chars": 396
+    },
+    {
+      "constitution_id": "Venezuela_2009",
+      "section_id": "1431",
+      "lang": "es",
+      "topic_keys": [
+        "em",
+        "intrght"
+      ],
+      "header": "TÍTULO VIII. DE LA PROTECCIÓN DE LA CONSTITUCIÓN > Capítulo II. De los Estados de Excepción",
+      "article": "Capítulo II. De los Estados de Excepción",
+      "copyright": null,
+      "translator": null,
+      "sha256": "ed69aaea716682be59306f5cccab708868b5251b89677198820ecc5db6667329",
+      "n_chars": 716
+    }
+  ]
+}

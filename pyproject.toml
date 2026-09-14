@@ -16,6 +16,7 @@ keywords = ["new realism", "documentality", "social ontology", "constitutions", 
 # Pinned as lower bounds; a lock file is produced per release.
 dependencies = [
   "requests>=2.31",
+  "beautifulsoup4>=4.12",
   "pydantic>=2",
   "rdflib>=7.6",
   "igraph>=1.0",

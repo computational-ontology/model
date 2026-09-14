@@ -21,6 +21,8 @@ class SectionRecord(BaseModel):
     section_id: str
     lang: str = Field(pattern="^(en|es|ar)$")
     topic_keys: list[str] = Field(default_factory=list)
+    header: str = ""  # structural breadcrumb (chapter/article), not the text
+    article: str = ""
     copyright: str | None = None
     translator: str | None = None
     sha256: str = Field(min_length=64, max_length=64)
