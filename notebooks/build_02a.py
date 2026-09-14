@@ -8,7 +8,7 @@ nb = nbf.v4.new_notebook()
 C: list = []
 md, code = (lambda s: C.append(nbf.v4.new_markdown_cell(s))), (lambda s: C.append(nbf.v4.new_code_cell(s)))
 
-md("""# 02a · Stage 1 load check — three candidates on 2×T4 (v2: constrained decoding)
+md("""# 02a · Stage 1 load check — three candidates on 2×T4 (v2.2: constrained decoding, stop tokens)
 
 Checks 2 and 3 of sprint 0 for the New-Realism Analyzer (github.com/computational-ontology/model).
 Question: do the three bake-off candidates fixed in decision D15 load in fp16 across Kaggle's two
@@ -22,6 +22,13 @@ were cut off at 900 tokens because the models pretty-print the JSON. v2 therefor
 the JSON Schema with **XGrammar** (decision D16): the grammar forbids anything but a compact,
 schema-valid object, so no fence, no indentation, no invented keys — and the budget goes to
 content. Each model runs twice per section, free and constrained, so the two can be compared.
+
+v2.1 (Version 3, 1652 s) ran end-to-end: 6/6 constrained outputs schema-valid vs 4/6 free. But Qwen3.5
+never stopped under the grammar (both runs hit the 1600-token cap with the JSON already complete):
+its `config.json` declares `<|endoftext|>` (248044) as EOS while the chat template ends turns with
+`<|im_end|>` (248046) — the grammar allows only the tokenizer's EOS after the object closes,
+`generate` waits for the config's. v2.2 passes the **union of all EOS ids** to both XGrammar and
+`generate`, dedupes exact duplicate mentions in the harness, and records the decoding settings per row.
 
 Settings: Accelerator **GPU T4 ×2**, Internet **on**, secret `HF_TOKEN` attached, dataset
 `luisdscientist/nra-snapshot-em` attached.""")
@@ -120,8 +127,11 @@ causal LM. All three load with `dtype=torch.float16, device_map="auto"`, which s
 across the two T4s. Decoding is greedy (`do_sample=False`) so the run is reproducible. `compile_grammar` turns the
 schema into an XGrammar grammar for that model's tokenizer (compact JSON, strict); passing it as
 a `LogitsProcessor` masks every token that would leave the grammar. A fresh processor is built
-per call because it carries the matcher state. The output is parsed (any fence stripped, for
-the free run), validated against `Stage1Output`, and its spans are checked to be verbatim.""")
+per call because it carries the matcher state. `eos_ids` collects every EOS id the model, its
+text config and its tokenizer declare, and hands the union to both the grammar (`stop_token_ids`)
+and `generate` (`eos_token_id`), so the turn can end whichever token the model prefers. The output
+is parsed (any fence stripped, for the free run), exact duplicate mentions are removed harness-side
+and counted, the object is validated against `Stage1Output`, and its spans are checked to be verbatim.""")
 code("""from transformers import AutoProcessor, AutoTokenizer, AutoModelForCausalLM
 try:
     from transformers import AutoModelForMultimodalLM
@@ -146,11 +156,25 @@ def text_vocab_size(model):
     cfg = model.config
     return getattr(cfg, "vocab_size", None) or getattr(cfg.text_config, "vocab_size")
 
+def eos_ids(tok, model):
+    # Union of every EOS the model or its tokenizer declares. Qwen3.5: config says <|endoftext|>
+    # (248044), tokenizer/chat template say <|im_end|> (248046); Gemma 4: [<eos>, <turn|>, ...].
+    base = getattr(tok, "tokenizer", tok)
+    ids = set()
+    for src in (getattr(model.generation_config, "eos_token_id", None),
+                getattr(model.config, "eos_token_id", None),
+                getattr(getattr(model.config, "text_config", None), "eos_token_id", None),
+                base.eos_token_id):
+        if src is not None:
+            ids.update(src if isinstance(src, (list, tuple)) else [src])
+    return sorted(int(i) for i in ids)
+
 def compile_grammar(tok, model):
     # Grammar for Stage1Output: compact JSON, schema-strict. vocab_size comes from the model
-    # config, not the tokenizer (Qwen3.5: 248 077 tokens vs 248 320 logits).
+    # config, not the tokenizer (Qwen3.5: 248 077 tokens vs 248 320 logits). stop_token_ids =
+    # the same EOS union that generate() gets, so the grammar can end the turn the model wants to.
     base = getattr(tok, "tokenizer", tok)  # AutoProcessor wraps the tokenizer
-    info = xgr.TokenizerInfo.from_huggingface(base, vocab_size=text_vocab_size(model))
+    info = xgr.TokenizerInfo.from_huggingface(base, vocab_size=text_vocab_size(model), stop_token_ids=eos_ids(tok, model))
     return xgr.GrammarCompiler(info).compile_json_schema(
         json.dumps(SCHEMA), any_whitespace=False, indent=None, separators=(",", ":"))
 
@@ -166,7 +190,8 @@ def load(model_id, kind):
     devs = sorted({str(d) for d in model.hf_device_map.values()})
     print(f"loaded in {time.time()-t0:.0f}s | devices {devs} | allocated {gpu_mem()}")
     t0 = time.time(); grammar = compile_grammar(tok, model)
-    print(f"grammar compiled in {time.time()-t0:.2f}s | logits vocab {text_vocab_size(model)}")
+    base = getattr(tok, "tokenizer", tok)
+    print(f"grammar compiled in {time.time()-t0:.2f}s | logits vocab {text_vocab_size(model)} | eos ids {eos_ids(tok, model)} = {[base.decode([i]) for i in eos_ids(tok, model)]}")
     return tok, model, grammar
 
 def generate(tok, model, kind, text, grammar=None, max_new_tokens=1600):
@@ -177,12 +202,16 @@ def generate(tok, model, kind, text, grammar=None, max_new_tokens=1600):
     n_in = inputs["input_ids"].shape[-1]
     t0 = time.time()
     lp = [xgr.contrib.hf.LogitsProcessor(grammar)] if grammar is not None else None
+    eos = eos_ids(tok, model)
     with torch.no_grad():
-        out = model.generate(**inputs, max_new_tokens=max_new_tokens, do_sample=False, logits_processor=lp)
+        out = model.generate(**inputs, max_new_tokens=max_new_tokens, do_sample=False,
+                             logits_processor=lp, eos_token_id=eos)
     dt = time.time() - t0
-    raw = tok.decode(out[0][n_in:], skip_special_tokens=True) if kind == "causal" \\
+    gen = out[0][n_in:]
+    stopped = int(gen[-1]) in eos
+    raw = tok.decode(gen, skip_special_tokens=True) if kind == "causal" \\
         else tok.batch_decode(out[:, n_in:], skip_special_tokens=True)[0]
-    return raw, n_in, out.shape[-1] - n_in, dt
+    return raw, n_in, int(gen.shape[-1]), dt, stopped
 
 def parse(raw, text):
     s = raw.strip()
@@ -194,8 +223,19 @@ def parse(raw, text):
         obj = Stage1Output.model_validate_json(s)
     except Exception as e:  # noqa: BLE001 — any failure is the datum here
         return None, f"parse/validation failed: {type(e).__name__}: {str(e)[:200]}"
+    # harness-side dedupe of exact duplicate mentions (codebook §1 is per mention; exact repeats carry nothing)
+    seen, uniq = set(), []
+    for m in obj.t2:
+        key = (m.mention, m.type)
+        if key not in seen:
+            seen.add(key); uniq.append(m)
+    n_dup = len(obj.t2) - len(uniq)
+    obj.t2 = uniq
     bad = check_verbatim(obj, text)
-    return obj, ("verbatim ok" if not bad else f"{len(bad)} non-verbatim span(s): {bad[:3]}")""")
+    note = "verbatim ok" if not bad else f"{len(bad)} non-verbatim span(s): {bad[:3]}"
+    if n_dup:
+        note += f" | {n_dup} duplicate mention(s) removed"
+    return obj, note""")
 
 md("""## 5 · Run the three candidates
 
@@ -216,15 +256,16 @@ for model_id, kind in CANDIDATES:
     for s in samples:
         for mode, g in (("constrained", grammar), ("free", None)):
             try:
-                raw, n_in, n_out, dt = generate(tok, model, kind, s["text"], grammar=g)
+                raw, n_in, n_out, dt, stopped = generate(tok, model, kind, s["text"], grammar=g)
             except Exception as e:  # noqa: BLE001
                 print(f"\\n[{s['lang']}] {mode}: GENERATION FAILED {type(e).__name__}: {str(e)[:300]}")
                 results.append({"model": model_id, "loaded": True, "lang": s["lang"], "mode": mode, "error": str(e)[:200]}); continue
             obj, verdict = parse(raw, s["text"])
-            print(f"\\n[{s['lang']}] {s['constitution_id']} §{s['section_id']} | {mode} | {n_in} in → {n_out} out | {dt:.0f}s | {verdict}")
+            print(f"\\n[{s['lang']}] {s['constitution_id']} §{s['section_id']} | {mode} | {n_in} in → {n_out} out | {dt:.0f}s | stopped by EOS: {stopped} | {verdict}")
             print(raw[:1200])
             results.append({"model": model_id, "loaded": True, "lang": s["lang"], "mode": mode, "in": n_in, "out": n_out,
-                            "sec": round(dt, 1), "tok_s": round(n_out / dt, 1), "parsed": obj is not None,
+                            "sec": round(dt, 1), "tok_s": round(n_out / dt, 1), "stopped_by_eos": stopped, "parsed": obj is not None,
+                            "decoding": {"grammar": g is not None, "decoder": "xgrammar", "do_sample": False, "max_new_tokens": 1600, "prompt_version": PROMPT_VERSION},
                             "n_t2": len(obj.t2) if obj else None, "n_t5": len(obj.t5) if obj else None,
                             "labels": [c.operator.value for c in obj.t5] if obj else None,
                             "verdict": verdict, "mem": gpu_mem()})
@@ -251,6 +292,7 @@ Fill in after the run:
 - Constrained runs: valid `Stage1Output` __/6, verbatim spans __/6, tokens saved vs. free __.
 - Free runs (one-line instruction): valid __/6, verbatim __/6.
 - Did the grammar change the labels vs. the free run on the same section? __ (if yes, note where).
+- Qwen3.5 stopped by EOS under the grammar: __ (v2.1: no, both runs hit the cap).
 - fp16 anomalies (NaN, empty, repeated tokens): __ → if any, rerun that model in 4-bit
   (`BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_compute_dtype=torch.float16)`) and note it.
 - Tokens per generation and seconds per section → budget for 100 sections × 3 models × 3 seeds
