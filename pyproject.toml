@@ -38,6 +38,7 @@ serve = [
 ]
 tda = ["ripser>=0.6.15"]
 dev = ["pytest", "ruff"]
+analysis = ["pandas>=2.2", "numpy"]  # notebooks/analyze_02.py
 
 [tool.setuptools.packages.find]
 where = ["src"]
