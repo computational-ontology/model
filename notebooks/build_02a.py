@@ -3,8 +3,9 @@
 from pathlib import Path
 
 import nbformat as nbf
+from _shared_cells import ENV_CELL, LOADER_CELL, PROMPT_CELL, TOKEN_CELL
 
-nb = nbf.v4.new_notebook()
+nb = nbf.v4.new_notebook()  # run from the repo root: python notebooks/build_02a.py
 C: list = []
 md, code = (lambda s: C.append(nbf.v4.new_markdown_cell(s))), (lambda s: C.append(nbf.v4.new_code_cell(s)))
 
@@ -40,23 +41,13 @@ older versions lack), `xgrammar` (the constrained decoder, Apache-2.0, the same 
 uses), the project package straight from GitHub so `nra.schema` is the code CI tests, and the
 `flash-linear-attention` kernel Qwen3.5 warned about in v1 (`causal-conv1d` needs a CUDA build and is skipped). Then prints the GPUs. T4s have no native bf16, so everything below
 is loaded in **float16**.""")
-code("""%pip install -q -U "transformers>=5.17" accelerate "pydantic>=2" huggingface_hub "xgrammar>=0.2.6"
-%pip install -q "nra @ git+https://github.com/computational-ontology/model.git@main"
-%pip install -q flash-linear-attention  # Triton kernel Qwen3.5 asks for; causal-conv1d needs a CUDA build (failed on Kaggle in v2) — skipped
-import torch, transformers, time, json, gc, os
-print("transformers", transformers.__version__, "| torch", torch.__version__)
-for i in range(torch.cuda.device_count()):
-    p = torch.cuda.get_device_properties(i)
-    print(f"cuda:{i} {p.name} {p.total_memory/2**30:.1f} GiB")""")
+code(ENV_CELL)
 
 md("""## 1 · Hugging Face token
 
 Read from Kaggle Secrets, never typed here. None of the four candidate repos is gated
 (`gated: false` on the HF API, checked 2026-09-14); the token only lifts anonymous download limits.""")
-code("""from kaggle_secrets import UserSecretsClient
-from huggingface_hub import login
-login(token=UserSecretsClient().get_secret("HF_TOKEN"), add_to_git_credential=False)
-print("logged in")""")
+code(TOKEN_CELL)
 
 md("""## 2 · Two pilot sections
 
@@ -90,34 +81,7 @@ md("""## 3 · The output schema and the prompt
 versions are added by the harness, never by the model. The system prompt is a compact rendering
 of codebook v1.0 §2–§3 plus the JSON Schema. `PROMPT_VERSION` is the hash of that prompt so
 every record can say which wording produced it.""")
-code("""from nra.schema import Stage1Output, check_verbatim
-SCHEMA = Stage1Output.json_schema_for_decoder()
-
-SYSTEM = f\"\"\"You annotate one section of a constitution following a fixed codebook. Answer with ONE JSON object and nothing else.
-
-T2 — type every entity mention as used in the clause:
-- physical: in space and time, independent of subjects (territory, persons as bodies, weapons, natural disasters)
-- ideal: outside space and time (numbers, durations, thresholds: "six months", "two-thirds")
-- social: in space and time but existing only because subjects recognise it (the State, an office such as "the President", Parliament, a proclamation, a state of emergency, public order, war as a legal status, rights, powers)
-Rules: offices are social, their holders physical; rights, duties and competences are social; territory is physical, "the Republic" is social.
-
-T5 — split the section into claims (each enumerated item is a claim) and label HOW each claim presents what it asserts, not whether it is true:
-- naturalised: the trigger or situation is stated as a plain fact of the world, with no actor, assessment or check ("in case of", "when X threatens", "during any period of public emergency", "en caso de")
-- revealed: the claim exposes its own act character — who declares, that an assessment is required, a procedure, a limit, a review, a consent ("if the President is satisfied", "may declare", "subject to Article 58", "con acuerdo del Senado")
-- other: purely procedural or definitional, or neither reading applies
-Test: for the state of affairs the claim relies on, ask "who says so, and could anyone check?" — answered → revealed; treated as simply existing → naturalised.
-
-Every "mention", "claim" and marker must be copied VERBATIM from the section, in its original language. List each distinct mention once. "secondary" may be null. Write the JSON on ONE line, without indentation or code fences.
-
-JSON Schema of the answer:
-{json.dumps(SCHEMA, ensure_ascii=False)}\"\"\"
-
-PROMPT_VERSION = "p1-" + hashlib.sha256(SYSTEM.encode()).hexdigest()[:8]
-print(PROMPT_VERSION, "| system prompt:", len(SYSTEM), "chars")
-
-def messages_for(text):
-    return [{"role": "system", "content": SYSTEM},
-            {"role": "user", "content": "Section:\\n\\n" + text + "\\n\\nReturn the JSON object."}]""")
+code(PROMPT_CELL)
 
 md("""## 4 · Loader and one-shot generator
 
@@ -132,110 +96,7 @@ text config and its tokenizer declare, and hands the union to both the grammar (
 and `generate` (`eos_token_id`), so the turn can end whichever token the model prefers. The output
 is parsed (any fence stripped, for the free run), exact duplicate mentions are removed harness-side
 and counted, the object is validated against `Stage1Output`, and its spans are checked to be verbatim.""")
-code("""from transformers import AutoProcessor, AutoTokenizer, AutoModelForCausalLM
-try:
-    from transformers import AutoModelForMultimodalLM
-except ImportError as e:
-    raise SystemExit("transformers too old for Gemma 4 / Qwen3.5 — re-run cell 0") from e
-
-CANDIDATES = [
-    ("google/gemma-4-12B-it",                 "multimodal"),
-    ("Qwen/Qwen3.5-9B",                       "multimodal"),
-    ("utter-project/EuroLLM-9B-Instruct-2512", "causal"),
-]
-
-def free():
-    gc.collect(); torch.cuda.empty_cache()
-
-def gpu_mem():
-    return {f"cuda:{i}": round(torch.cuda.memory_allocated(i)/2**30, 2) for i in range(torch.cuda.device_count())}
-
-import xgrammar as xgr
-
-def text_vocab_size(model):
-    cfg = model.config
-    return getattr(cfg, "vocab_size", None) or getattr(cfg.text_config, "vocab_size")
-
-def eos_ids(tok, model):
-    # Union of every EOS the model or its tokenizer declares. Qwen3.5: config says <|endoftext|>
-    # (248044), tokenizer/chat template say <|im_end|> (248046); Gemma 4: [<eos>, <turn|>, ...].
-    base = getattr(tok, "tokenizer", tok)
-    ids = set()
-    for src in (getattr(model.generation_config, "eos_token_id", None),
-                getattr(model.config, "eos_token_id", None),
-                getattr(getattr(model.config, "text_config", None), "eos_token_id", None),
-                base.eos_token_id):
-        if src is not None:
-            ids.update(src if isinstance(src, (list, tuple)) else [src])
-    return sorted(int(i) for i in ids)
-
-def compile_grammar(tok, model):
-    # Grammar for Stage1Output: compact JSON, schema-strict. vocab_size comes from the model
-    # config, not the tokenizer (Qwen3.5: 248 077 tokens vs 248 320 logits). stop_token_ids =
-    # the same EOS union that generate() gets, so the grammar can end the turn the model wants to.
-    base = getattr(tok, "tokenizer", tok)  # AutoProcessor wraps the tokenizer
-    info = xgr.TokenizerInfo.from_huggingface(base, vocab_size=text_vocab_size(model), stop_token_ids=eos_ids(tok, model))
-    return xgr.GrammarCompiler(info).compile_json_schema(
-        json.dumps(SCHEMA), any_whitespace=False, indent=None, separators=(",", ":"))
-
-def load(model_id, kind):
-    t0 = time.time()
-    if kind == "multimodal":
-        tok = AutoProcessor.from_pretrained(model_id)
-        model = AutoModelForMultimodalLM.from_pretrained(model_id, dtype=torch.float16, device_map="auto")
-    else:
-        tok = AutoTokenizer.from_pretrained(model_id)
-        model = AutoModelForCausalLM.from_pretrained(model_id, dtype=torch.float16, device_map="auto")
-    model.eval()
-    devs = sorted({str(d) for d in model.hf_device_map.values()})
-    print(f"loaded in {time.time()-t0:.0f}s | devices {devs} | allocated {gpu_mem()}")
-    t0 = time.time(); grammar = compile_grammar(tok, model)
-    base = getattr(tok, "tokenizer", tok)
-    print(f"grammar compiled in {time.time()-t0:.2f}s | logits vocab {text_vocab_size(model)} | eos ids {eos_ids(tok, model)} = {[base.decode([i]) for i in eos_ids(tok, model)]}")
-    return tok, model, grammar
-
-def generate(tok, model, kind, text, grammar=None, max_new_tokens=1600):
-    kw = dict(tokenize=True, return_dict=True, return_tensors="pt", add_generation_prompt=True)
-    if kind == "multimodal":
-        kw["enable_thinking"] = False
-    inputs = tok.apply_chat_template(messages_for(text), **kw).to(model.device)
-    n_in = inputs["input_ids"].shape[-1]
-    t0 = time.time()
-    lp = [xgr.contrib.hf.LogitsProcessor(grammar)] if grammar is not None else None
-    eos = eos_ids(tok, model)
-    with torch.no_grad():
-        out = model.generate(**inputs, max_new_tokens=max_new_tokens, do_sample=False,
-                             logits_processor=lp, eos_token_id=eos)
-    dt = time.time() - t0
-    gen = out[0][n_in:]
-    stopped = int(gen[-1]) in eos
-    raw = tok.decode(gen, skip_special_tokens=True) if kind == "causal" \\
-        else tok.batch_decode(out[:, n_in:], skip_special_tokens=True)[0]
-    return raw, n_in, int(gen.shape[-1]), dt, stopped
-
-def parse(raw, text):
-    s = raw.strip()
-    if s.startswith("```"):
-        s = s.split("```", 2)[1]
-        s = s[4:] if s.startswith("json") else s
-    s = s[s.find("{"): s.rfind("}") + 1]
-    try:
-        obj = Stage1Output.model_validate_json(s)
-    except Exception as e:  # noqa: BLE001 — any failure is the datum here
-        return None, f"parse/validation failed: {type(e).__name__}: {str(e)[:200]}"
-    # harness-side dedupe of exact duplicate mentions (codebook §1 is per mention; exact repeats carry nothing)
-    seen, uniq = set(), []
-    for m in obj.t2:
-        key = (m.mention, m.type)
-        if key not in seen:
-            seen.add(key); uniq.append(m)
-    n_dup = len(obj.t2) - len(uniq)
-    obj.t2 = uniq
-    bad = check_verbatim(obj, text)
-    note = "verbatim ok" if not bad else f"{len(bad)} non-verbatim span(s): {bad[:3]}"
-    if n_dup:
-        note += f" | {n_dup} duplicate mention(s) removed"
-    return obj, note""")
+code(LOADER_CELL)
 
 md("""## 5 · Run the three candidates
 
