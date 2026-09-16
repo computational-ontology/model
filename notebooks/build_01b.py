@@ -26,9 +26,12 @@ the population the pilot was drawn from. Settings: no accelerator needed, Intern
 md("""## 0 · Mount and repository files""")
 code("""import os, json, hashlib, unicodedata, collections, statistics as st
 import requests, pandas as pd
-ROOT = "/kaggle/input/datasets/luisdscientist/nra-snapshot-preamble"
+MOUNT = "/kaggle/input/datasets/luisdscientist/nra-snapshot-preamble"
 RAW = "https://raw.githubusercontent.com/computational-ontology/model/main/"
-files = sorted(os.listdir(ROOT))
+# the dataset was uploaded as a folder, so the texts sit one level down (…/snapshot_preamble/);
+# accept either layout
+ROOT = next((os.path.join(d, "") for d, _, f in os.walk(MOUNT) if any(x.endswith(".txt") for x in f)), MOUNT).rstrip("/")
+files = sorted(f for f in os.listdir(ROOT) if f.endswith(".txt"))
 print(len(files), "files mounted at", ROOT); print(files[:3], "…", files[-2:])
 manifests = {lang: requests.get(RAW + f"data/snapshot_manifest_preamble_{lang}.json", timeout=30).json() for lang in ("en", "es")}
 pilot_meta = requests.get(RAW + "data/splits/pilot_preamble_100.json", timeout=30).json()
