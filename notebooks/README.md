@@ -14,6 +14,7 @@ Rules (docs/plan.md §5b):
 | Notebook | Kaggle | Purpose | State |
 |---|---|---|---|
 | `01_snapshot_check.ipynb` | `luisdscientist/01-snapshot-check` v2 | first read of the frozen corpus: mount path, manifests, per-constitution counts, lengths, chapter-type classifier | done (14 Sep 2026) |
+| `01b_preamble_check.ipynb` (`build_01b.py`) | — | campaign 1 after D20: mount check of `nra-snapshot-preamble`, corpus filter (190 kept / 19 excluded), hash verification, length and paragraph profile, co-occurring topic keys, pilot check, first read of six preambles for codebook v2.0 | ready to run |
 | `02a_stage1_load_check.ipynb` (`build_02a.py`) | `luisdscientist/02a-stage1-load-check` v4 = v2.2 | checks 2–3: the three D15 candidates load in fp16 on 2×T4; XGrammar-constrained JSON (D16) vs free; EOS union; dedupe | done (14 Sep 2026) |
 | `02_stage1_llm_bakeoff.ipynb` v1 (`build_02.py` @ `a7e42f2`) | `luisdscientist/02-stage1-llm-bakeoff` v2 (full run, 13 152 s) | prompt `p1-e482d89f`, `max_new_tokens=1600`, section label with ties → other | done (15 Sep 2026) — outputs in `data/annotations/stage1/` (offsets form) |
 | `02_stage1_llm_bakeoff.ipynb` **v2** (`build_02.py`) | — | prompt **`p2-b3707801`** (example markers removed, markers = quotations; D19), `max_new_tokens=2048`, agreement per D18 (interval α on share naturalised; claim-level α on offset-aligned claims; section label only with ties missing), normalised second pass on non-verbatim spans; writes to `stage1_p2/` | done (15 Sep 2026, Kaggle v3, 13 305 s) — outputs in `data/annotations/stage1_p2/` |
