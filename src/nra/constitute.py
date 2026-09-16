@@ -12,7 +12,8 @@
       </div>
     </div>
 
-Shape observed live on 2026-09-14 (Afghanistan_2004, key=em, lang=en). Only the structure is
+Shape observed live on 2026-09-14 (Afghanistan_2004, key=em, lang=en); preambles (key=preamble,
+2026-09-16) return one `_result-title` with one `_result-body` per paragraph. Only the structure is
 relied upon here; no constitutional text is stored in this repository.
 """
 
@@ -74,11 +75,16 @@ def parse_result(html: str) -> Section:
         if isinstance(child, Tag) and child.name == "p" and "content" in (child.get("class") or []):
             article = _clean(child.get_text(" "))
             break
-    body = outer.find("div", class_="_result-body") or outer
-    lines = _body_text(body)
+    # A title section may carry several sibling bodies (preambles: one per paragraph,
+    # observed live 2026-09-16 with key=preamble); take them all, in document order.
+    bodies = outer.find_all("div", class_="_result-body", recursive=False)
+    lines: list[str] = []
+    for body in bodies or [outer]:
+        lines += _body_text(body)
     tagged = [outer] if outer.has_attr("data-topics") else []
     tagged += outer.find_all(attrs={"data-topics": True})
-    topics = sorted({str(t["data-topics"]) for t in tagged})
+    # data-topics is a comma-separated list ("auth,preamble,motive"); keep one key per entry
+    topics = sorted({k.strip() for t in tagged for k in str(t["data-topics"]).split(",") if k.strip()})
     return Section(section_id=sid, header=header, article=article, text="\n".join(lines), topic_hits=topics)
 
 

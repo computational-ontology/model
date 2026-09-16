@@ -1,0 +1,750 @@
+{
+  "dump_date": "2026-09-16",
+  "api_base": "https://www.constituteproject.org/service/",
+  "query": {
+    "key": "preamble",
+    "lang": "es",
+    "in_force": "true"
+  },
+  "notice": "Texts are CC BY-NC 3.0 (Constitute) with third-party exceptions; not redistributed. Cite Elkins, Ginsburg & Melton, Constitute, constituteproject.org.",
+  "sections": [
+    {
+      "constitution_id": "Argentina_1994",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "cd2582b4bcb37dd23dc67ad5ecd665c98a86a964b044f3b6100d9a145f639f86",
+      "n_chars": 664
+    },
+    {
+      "constitution_id": "Bhutan_2008",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preámbulo",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducida por Carlos Morales de Setién Ravina",
+      "sha256": "63d890e353452e5a03d5016380fbb29c0b5e67dabeaf57cab75fcb8492e11a57",
+      "n_chars": 643
+    },
+    {
+      "constitution_id": "Bolivia_2009",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond",
+        "resrce",
+        "solid",
+        "water"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "b7c2167706f23ed415900e8e7b996171bc99b8840b2e89b02d87199fc273b8df",
+      "n_chars": 2172
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "solid"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "713c84d59f2b490db353bc6a50777513e026cafc96d668c2b80a92dd087361d8",
+      "n_chars": 557
+    },
+    {
+      "constitution_id": "China_2004",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "figures",
+        "motive",
+        "partprf",
+        "preamble",
+        "prevcond",
+        "science"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "6b8c99678700cbc08837ea519d1690d7c857990e0899db98c7ca041756983e1d",
+      "n_chars": 7989
+    },
+    {
+      "constitution_id": "Colombia_2015",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "region"
+      ],
+      "header": "",
+      "article": "Preámbulo",
+      "copyright": null,
+      "translator": null,
+      "sha256": "1ae07c988760ee26e8e398a0de85b14efb487019196c1c0778cee04bfc7f1e1f",
+      "n_chars": 575
+    },
+    {
+      "constitution_id": "Costa_Rica_2020",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "god",
+        "preamble"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "e95e8d472eac43101eb188e7fdb8268f74d08eba9d082e6f650d19e01835740e",
+      "n_chars": 231
+    },
+    {
+      "constitution_id": "Cuba_2019",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "figures",
+        "motive",
+        "preamble",
+        "prevcond",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preámbulo",
+      "copyright": "Proyecto del 2018 con enmiendas resultantes de la consulta popular, publicado el 5 de enero de 2019; aprobado por el público en un referéndum nacional el 24 de febrero de 2019.",
+      "translator": null,
+      "sha256": "995642fb7671f959af2049676ca72c3c37e7012f901bbf0b51e757fcd04105cf",
+      "n_chars": 3571
+    },
+    {
+      "constitution_id": "Dominican_Republic_2015",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "figures",
+        "god",
+        "preamble",
+        "prevcond",
+        "solid"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "0cc09be7cef234ae91cf5d51ea70b5fe2df3431e9cca7c1c7ccf7096a01bc70f",
+      "n_chars": 1031
+    },
+    {
+      "constitution_id": "Ecuador_2021",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "figures",
+        "god",
+        "motive",
+        "preamble",
+        "region",
+        "solid"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "2198f66cbcfe36f4b539374de316461529da2008b01fe6e1077b2becc17d1925",
+      "n_chars": 1163
+    },
+    {
+      "constitution_id": "Egypt_2019",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "equal",
+        "figures",
+        "god",
+        "intrght",
+        "motive",
+        "preamble",
+        "prevcond",
+        "region",
+        "rellaw",
+        "science"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "f75bf1210ea4e473dfba1e8c8ad53fae2d7e55ab45e285a1e30682aacd450600",
+      "n_chars": 8182
+    },
+    {
+      "constitution_id": "El_Salvador_2014",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "preamble"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "c4a089e38eb8dd9eadcc4c132d2e35131b7b4dd740ac94b4b2169d370951cb99",
+      "n_chars": 615
+    },
+    {
+      "constitution_id": "Equatorial_Guinea_2012",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "god",
+        "intrght",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "preámbulo",
+      "copyright": null,
+      "translator": null,
+      "sha256": "a69b6b2b23fa4567e0f26e866aa47601721fb549adb7923463eb62e65c15a14b",
+      "n_chars": 922
+    },
+    {
+      "constitution_id": "Estonia_2015",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "cultrght",
+        "motive",
+        "preamble",
+        "selfdet"
+      ],
+      "header": "",
+      "article": "Preámbulo",
+      "copyright": null,
+      "translator": "Este texto fue traducido del estonio al español por la Fundación Max Planck para la Paz Internacional y el Estado de Derecho en el marco de la asistencia de la Fundación al proceso constituyente chileno, con fondos del Ministerio Federal de Relaciones Exteriores de Alemania.",
+      "sha256": "4bc1e0a738bbf30401cdfb26370a1f865798f5ea270daebe50b4567037468d56",
+      "n_chars": 722
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "selfdet"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": "Texto proporcionado por el Bundestag Alemán; actualizado por el Proyecto de Constituciones Comparadas",
+      "translator": "Traducido por el Dr. Ricardo García Macho y el Dr. Karl-Peter Sommermann, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "1304802a77b0c486598a8fc1e08beba109ac9480c6583711d91c7c44ca6104cb",
+      "n_chars": 686
+    },
+    {
+      "constitution_id": "Greece_2019",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "god",
+        "preamble"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "e57de4a763f23c069095bce9ccb4eb0a3827d8a2551462f0274ed845ffca5e17",
+      "n_chars": 66
+    },
+    {
+      "constitution_id": "Guatemala_1993",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "6deee502b7d633aae030d8c899eec2bf0841e2bf76d4e5cb54e57111a415d30b",
+      "n_chars": 989
+    },
+    {
+      "constitution_id": "Haiti_2012",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "equal",
+        "equalgr1",
+        "health",
+        "inalrght",
+        "infoacc",
+        "intrght",
+        "langprot",
+        "leisure",
+        "life",
+        "motive",
+        "preamble",
+        "provwork",
+        "socclas"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducción editada y actualizada por Carlos Morales de Setién Ravina",
+      "sha256": "659d4b7ed3ecbca282c56cc8c952407d2f99271bdceb0a696eddac08edcff395",
+      "n_chars": 1616
+    },
+    {
+      "constitution_id": "Honduras_2013",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "region"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "eac46b85a4f1fe6978a49c4978915ad8ff04c4b597225703dc17e73587bcee70",
+      "n_chars": 753
+    },
+    {
+      "constitution_id": "Indonesia_2002",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preámbulo",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducida por Carlos Morales de Setién Ravina",
+      "sha256": "28d6f4c2bda421925a08c19e7467cfdb9b29c4b6b2730582e12e41406272f7aa",
+      "n_chars": 1364
+    },
+    {
+      "constitution_id": "Iran_1989",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "abide",
+        "dignity",
+        "figures",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond",
+        "prevlead",
+        "provwork",
+        "rellaw",
+        "selfdet",
+        "solid"
+      ],
+      "header": "PREÁMBULO",
+      "article": "PREÁMBULO",
+      "copyright": "© Agencia de Noticias de la República Islámica de Irán",
+      "translator": null,
+      "sha256": "b54b753c4fb82f9cf9758d3ec4ef56874ddbc4d4ca7b620d98af19362591490a",
+      "n_chars": 2380
+    },
+    {
+      "constitution_id": "Iraq_2005",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "cultrght",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond",
+        "science",
+        "terror"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": "Publicado originalmente en el Journal of International Mediterranean Studies (REIM)",
+      "translator": "Traducido por Waleed Saleh",
+      "sha256": "b0091645604f3efc030517f39f4cd8e064b9d067ddb7da17f47b3696800160ca",
+      "n_chars": 3443
+    },
+    {
+      "constitution_id": "Ireland_2019",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": "Texto de http://www.congreso.es/consti/otras/europea/flash.html, con actualizaciones de Carlos Morales de Setién Ravina y el Proyecto de Constituciones Comparadas",
+      "sha256": "7fa4447325f68c3fc91c03927eed26e1fded239cae0ad99bd4d431bf36ce1689",
+      "n_chars": 799
+    },
+    {
+      "constitution_id": "Japan_1946",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "01fe0221c33545ac1802e42069857c505aa1e97a943cc09153ccab53e71216ff",
+      "n_chars": 1911
+    },
+    {
+      "constitution_id": "Kenya_2010",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "env",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preámbulo",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducida por Carlos Morales de Setién Ravina",
+      "sha256": "56119c71ff10f1ee625fa59e3122cbf069691abcce278549b4ca34d8797213e5",
+      "n_chars": 1088
+    },
+    {
+      "constitution_id": "Lithuania_2019",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": "Texto de http://www.congreso.es/consti/otras/europea/flash.html, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "8119a268b59c0c4972fea23ce367b88b16ef34fe72d59a3c21c31ff596b81e23",
+      "n_chars": 816
+    },
+    {
+      "constitution_id": "Nicaragua_2014",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "figures",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "b9df3bee794f361aaf7455bce1268df58ab81f055c535a115d377f3760179bc3",
+      "n_chars": 2192
+    },
+    {
+      "constitution_id": "Nigeria_2011",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "region",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preámbulo",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducción editada y actualizada por Carlos Morales de Setién Ravina",
+      "sha256": "d64a8e8a39c469c19c93ca9cc44d587910839005a6e68db7a3264be6e51ded15",
+      "n_chars": 612
+    },
+    {
+      "constitution_id": "Panama_2004",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "a2d8712049b8e55265917c353e13695c6f5b0ea5ce24a34adbcadfb6ad438966",
+      "n_chars": 324
+    },
+    {
+      "constitution_id": "Paraguay_2011",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "410837dd4aa0ba9fbcc47da54c45a0ac3098c7e2acc702d18a5c5795d4d37db6",
+      "n_chars": 487
+    },
+    {
+      "constitution_id": "Peru_2023",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "god",
+        "preamble"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "c655f5f888e310d3a671a902cec79ab797dc3df4b8c42a23d966cc85080af50e",
+      "n_chars": 248
+    },
+    {
+      "constitution_id": "Philippines_1987",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "equal",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": "Traducido por OEC (Organización de Exposiciones y Congresos). Adaptado a las categorías jurídico-constitucionales y parlamentarias por el Letrado de las Cortes Generales D. Mariano Daranas Peláez.",
+      "sha256": "3194e2d566635b11e516da1b323e831fb0fa496f355881dbf2234f5377d53261",
+      "n_chars": 493
+    },
+    {
+      "constitution_id": "Poland_2009",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond",
+        "solid"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "03a847c6ee438c554df3038e317952b59c8333f7d0cc456b9c05a028159e9110",
+      "n_chars": 2043
+    },
+    {
+      "constitution_id": "Portugal_2005",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": "© Congreso de los Diputados de España",
+      "translator": null,
+      "sha256": "6ccfa6aa4c94e61f8ade8e566508fa2829dd8beea85a7a21118116ff1233ef86",
+      "n_chars": 1212
+    },
+    {
+      "constitution_id": "Russia_2014",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "0d218473f836c3ad99d46c4176476e1aa14123a8ac8f4c5a36ae13296ab13fed",
+      "n_chars": 814
+    },
+    {
+      "constitution_id": "Rwanda_2015",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "inalrght",
+        "motive",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preámbulo",
+      "copyright": "Texto preparado en asociación con el Programa de Justicia Global y Derechos Humanos de la Universidad de Los Andes",
+      "translator": "Traducida por Carlos Morales de Setién Ravina",
+      "sha256": "1f90ec9b48bad456b8904eb9bc28a0c448366c50154518a8e56b4dbb142a5f2b",
+      "n_chars": 2043
+    },
+    {
+      "constitution_id": "South_Africa_2012",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "equal",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond",
+        "system"
+      ],
+      "header": "PREÁMBULO",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": "Traducida por José Luis Alonso Saura, con actualizaciones realizadas por el Proyecto de Constituciones Comparadas",
+      "sha256": "81d8bb32caa042545b1e6478fb7ee37898a88307abd98c136caf9248969022ec",
+      "n_chars": 1279
+    },
+    {
+      "constitution_id": "Spain_2011",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "c397e1daffeea20d5867ff3ecdedd085d63455c64940010d9538b57d1194965e",
+      "n_chars": 896
+    },
+    {
+      "constitution_id": "United_States_of_America_1992",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "ac3bafb34113415dbc4a831837ee02b6847ff67828468198ffffdb8b37413183",
+      "n_chars": 377
+    },
+    {
+      "constitution_id": "Venezuela_2009",
+      "section_id": "1",
+      "lang": "es",
+      "topic_keys": [
+        "auth",
+        "figures",
+        "god",
+        "motive",
+        "preamble",
+        "region",
+        "selfdet",
+        "solid"
+      ],
+      "header": "",
+      "article": "PREÁMBULO",
+      "copyright": null,
+      "translator": null,
+      "sha256": "37b6e97b606ad7e2ee7a53bd3c7d6e17676bc2a68300097bb005d2695e39aa1b",
+      "n_chars": 1424
+    }
+  ]
+}

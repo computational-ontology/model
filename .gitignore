@@ -1,5 +1,7 @@
 # texts are never committed — see NOTICE
 data/snapshot/
+data/snapshot_*/
+scripts_probe_*.py
 data/raw/
 data/*.zip
 *.zip

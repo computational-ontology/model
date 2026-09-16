@@ -30,3 +30,22 @@ def test_parse_topic_search_payload():
     out = parse_topic_search(payload, "X_2000")
     assert len(out) == 1 and out[0].section_id == "470"
     assert parse_topic_search(payload, "Y_1999") == []
+
+
+PREAMBLE_SNIPPET = """
+<div data-id="section/1" class="section _result _result-title" data-topics="auth,preamble,motive">
+<h4 class="article-header"><a class="article-header__link header-parts" href="#"><span class="article-breadcrumb ng-binding ng-scope"></span></a></h4>
+<p class="content">Preamble</p>
+<div data-id="section/2" class="section _result _result-body"><p class="content">PARA ONE.</p></div>
+<div data-id="section/3" class="section _result _result-body" data-topics="god"><p class="content">PARA TWO.</p></div>
+<div data-id="section/4" class="section _result _result-body"><p class="content">PARA THREE.</p></div>
+</div>
+"""
+
+
+def test_parse_result_multiple_bodies():
+    # preambles: one title section with one body per paragraph (live shape, 2026-09-16)
+    s = parse_result(PREAMBLE_SNIPPET)
+    assert s.section_id == "1" and s.article == "Preamble" and s.header == ""
+    assert s.text.split("\n") == ["PARA ONE.", "PARA TWO.", "PARA THREE."]
+    assert s.topic_hits == ["auth", "god", "motive", "preamble"]

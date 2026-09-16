@@ -1,0 +1,3339 @@
+{
+  "dump_date": "2026-09-16",
+  "api_base": "https://www.constituteproject.org/service/",
+  "query": {
+    "key": "preamble",
+    "lang": "en",
+    "in_force": "true"
+  },
+  "notice": "Texts are CC BY-NC 3.0 (Constitute) with third-party exceptions; not redistributed. Cite Elkins, Ginsburg & Melton, Constitute, constituteproject.org.",
+  "sections": [
+    {
+      "constitution_id": "Afghanistan_2004",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "env",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "1aa5a7cad40ec0f290471b94d558dddeefb0a724fdb672947d2318c724e17532",
+      "n_chars": 1713
+    },
+    {
+      "constitution_id": "Albania_2016",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "god",
+        "motive",
+        "preamble",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "579bca8a0d2eb38bc6b34a710f21e243b4d86cb464da6e96b196985c60218b6d",
+      "n_chars": 731
+    },
+    {
+      "constitution_id": "Algeria_2020",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "dignity",
+        "env",
+        "freecomp",
+        "intlaw",
+        "intorgs",
+        "intrght",
+        "motive",
+        "preamble",
+        "prevcond",
+        "region",
+        "solid",
+        "terror"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": "Translated by International IDEA",
+      "sha256": "d7fbcf1e3fea00b58afee828a33a78bcd901e38f08a1d96dbccc030fdf1f35bd",
+      "n_chars": 8601
+    },
+    {
+      "constitution_id": "Andorra_1993",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "motive",
+        "motto",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "048d5598f351d7c11e03c058ee0c27f73dab96cde2c48ebfffd726123290ec87",
+      "n_chars": 1601
+    },
+    {
+      "constitution_id": "Angola_2010",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "motive",
+        "preamble",
+        "prevcond",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "f2c85f2030c6797d1a00e28e2ab1e0b6dcaa9a08d8b4abc263e84da49fdff410",
+      "n_chars": 3701
+    },
+    {
+      "constitution_id": "Antigua_and_Barbuda_1981",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "citizen",
+        "dignity",
+        "god",
+        "motive",
+        "preamble",
+        "safework",
+        "standliv"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "839807441cb800a2db2040bf8967bd31ff423f31af55e98e119a97f5c665dcdd",
+      "n_chars": 1695
+    },
+    {
+      "constitution_id": "Argentina_1994",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "© Oxford University Press, Inc.",
+      "translator": "Translated by Jonathan M. Miller and Fang-Lian Liao",
+      "sha256": "21784b0f24c35e3f9d3d30921976d9737e406896816e64b562477c10bb1500ac",
+      "n_chars": 641
+    },
+    {
+      "constitution_id": "Armenia_2020",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "6931f3bd5550a9bc613640773fb1363ab1a6558a78649e31f7a6d097087049b9",
+      "n_chars": 545
+    },
+    {
+      "constitution_id": "Azerbaijan_2016",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble",
+        "referen"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "f17de5f4c3a9720d621a4675469649dd4d0772a03da32a1f01ce3172f71808b8",
+      "n_chars": 1230
+    },
+    {
+      "constitution_id": "Bahamas_1973",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "619e33b0eb164119fc628a41e4d5f5296d7603cdb94f47bbe5101f6332e22924",
+      "n_chars": 982
+    },
+    {
+      "constitution_id": "Bahrain_2017",
+      "section_id": "2-1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "figures",
+        "god",
+        "preamble",
+        "region"
+      ],
+      "header": "Preamble",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "1b75d418fde538a041b51d3b17e9de6bebed1e3063c648b8dcc71f9bf796b318",
+      "n_chars": 440
+    },
+    {
+      "constitution_id": "Bangladesh_2018",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "4c08073711b5674345065ede2622e27cb68aeded9628f475066244f588e001e5",
+      "n_chars": 1358
+    },
+    {
+      "constitution_id": "Barbados_2026",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "043aa07cbb9e4cbb6a9c82434b257f7980f598183f6aa4b14db945cd67914bde",
+      "n_chars": 2262
+    },
+    {
+      "constitution_id": "Belarus_2004",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "6fca67dde794ba4dedb05403941f6909d1a1fa740a7b3b1322a4f32cc098a12f",
+      "n_chars": 706
+    },
+    {
+      "constitution_id": "Belize_2022",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "busines",
+        "childpro",
+        "cultrght",
+        "dignity",
+        "env",
+        "equalgr1",
+        "equalgr10",
+        "equalgr11",
+        "equalgr4",
+        "equalgr9",
+        "god",
+        "health",
+        "inalrght",
+        "intlaw",
+        "motive",
+        "preamble",
+        "proprght",
+        "provwork",
+        "safework",
+        "standliv",
+        "voteun"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "be3d0bd82f0c8d6ac9d2edef19f7222f5ecdab0bbfd4007bb8ca523b682f1fe2",
+      "n_chars": 3050
+    },
+    {
+      "constitution_id": "Benin_1990",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "intrght",
+        "motive",
+        "preamble",
+        "prevcond",
+        "region",
+        "solid"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": "© Oxford University Press, Inc.",
+      "translator": "Translated by Jessie L. Matthews",
+      "sha256": "b2505ef7475cf4888729a54bfcdf3b9d344b6854daa8ea0fc8c6cc5419a53c04",
+      "n_chars": 2841
+    },
+    {
+      "constitution_id": "Bhutan_2008",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "82d40da4664c7a7939db4c2024e6e61cf607e4d31b9e6667a7cf94b8f8201c21",
+      "n_chars": 670
+    },
+    {
+      "constitution_id": "Bolivia_2009",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond",
+        "resrce",
+        "solid",
+        "water"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "© Oxford University Press, Inc.",
+      "translator": "Translated by Max Planck Institute",
+      "sha256": "53f99739e3ee13e9f42bcbdd898356b1c859865aa5e599d6401c0f6ffba57640",
+      "n_chars": 2166
+    },
+    {
+      "constitution_id": "Bosnia_Herzegovina_2009",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "intlaw",
+        "intrght",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "92bf892a80f18ff135e4f63a4da37b8a67e7183315fa4c57f5531b19e7f1a1d3",
+      "n_chars": 1299
+    },
+    {
+      "constitution_id": "Brazil_2017",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "© Keith S. Rosenn",
+      "translator": "Translated by Keith S. Rosenn",
+      "sha256": "39759096778cf0529314627c69b44ae45a4087feda7da8d49c2616ed245e2873",
+      "n_chars": 550
+    },
+    {
+      "constitution_id": "Brunei_2006",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "hoselect",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "05c59c72469b0352eb63ae4f8c7a1f78bb2489a8642c1e1e83dd72954c78f9de",
+      "n_chars": 1040
+    },
+    {
+      "constitution_id": "Bulgaria_2015",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "ccd1e85259fec5aa1085359bf6758926a030a034837aa5c0f7c87891dcaeb142",
+      "n_chars": 552
+    },
+    {
+      "constitution_id": "Burundi_2018",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "intlaw",
+        "intrght",
+        "motive",
+        "preamble",
+        "prevcond",
+        "region",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "a8e7cf67bad6d639cd3f465933a6a4901893770bc0c5b3bb7eabc0ee666e79e1",
+      "n_chars": 2402
+    },
+    {
+      "constitution_id": "Cambodia_2008",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "8757af00c7699981f902aa655e0986183ce1fb4dfae04d88deb06c81cfbcb408",
+      "n_chars": 837
+    },
+    {
+      "constitution_id": "Cameroon_2008",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "assem",
+        "assoc",
+        "auth",
+        "childpro",
+        "cruelty",
+        "edcomp",
+        "env",
+        "equal",
+        "equalgr1",
+        "equalgr11",
+        "equalgr4",
+        "equalgr6",
+        "evidence",
+        "expost",
+        "express",
+        "exprop",
+        "fairtri",
+        "finsup1",
+        "finsup3",
+        "finsup4",
+        "fndfam",
+        "freemove",
+        "freerel",
+        "habcorp",
+        "inalrght",
+        "intlaw",
+        "intrght",
+        "jointrde",
+        "life",
+        "milserv",
+        "motive",
+        "offrel",
+        "preamble",
+        "presinoc",
+        "press",
+        "privacy",
+        "proprght",
+        "provwork",
+        "region",
+        "seprel",
+        "solid",
+        "standliv",
+        "strike",
+        "taxes",
+        "torture",
+        "wolaw",
+        "work"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "503e3a3e7416b293c45b538ea7f03c4f69850e38978c41a5485c92e0a2fdba77",
+      "n_chars": 5306
+    },
+    {
+      "constitution_id": "Canada_2011",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "access",
+        "attend",
+        "capital",
+        "census",
+        "comchief",
+        "depexec",
+        "district",
+        "execnum",
+        "fedsep",
+        "finance",
+        "finsup1",
+        "finsup3",
+        "hospow",
+        "hosstaff",
+        "housenum",
+        "immunity",
+        "intprop",
+        "jrem",
+        "judretir",
+        "judsal",
+        "lang",
+        "legapp",
+        "legdiss",
+        "legrep",
+        "levjud",
+        "lhlead",
+        "lhrest",
+        "lhseats",
+        "lhterm",
+        "motive",
+        "oath",
+        "ordres",
+        "ordsel",
+        "ordterm",
+        "preamble",
+        "quorum",
+        "region",
+        "remleg",
+        "resrce",
+        "spend",
+        "sub",
+        "tax",
+        "treat",
+        "uhage",
+        "uhlead",
+        "uhrest",
+        "uhseats",
+        "uhselect",
+        "uhterm"
+      ],
+      "header": "CONSTITUTION ACT 1867 > VII. JUDICATURE > THE FIRST SCHEDULE. ELECTORAL DISTRICTS OF ONTARIO",
+      "article": "CONSTITUTION ACT 1867",
+      "copyright": null,
+      "translator": null,
+      "sha256": "1f8f882199af85b7200c4420216c35707d3c9ce890f74b886634142de84de76b",
+      "n_chars": 930
+    },
+    {
+      "constitution_id": "Cape_Verde_1992",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "dignity",
+        "motive",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "© Oxford University Press, Inc.",
+      "translator": "Translated by Sarah Campbell and Marcia W. Coward",
+      "sha256": "2a5012f28f08bdcd68e8edc0d8dd0e5a6c120d4304e7fec29436e6ee9e715505",
+      "n_chars": 4008
+    },
+    {
+      "constitution_id": "China_2018",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "abide",
+        "ethincl",
+        "figures",
+        "motive",
+        "preamble",
+        "prevcond",
+        "science",
+        "socclas"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": "Translation of 2018 amendments provided by the NPC Observer",
+      "sha256": "b2895d7b187c9327c63726e4b3c4fa97abff2a5e61e89587111c336b9bba5b80",
+      "n_chars": 8115
+    },
+    {
+      "constitution_id": "Colombia_2015",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "region"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "© Oxford University Press, Inc.",
+      "translator": "Translated by Max Planck Institute, with updates by the Comparative Constitutions Project",
+      "sha256": "d174d565f56e154d0c5f136c416b6e5ab4ac594cc27448fd8f81f513f879a07e",
+      "n_chars": 573
+    },
+    {
+      "constitution_id": "Comoros_2018",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "intlaw",
+        "intorgs",
+        "intrght",
+        "motive",
+        "preamble",
+        "region"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "ba7ee21938ec1845a2f0a22aa87c746d8011f31f017c9c6b2b8f19584915108b",
+      "n_chars": 2240
+    },
+    {
+      "constitution_id": "Congo_2015",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "intlaw",
+        "intorgs",
+        "intrght",
+        "motive",
+        "preamble",
+        "prevcond",
+        "solid"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": "English Translation © 2016 by William S. Hein & Co., Inc.  All rights reserved.",
+      "translator": "Translated by Maria del Carmen Gress",
+      "sha256": "23b6699af02871766d797476384a375fafef92a29ec9eb66e1bc89bbb1923333",
+      "n_chars": 1872
+    },
+    {
+      "constitution_id": "Costa_Rica_2020",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "English Translation © 2016 by William S. Hein & Co., Inc.  All rights reserved.",
+      "translator": "Translated by Maria del Carmen Gress",
+      "sha256": "759864f12513cf8e6852d2506d17c5aa70fee2324384da3632aee10de067462d",
+      "n_chars": 214
+    },
+    {
+      "constitution_id": "Cote_DIvoire_2020",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "env",
+        "intlaw",
+        "intorgs",
+        "intrght",
+        "motive",
+        "preamble",
+        "region",
+        "solid"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "f07763ed4d7ae3b50dd91252870d83bf3a6c75533127dfc2f7e92a696444c1a5",
+      "n_chars": 3097
+    },
+    {
+      "constitution_id": "Cuba_2019",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "figures",
+        "motive",
+        "preamble",
+        "prevcond",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "Draft of 2018 with amendments resulting from the popular consulation, published on January 5, 2019; approved by the public in a national referendum on February 24, 2019",
+      "translator": null,
+      "sha256": "5119310467552586d91b8164c3fb9dc0efa232f5935bfac960d406ae8ea05a2b",
+      "n_chars": 3490
+    },
+    {
+      "constitution_id": "Czech_Republic_2013",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "cultrght",
+        "dignity",
+        "env",
+        "motive",
+        "preamble"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "619b04b839f113416d4db58af80846c4d06f4306948091fa31796e0fa4d0dcaf",
+      "n_chars": 1009
+    },
+    {
+      "constitution_id": "Democratic_Republic_of_the_Congo_2011",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "intlaw",
+        "intrght",
+        "motive",
+        "preamble",
+        "region",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "English Translation © 2012 by William S. Hein & Co., Inc.  All rights reserved.",
+      "translator": "Translated by Jefri J. Ruchti",
+      "sha256": "c4a0f8c99842cc584cc2fc81aa673aa736bd30209c1bb2c3c54184c116476ebf",
+      "n_chars": 1956
+    },
+    {
+      "constitution_id": "Djibouti_2010",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "intrght",
+        "motive",
+        "preamble",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "English Translation © 2012 by William S. Hein & Co., Inc.  All rights reserved.",
+      "translator": "Translated by Jefri J. Ruchti",
+      "sha256": "20c1494e259f871c76dafd04e80dfee799809f753e1693e53559cde9363f8f76",
+      "n_chars": 806
+    },
+    {
+      "constitution_id": "Dominica_2014",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "god",
+        "inalrght",
+        "motive",
+        "preamble",
+        "standliv"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "a993a05e20f6285a4b44338460d6efdc5fe7ebd4615c55bbfbe08a21fa55a11c",
+      "n_chars": 1564
+    },
+    {
+      "constitution_id": "Dominican_Republic_2015",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "figures",
+        "god",
+        "preamble",
+        "prevcond",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "cc455ae013202c9bb219f31d363c2fdf5fa7fd156f468d3cff5400b73f8b1cbe",
+      "n_chars": 941
+    },
+    {
+      "constitution_id": "East_Timor_2002",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "intorgs",
+        "motive",
+        "preamble",
+        "prevcond",
+        "referen",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "© Oxford University Press, Inc.",
+      "translator": "Translated by Gisbert H. Flanz",
+      "sha256": "0e6ce377c7be3653fc39cf2578bfd196bb7597c33c8a8c9ede9398c4945aed07",
+      "n_chars": 3067
+    },
+    {
+      "constitution_id": "Ecuador_2021",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "figures",
+        "god",
+        "motive",
+        "preamble",
+        "region",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "bd89643bc39c038441845453a1338d3a83fc522243258bffa411a19a68ac7658",
+      "n_chars": 1125
+    },
+    {
+      "constitution_id": "Egypt_2019",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "equal",
+        "figures",
+        "god",
+        "intrght",
+        "motive",
+        "preamble",
+        "prevcond",
+        "region",
+        "rellaw",
+        "science"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": "Translated by International IDEA, with updates by the Comparative Constitutions Project",
+      "sha256": "24d8089243bbe62f95f618bc3da78c5b4c70485bf71606d8b2617543f81248d3",
+      "n_chars": 7550
+    },
+    {
+      "constitution_id": "El_Salvador_2014",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "© Oxford University Press, Inc.",
+      "translator": "Translated by Marcia W. Coward, Milagros M. Gavilan and Reka Koerner, with updates by the Comparative Constitutions Project",
+      "sha256": "b68ce7b54f161efc91e7ff69e211a466e5a392d108c0fe255c227a4a14d86800",
+      "n_chars": 595
+    },
+    {
+      "constitution_id": "Equatorial_Guinea_2012",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "intrght",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "17175b9db957717925fef6cf4e2d8dd82fbf7e9afae1f970d42da76057164369",
+      "n_chars": 825
+    },
+    {
+      "constitution_id": "Eritrea_1997",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "preamble",
+        "prevcond",
+        "solid",
+        "system"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "d319b447357797f1fc02fea96bfba3e7dee0abb0fdebc6f70be82a6a17fc9c8d",
+      "n_chars": 2574
+    },
+    {
+      "constitution_id": "Estonia_2015",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "cultrght",
+        "motive",
+        "preamble",
+        "selfdet"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "a37ecc86de725a74a9bebde39a1bee302db720d694df8ae7f3550767d9a011b5",
+      "n_chars": 791
+    },
+    {
+      "constitution_id": "Ethiopia_1994",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "c82c8b8a02af6583266a2c60f201b12d21d3e606a4f1134c3194964a8c7afc89",
+      "n_chars": 1628
+    },
+    {
+      "constitution_id": "Fiji_2013",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "cultrght",
+        "dignity",
+        "env",
+        "ethincl",
+        "motive",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "e71f76d4f3d541725f9773be71921e1c12743f6654f2857e7c7d60a9e0aa67fd",
+      "n_chars": 1100
+    },
+    {
+      "constitution_id": "France_2024",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "equal",
+        "equalgr3",
+        "equalgr4",
+        "equalgr6",
+        "preamble",
+        "selfdet",
+        "seprel",
+        "solid",
+        "system"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "2edbf4c46d1c7f4a1d02d13b8f2c20c84a4e95eec5e0f8cd6228f7195f3dd9b0",
+      "n_chars": 628
+    },
+    {
+      "constitution_id": "Gambia_2018",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "bc97699ed22a0a13f6d90fbd5e74a0d202aad5911d4ae3951f547f65825bb31e",
+      "n_chars": 2021
+    },
+    {
+      "constitution_id": "Georgia_2018",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "575129748a94ead939e3edcd5fa6da1b3992d9411be662f9c383f785964dd73d",
+      "n_chars": 489
+    },
+    {
+      "constitution_id": "German_Federal_Republic_2014",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "selfdet"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "9fb54e8f2cef55938b9f35769e1e89d0ebb21ea8b42ec5f6e54a168a9bfd22d1",
+      "n_chars": 625
+    },
+    {
+      "constitution_id": "Ghana_1996",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "voteun"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "a592a06e4cfa7d314ed40b8369b0ca5239ef8a41ed9003e048c1d6a56c5cf103",
+      "n_chars": 757
+    },
+    {
+      "constitution_id": "Greece_2019",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "god",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "1297ba5cda81eb874334771cdc21b991ba7c9278b2c4640f8598ae04e9fb581a",
+      "n_chars": 66
+    },
+    {
+      "constitution_id": "Grenada_1992",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "4a8c1e374820969a6086a2417434d4092e9253ce7ed239e8fd1e274a5afe24b2",
+      "n_chars": 1508
+    },
+    {
+      "constitution_id": "Guatemala_1993",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "English Translation © 2012 by William S. Hein & Co., Inc.  All rights reserved.",
+      "translator": "Translated by Luis Francisco Valle Velasco",
+      "sha256": "3b99094ce0fc6447cfc89fc22c8b2359d0b060d1c63801256a34c3481279ae26",
+      "n_chars": 1042
+    },
+    {
+      "constitution_id": "Guinea_Bissau_1996",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "a22eeb3f7a5587805f3263a9b6e2f5655a528ff516f92d53f3b883f2e1822b13",
+      "n_chars": 2334
+    },
+    {
+      "constitution_id": "Guyana_2016",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "env",
+        "ethincl",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "0135b1bbace1207d63ca0502fee7c7b808baf2cf57f534629d575b0ec574071a",
+      "n_chars": 2063
+    },
+    {
+      "constitution_id": "Haiti_2012",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "equal",
+        "equalgr1",
+        "health",
+        "inalrght",
+        "infoacc",
+        "intrght",
+        "langprot",
+        "leisure",
+        "life",
+        "motive",
+        "preamble",
+        "provwork",
+        "socclas"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "English Translation © 2012 by William S. Hein & Co., Inc.  All rights reserved.",
+      "translator": "Translated by Maria del Carmen Gress and Jefri J. Ruchti",
+      "sha256": "4cc89bd23f36613f2d582cea5ceaac924d01f338692b3454b9b0362e1a5d1434",
+      "n_chars": 1632
+    },
+    {
+      "constitution_id": "Honduras_2013",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "region"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "1cfcfd6238c3669c03d0a3109104670f70f7fbe9c996603663019c49a802b0c9",
+      "n_chars": 753
+    },
+    {
+      "constitution_id": "Hungary_2016",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "cultrght",
+        "dignity",
+        "env",
+        "ethincl",
+        "figures",
+        "god",
+        "langprot",
+        "motive",
+        "preamble",
+        "prevcond",
+        "prevlead",
+        "selfdet",
+        "standliv"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "521c9144180565262687ea1c5273d0eed18a2fc7182d9ef95a0a14632368c754",
+      "n_chars": 4291
+    },
+    {
+      "constitution_id": "India_2023",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "motive",
+        "opinion",
+        "preamble",
+        "seprel",
+        "solid",
+        "system"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "eb565886be7bc9e8bbc2755eff1d84f060e6c44b14eb74f8ba26fa570536afe7",
+      "n_chars": 554
+    },
+    {
+      "constitution_id": "Indonesia_2002",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "dd69364d11b9eeee98c735981a0ba6e3a959b7254f393cf87289a1fe421e00d6",
+      "n_chars": 1358
+    },
+    {
+      "constitution_id": "Iran_1989",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "abide",
+        "dignity",
+        "figures",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond",
+        "prevlead",
+        "provwork",
+        "rellaw",
+        "selfdet",
+        "solid"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "500b82774917fa465953ca35f42de5953fe81ca05827a6faf49585a46372ba28",
+      "n_chars": 2284
+    },
+    {
+      "constitution_id": "Iraq_2005",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "cultrght",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond",
+        "science",
+        "terror"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "b1bdc452ef384f2c461320147049e8b125baa8b99cacd17c1c2ec055efbe2e65",
+      "n_chars": 3406
+    },
+    {
+      "constitution_id": "Ireland_2019",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "5afc2f7e3c1fb07ebe370eac61ceafec7be4c5f7ef1f37a57145152009cd79d2",
+      "n_chars": 745
+    },
+    {
+      "constitution_id": "Japan_1946",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "7a55f269948129dbb62e2e744bcbdd3530b1ee286308614fc72416b669f49519",
+      "n_chars": 1830
+    },
+    {
+      "constitution_id": "Jordan_2016",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "figures",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "e6c21baa5e6fa1968719c6b12687b8ab5ba503f16a9e056e90fa37efe94da84b",
+      "n_chars": 272
+    },
+    {
+      "constitution_id": "Kazakhstan_2026",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "env",
+        "ethincl",
+        "motive",
+        "preamble",
+        "prevcond",
+        "science",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "4a6eb3cd99dbc24f7597bbe5acf1902338ca3a551116aac6148e0096535adb3d",
+      "n_chars": 846
+    },
+    {
+      "constitution_id": "Kenya_2010",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "env",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "2402b3b7c12398c68804dc859da04f73adbc0c6836cd793408d62c8ce7b58a10",
+      "n_chars": 978
+    },
+    {
+      "constitution_id": "Kosovo_2020",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble",
+        "region"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "d18400821a64eea9efb466ab8d9d5d74edcf8ec5d0285ab79f5148837f6983e1",
+      "n_chars": 908
+    },
+    {
+      "constitution_id": "Kuwait_1992",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": "Translation of Article 29 updated by Myra E.J.B. Williamson",
+      "sha256": "62b1d63ed058a1df8c29ee7ce8a4a52450c538de71b0c1c8e5b49d3c0605a223",
+      "n_chars": 1009
+    },
+    {
+      "constitution_id": "Kyrgyz_Republic_2021",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble",
+        "prevcond",
+        "science"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "6cbfca037e5c34aaaa59dee4559a1c032e7c0babf82c3f76e816c0b7cb3950fc",
+      "n_chars": 974
+    },
+    {
+      "constitution_id": "Laos_2025",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "figures",
+        "motive",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "a7aece8436eddd145c2781db98b386648551021ef88d88a5cbb11f6e7c100e05",
+      "n_chars": 3473
+    },
+    {
+      "constitution_id": "Latvia_2018",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "god",
+        "preamble",
+        "prevcond",
+        "region",
+        "selfdet",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "a76f8c125919d5f97ba50dd9ebba14e6938a02ef78014dbc9f42b2aad7fb1963",
+      "n_chars": 2243
+    },
+    {
+      "constitution_id": "Lebanon_2004",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "acfree",
+        "assem",
+        "assoc",
+        "capital",
+        "citizen",
+        "citrev",
+        "civil",
+        "edfree",
+        "equal",
+        "express",
+        "exprop",
+        "flag",
+        "freecomp",
+        "freemove",
+        "freerel",
+        "god",
+        "inalrght",
+        "intlaw",
+        "intrght",
+        "lang",
+        "opinion",
+        "preamble",
+        "press",
+        "privacy",
+        "proprght",
+        "region",
+        "system",
+        "tranprov",
+        "wolaw"
+      ],
+      "header": "PART I BASIC PROVISIONS",
+      "article": "PART I BASIC PROVISIONS",
+      "copyright": "© Oxford University Press, Inc.",
+      "translator": "Translated by Fouad Fahmy Shafik (constitution) and Abed Awad (Law No. 462)",
+      "sha256": "7780228a8a379ece0bbb0c3b93e4a52101e9ce844ab378b3b8768708e4777a34",
+      "n_chars": 5673
+    },
+    {
+      "constitution_id": "Liberia_1986",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond",
+        "region",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "0922b167982693155e297b0c4489a2069e1428c169bebc0e78ec0b408b729cae",
+      "n_chars": 1206
+    },
+    {
+      "constitution_id": "Libya_2012",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "figures",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond",
+        "science",
+        "tranprov"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "740e19e39339601eac31d088ab7f05df023eae480207577b10c523eda88be161",
+      "n_chars": 1378
+    },
+    {
+      "constitution_id": "Liechtenstein_2020",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "8f0bc460d8aaf4f2a09f08465235143f33c1ebf2ed5105cb65a70de951c2e587",
+      "n_chars": 241
+    },
+    {
+      "constitution_id": "Lithuania_2022",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "d4df44469c2f63425aad9b8b19136328c2aaf87d47e702fa69311de57b44cd0f",
+      "n_chars": 747
+    },
+    {
+      "constitution_id": "Macedonia_2019",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "ethincl",
+        "motive",
+        "preamble"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "6f60caccbfefb7b2231c6b1e82b4107ed415682a9e127aeed59709f07a7e7acd",
+      "n_chars": 1617
+    },
+    {
+      "constitution_id": "Madagascar_2010",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "childpro",
+        "devlpers",
+        "env",
+        "intrght",
+        "motive",
+        "preamble",
+        "solid"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": "English Translation © 2012 by William S. Hein & Co., Inc.  All rights reserved.",
+      "translator": "Translated by Maria del Carmen Gress",
+      "sha256": "f7fb171d03226a1d0cc4a94399b05d7a6c18dab8c5eac8104f86659684e798b9",
+      "n_chars": 3225
+    },
+    {
+      "constitution_id": "Malawi_2017",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "8399628af62212eec6fd34a5e8a6cfa0e4481f0db7a92ab7eab9f2e25ae1094c",
+      "n_chars": 498
+    },
+    {
+      "constitution_id": "Mali_2023",
+      "section_id": "8",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "childpro",
+        "env",
+        "equalgr1",
+        "equalgr9",
+        "intrght",
+        "motive",
+        "preamble",
+        "prevcond",
+        "region",
+        "resrce",
+        "seprel"
+      ],
+      "header": "",
+      "article": "PREAMBLE",
+      "copyright": null,
+      "translator": null,
+      "sha256": "57bc39e15858030d4fc0c96a5d1c3daa9a596c00fe1766f5597bd0845b6340c2",
+      "n_chars": 2359
+    },
+    {
+      "constitution_id": "Marshall_Islands_1995",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "3850507a65b1d6daac63ef6ba2cf666c2c50377268f962a8caa13ea95fc36917",
+      "n_chars": 1502
+    },
+    {
+      "constitution_id": "Mauritania_2012",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "dignity",
+        "equal",
+        "fndfam",
+        "god",
+        "intrght",
+        "preamble",
+        "proprght",
+        "region",
+        "rellaw"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": "English Translation © 2012 by William S. Hein & Co., Inc.  All rights reserved.",
+      "translator": "Translated by Maria del Carmen Gress",
+      "sha256": "d5d8ef1ba1b996e6960f38d70a30315378e3a050d2165b956f3cf1b5087407e3",
+      "n_chars": 2218
+    },
+    {
+      "constitution_id": "Micronesia_1990",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "d1d9107b297700d034825a23942dbd44df329b9a6c7a6b84fef576bdccd84b57",
+      "n_chars": 1203
+    },
+    {
+      "constitution_id": "Moldova_2024",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "custlaw",
+        "devlpers",
+        "dignity",
+        "intlaw",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "b113df707382a864dc588d4d35c3faefba8bf58850b78f05fee3149924d08908",
+      "n_chars": 1442
+    },
+    {
+      "constitution_id": "Mongolia_2001",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "a6064b089866779a00b7568ea4beea5ae43bfa0b9446aefa5858ca203e31595c",
+      "n_chars": 556
+    },
+    {
+      "constitution_id": "Montenegro_2013",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "env",
+        "ethincl",
+        "motive",
+        "preamble",
+        "referen",
+        "region"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "1bbebe6b7c52571a1e2de75e5b4d68373129d4f12a30d23faaad39a79354b202",
+      "n_chars": 1148
+    },
+    {
+      "constitution_id": "Morocco_2011",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "dignity",
+        "equal",
+        "equalgr1",
+        "equalgr10",
+        "equalgr11",
+        "equalgr3",
+        "equalgr5",
+        "equalgr9",
+        "ethincl",
+        "intlaw",
+        "intorgs",
+        "intrght",
+        "motive",
+        "preamble",
+        "region",
+        "science",
+        "solid",
+        "treatcon"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": "English Translation © 2012 by William S. Hein & Co., Inc.  All rights reserved.",
+      "translator": "Translated by Jefri J. Ruchti",
+      "sha256": "cad02dc814e843809bb0d6fae7a6f34efdeaf8a169a9a16a2f3f1624bc30c965",
+      "n_chars": 3811
+    },
+    {
+      "constitution_id": "Mozambique_2007",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "motive",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "English Translation of amended Article 304 © 2012 by William S. Hein & Co., Inc.  All rights reserved.",
+      "translator": "Amendment translated by Jefri J. Ruchti",
+      "sha256": "7016d6cbae5928f4f039558cb567a91ec9adb43d17e611af03a3c832590bcacb",
+      "n_chars": 1217
+    },
+    {
+      "constitution_id": "Myanmar_2015",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble",
+        "prevcond",
+        "solid"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "567141b2843a4f36aa76a07cd85914705fb456d84ba8965c19795eb992e94987",
+      "n_chars": 3109
+    },
+    {
+      "constitution_id": "Namibia_2014",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "equalgr1",
+        "equalgr10",
+        "equalgr11",
+        "equalgr12",
+        "equalgr13",
+        "equalgr4",
+        "equalgr6",
+        "life",
+        "motive",
+        "preamble",
+        "prevcond",
+        "seprel",
+        "solid",
+        "system"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "5af5b039d3cef34c1f84bcdd58854eb497d81bb50b3ea99f91b7a8e25c15f9ca",
+      "n_chars": 1661
+    },
+    {
+      "constitution_id": "Nauru_2025",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "2e13293e52df3eacb1d87e0c6dcb36052c467fd362ff8e43d71839ab3bf79053",
+      "n_chars": 720
+    },
+    {
+      "constitution_id": "Nepal_2016",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "ethincl",
+        "motive",
+        "preamble",
+        "press",
+        "prevcond",
+        "solid",
+        "system"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": "Unofficial translation by Nepal Law Society, International IDEA, and UNDP.",
+      "sha256": "3636247cb68a2109a5454b191437aed3c52b58161a08c67ed1fc394766d89f89",
+      "n_chars": 1841
+    },
+    {
+      "constitution_id": "New_Zealand_2014",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "commit",
+        "immunity",
+        "motive",
+        "preamble",
+        "prevcond",
+        "pubmin"
+      ],
+      "header": "Legislature Act 1908 > Amendment Act 1. Legislature Amendment Act 1992",
+      "article": "Legislature Act 1908",
+      "copyright": null,
+      "translator": null,
+      "sha256": "631ef65f78afbb6c382e840577c568ce8a555cca8bee3dcc913fc9970b5e35d6",
+      "n_chars": 20812
+    },
+    {
+      "constitution_id": "Nicaragua_2014",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "figures",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "© Oxford University Press, Inc.",
+      "translator": "Translated by Max Planck Institute",
+      "sha256": "cdb2816fa5b3f6bb53182fa46b7392c62b18f96539473573c12f58c91ed688da",
+      "n_chars": 2218
+    },
+    {
+      "constitution_id": "Niger_2017",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "intlaw",
+        "intrght",
+        "motive",
+        "preamble",
+        "region"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": "English Translation © 2017 by William S. Hein & Co., Inc.  All rights reserved.",
+      "translator": "Translated by Maria del Carmen Gress & J.J. Ruchti",
+      "sha256": "1957ef2e6b5339a391bb7b54de96ae3eaeb19050ffb89fb6ab090a208eca9789",
+      "n_chars": 2058
+    },
+    {
+      "constitution_id": "Nigeria_2023",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "region",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "92680165ec276c1abbbbdbdeaade5ad833a1ad4a1be51c39470eabdff52a1da8",
+      "n_chars": 604
+    },
+    {
+      "constitution_id": "Pakistan_2018",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "access",
+        "auth",
+        "cultrght",
+        "figures",
+        "god",
+        "judind",
+        "motive",
+        "opinion",
+        "preamble",
+        "prevcond",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "7a44a74bba950e35e4dd8b34b00598994158fe80f2315a4865c12cedd71237c5",
+      "n_chars": 2745
+    },
+    {
+      "constitution_id": "Palau_1992",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "preamble",
+        "system"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "985fbe794c703daf4a9193839e2d36e7a65f2ddc28c77e5ebcadd19005f6d26e",
+      "n_chars": 497
+    },
+    {
+      "constitution_id": "Palestine_2005",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "figures",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond",
+        "selfdet"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "ad2d56298547ee97e9c0a0fcf1bb34c2f23a64e600f7dcff8932ff3154830680",
+      "n_chars": 4548
+    },
+    {
+      "constitution_id": "Panama_2004",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "dad2704f3ca5366dce716dc0e3cd24f8b4634d80d88755cf7ec78304b7dc5017",
+      "n_chars": 306
+    },
+    {
+      "constitution_id": "Papua_New_Guinea_2016",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "abide",
+        "assem",
+        "assoc",
+        "auth",
+        "childpro",
+        "cruelty",
+        "cultrght",
+        "devlpers",
+        "dignity",
+        "env",
+        "equal",
+        "equalgr1",
+        "equalgr10",
+        "equalgr11",
+        "equalgr14",
+        "equalgr15",
+        "equalgr3",
+        "equalgr4",
+        "express",
+        "fndfam",
+        "freemove",
+        "god",
+        "health",
+        "infoacc",
+        "life",
+        "matequal",
+        "motive",
+        "occupate",
+        "opinion",
+        "parents",
+        "preamble",
+        "privacy",
+        "science",
+        "slave",
+        "socclas",
+        "solid",
+        "taxes",
+        "work"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "0b5f7d6027a79ecbe5620cf3f3a6b5d1e2b8132fae8e9bcfd5c1f2d946d1b661",
+      "n_chars": 1858
+    },
+    {
+      "constitution_id": "Paraguay_2011",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "English Translation © 2012 by William S. Hein & Co., Inc.  All rights reserved.",
+      "translator": "Translated by Maria del Carmen Gress",
+      "sha256": "5890185c47d91aa0681d13ad48de3d4ff44d9ca3ad2e91565c223518115a7c6b",
+      "n_chars": 462
+    },
+    {
+      "constitution_id": "Peoples_Republic_of_Korea_2016",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "figures",
+        "god",
+        "partprf",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "5a035ea14a3a204a730ff863b6b1743f702a3eb13e71c77348fda17a1b52007f",
+      "n_chars": 5671
+    },
+    {
+      "constitution_id": "Peru_2023",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "04adb0f5d4a070993cba3162c488ce2d5ee60211e721830cb8b74687b37a2671",
+      "n_chars": 228
+    },
+    {
+      "constitution_id": "Philippines_1987",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "equal",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "402339837edaa9b013259fd13c2d1f309418053e8ecfaba26ef7cb876b417663",
+      "n_chars": 467
+    },
+    {
+      "constitution_id": "Poland_2009",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "da1673b1b33f2de01c423ac286b915985aef5e521d03e67cafe64645d2da5638",
+      "n_chars": 1930
+    },
+    {
+      "constitution_id": "Portugal_2005",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "8bd7002789cd7f4c405d91aacc6195676ae8e4f4b7e7d55edecbebfe196a7dae",
+      "n_chars": 1200
+    },
+    {
+      "constitution_id": "Republic_of_Korea_1987",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "f921cf3a3d3f4456014052881994654fca7d14a98b7095ede34c8a5b6d8d74f4",
+      "n_chars": 1480
+    },
+    {
+      "constitution_id": "Russia_2014",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "9bca428aad3bba240911fcd24700d439cc5474f6c9bc731340107f523475ae2d",
+      "n_chars": 794
+    },
+    {
+      "constitution_id": "Rwanda_2015",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "inalrght",
+        "motive",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "31e81eeea02006504dd0a7e5b7009c25a17c709ccf31f19563d7a90a38feca37",
+      "n_chars": 1750
+    },
+    {
+      "constitution_id": "Samoa_2025",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "b885fe3702e7140753e407abf056cf239b65e32fd4866629a6284fc10511d9aa",
+      "n_chars": 1087
+    },
+    {
+      "constitution_id": "Sao_Tome_and_Principe_2003",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "motive",
+        "preamble",
+        "prevcond",
+        "region"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "© Oxford University Press, Inc.",
+      "translator": null,
+      "sha256": "ef32fab6982d0e68338f683e5eaa25ce89d80f393ffaf35d73cda176462e2757",
+      "n_chars": 2924
+    },
+    {
+      "constitution_id": "Senegal_2016",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "intlaw",
+        "intorgs",
+        "intrght",
+        "motive",
+        "preamble",
+        "region",
+        "solid"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": "English Translation © 2016 by William S. Hein & Co., Inc.  All rights reserved.",
+      "translator": "Translated by J. J. Ruchti",
+      "sha256": "794b947aaa14386b42cb7b07614f293f6dfce310bffa57200051b447488377dc",
+      "n_chars": 2740
+    },
+    {
+      "constitution_id": "Serbia_2006",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "equal",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "2060f5f6568f4927cf2baf4c6639dbe106f0313e9c685a9d54b10ad2cebd4bcf",
+      "n_chars": 580
+    },
+    {
+      "constitution_id": "Seychelles_2025",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "env",
+        "god",
+        "inalrght",
+        "motive",
+        "preamble",
+        "prevcond",
+        "solid",
+        "standliv"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "1ab3952839ff86f24f090b4a3623d144a4c108d0c60554014c9a040dd96843e1",
+      "n_chars": 2492
+    },
+    {
+      "constitution_id": "Slovakia_2017",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "ethincl",
+        "figures",
+        "motive",
+        "preamble",
+        "prevcond",
+        "selfdet"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "912a2b97e0d389f12f9383deadb5cf03f4b567096ca817b6f7a01574605db378",
+      "n_chars": 792
+    },
+    {
+      "constitution_id": "Slovenia_2021",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "preamble",
+        "selfdet"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "5c6af24b730cee7bf8fcd1083d119e67742aa4e5e392918a66ba492f91489dc8",
+      "n_chars": 467
+    },
+    {
+      "constitution_id": "Socialist_Republic_of_Vietnam_2013",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "figures",
+        "motive",
+        "preamble",
+        "prevcond",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": "Translated by International IDEA's Constitution building Programme",
+      "sha256": "7dec0271f3e90a559154155c62f1fd8582b9d6fa0c4353037a5dd09999533102",
+      "n_chars": 1541
+    },
+    {
+      "constitution_id": "Solomon_Islands_2018",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "cultrght",
+        "dignity",
+        "god",
+        "motive",
+        "preamble",
+        "resrce",
+        "socclas",
+        "solid",
+        "voteun"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": "© Oxford University Press, Inc.",
+      "translator": null,
+      "sha256": "e15def1982bde2b6ca4afb20abab885abe64a89eb9902d174ca970cea8f97adc",
+      "n_chars": 1303
+    },
+    {
+      "constitution_id": "South_Africa_2012",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "equal",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond",
+        "system"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "c031a58783aa9c7f088ad7b9140f5e0c7cc2cf8cef8933eea2e48f7d4fd783ca",
+      "n_chars": 1085
+    },
+    {
+      "constitution_id": "South_Sudan_2013",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "equal",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "f8c4cdb3d2af4e12c4b4096756d71224c7834abfe0571a46afa2085f0b542c61",
+      "n_chars": 1594
+    },
+    {
+      "constitution_id": "Spain_2011",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "2dd088471c5d00a89d9eebfdb172a09f61a41e52b0aae69e7118c238bb2f2115",
+      "n_chars": 871
+    },
+    {
+      "constitution_id": "Sri_Lanka_2015",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "judind",
+        "motive",
+        "preamble",
+        "system"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "332f366dc444a97a33c73a8bb241205c89a2968a62e39a0ae93ac7a842119bc7",
+      "n_chars": 1803
+    },
+    {
+      "constitution_id": "St_Kitts_and_Nevis_1983",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "aceeb04f055c289aa5ff552ef8276eab3ea395498c05d8b982e5baf0bc0dbd92",
+      "n_chars": 624
+    },
+    {
+      "constitution_id": "St_Lucia_1978",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "assoc",
+        "auth",
+        "dignity",
+        "express",
+        "god",
+        "inalrght",
+        "motive",
+        "opinion",
+        "preamble",
+        "safework",
+        "socclas",
+        "standliv",
+        "system",
+        "voteun"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "ecfecbd6e839a45858dba7646fd226c11e3019f8d499ac7f5849587f3411d8d7",
+      "n_chars": 2051
+    },
+    {
+      "constitution_id": "Sudan_2020",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": "Translated by International IDEA, with updates by the Comparative Constitutions Project",
+      "sha256": "ac4e5b037c1ebe15306515ca43025c541939710258e899347a8fe280f3157082",
+      "n_chars": 1881
+    },
+    {
+      "constitution_id": "Surinam_1992",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "22ddd303becd650f567231e776a29442b19fa823bdfbf63850fe4eb63017be7e",
+      "n_chars": 1155
+    },
+    {
+      "constitution_id": "Swaziland_2005",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "665430946d06b65308426cf4fe0197abf849595dcb3be7ede841e065fea7a170",
+      "n_chars": 2071
+    },
+    {
+      "constitution_id": "Switzerland_2014",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "solid",
+        "system"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "Text provided by the Swiss Federal Chancellery.",
+      "translator": "English is not an official language of the Swiss Confederation. This translation is provided for information purposes only and has no legal force.",
+      "sha256": "9460420f303ad1529af5ae140097fb0caf1c7e1a2fc4a0d3da46bafb9a1450b2",
+      "n_chars": 639
+    },
+    {
+      "constitution_id": "Taiwan_2005",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "figures",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "© Oxford University Press, Inc.",
+      "translator": "Translated by Max Planck Institute",
+      "sha256": "19ef9ffbef5fa2970ea68fd0183440e2d035b73034e638e7ba13ad0000ffc706",
+      "n_chars": 500
+    },
+    {
+      "constitution_id": "Tajikistan_2016",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "© Oxford University Press, Inc., with updates by the Comparative Constitutions Project",
+      "translator": "Translated by Patricie H. Ward; translation of 2016 amendments provided by UN Women",
+      "sha256": "c25b18d7e10a2ea1c29d0a8d9cdb4371ba48a8000ed3359912557137cbf20dad",
+      "n_chars": 459
+    },
+    {
+      "constitution_id": "Tanzania_2005",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "judind",
+        "motive",
+        "preamble",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "0d63afdc93b31633cfc2899abb3fe62706e928fa10da6e61904b62174e600bd9",
+      "n_chars": 926
+    },
+    {
+      "constitution_id": "Thailand_2017",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble",
+        "prevcond",
+        "referen",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": "Unofficial translation by the Legal Opinion and Translation Section, Foreign Law Division under the legal duty of the Office of the Council of State",
+      "sha256": "2ded56855081a7503fc0b4cbdae23aefa43ee6c1f2cff69ea7dd51a3c4b4de14",
+      "n_chars": 7685
+    },
+    {
+      "constitution_id": "Togo_2024",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "god",
+        "inalrght",
+        "intrght",
+        "preamble",
+        "region",
+        "solid"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "acc66c25f9c1db90a55feffa83ad9954a30e679d33c394b37b22cf6f88cad0f6",
+      "n_chars": 1582
+    },
+    {
+      "constitution_id": "Tonga_2025",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "figures",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "e84d1a4a70389ae124e1f2d3829c97030ea1ef77514fc764a00726e37516f9ee",
+      "n_chars": 228
+    },
+    {
+      "constitution_id": "Trinidad_and_Tobago_2007",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "dignity",
+        "god",
+        "motive",
+        "preamble",
+        "slave",
+        "standliv"
+      ],
+      "header": "Preamble",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "04895855a18de935665df1e40ebb061c85f8a0c941db5dde74119d0164b9af70",
+      "n_chars": 1638
+    },
+    {
+      "constitution_id": "Tunisia_2022",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "env",
+        "preamble",
+        "prevcond",
+        "prevlead",
+        "region",
+        "selfdet",
+        "solid",
+        "system"
+      ],
+      "header": "",
+      "article": "PREAMBLE",
+      "copyright": null,
+      "translator": null,
+      "sha256": "ae3aa5be42084d0c0f601764f4252017be1fc17ae72eb4a167e69f193b7463fd",
+      "n_chars": 6482
+    },
+    {
+      "constitution_id": "Turkey_2017",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "figures",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "Some of the 2017 amendments have not yet entered into force; see the final article for more information.",
+      "translator": null,
+      "sha256": "de2e74bb991f4e7f8352e6abb19d27d5a7cd7d831729f69370d7e00556c95fb0",
+      "n_chars": 2806
+    },
+    {
+      "constitution_id": "Turkmenistan_2016",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "inalrght",
+        "motive",
+        "preamble",
+        "selfdet"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "ff2e8b9a6d5f65d8f0a8b6fb577eb31432181df444fd6586084ff03ea63725e4",
+      "n_chars": 767
+    },
+    {
+      "constitution_id": "Tuvalu_2023",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "cultrght",
+        "dignity",
+        "env",
+        "ethincl",
+        "god",
+        "motive",
+        "offrel",
+        "preamble",
+        "prevcond",
+        "standliv",
+        "system"
+      ],
+      "header": "PREAMBLE",
+      "article": "PREAMBLE",
+      "copyright": null,
+      "translator": null,
+      "sha256": "02db8ad2dc78511a076c94af0d3c9e04b5a3cf42a791c645375077480b04e33a",
+      "n_chars": 4880
+    },
+    {
+      "constitution_id": "Tuvalu_2023",
+      "section_id": "1711-1",
+      "lang": "en",
+      "topic_keys": [
+        "preamble"
+      ],
+      "header": "SCHEDULE 1 (Section 4). RULES FOR THE INTERPRETATION OF THE CONSTITUTION > 3. Form of the Constitution",
+      "article": "",
+      "copyright": null,
+      "translator": null,
+      "sha256": "d408b538f4b142e7e99b7e4224e7707781e302721073d062f142127cd42a7eef",
+      "n_chars": 171
+    },
+    {
+      "constitution_id": "Uganda_2017",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond",
+        "selfdet"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "330c5d5c21ac078c95cf30999edaf6d88443105cfb5c43adeadea81565bac2ec",
+      "n_chars": 1047
+    },
+    {
+      "constitution_id": "Ukraine_2019",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond",
+        "region",
+        "selfdet"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "f15468ecaf3158645855f205eeabab74d56434844b999fb5c5b0ddb403e41ba7",
+      "n_chars": 983
+    },
+    {
+      "constitution_id": "United_Arab_Emirates_2009",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "intorgs",
+        "motive",
+        "preamble",
+        "region"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "eaa3270c81e90b59f2ee722770dc4ae73cabe5e129cf6ee053215daab8cba3de",
+      "n_chars": 1688
+    },
+    {
+      "constitution_id": "United_Kingdom_2013",
+      "section_id": "2",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "figures",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond",
+        "socclas"
+      ],
+      "header": "Magna Carta 1297",
+      "article": "Preamble",
+      "copyright": "Texts collected from  legislation.gov.uk.",
+      "translator": null,
+      "sha256": "c4509282214789b0d729f0426411983691fa3e786e851c25c361cc3ce37ac44a",
+      "n_chars": 1117
+    },
+    {
+      "constitution_id": "United_Kingdom_2013",
+      "section_id": "23",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "The Petition of Right 1628",
+      "article": "Preamble",
+      "copyright": "Texts collected from  legislation.gov.uk.",
+      "translator": null,
+      "sha256": "b84e7bc204977dc020709730898ef2772b789509bfaafbe54a1cd6b5e86db460",
+      "n_chars": 289
+    },
+    {
+      "constitution_id": "United_Kingdom_2013",
+      "section_id": "49",
+      "lang": "en",
+      "topic_keys": [
+        "motive",
+        "preamble"
+      ],
+      "header": "Habeas Corpus Act 1679",
+      "article": "Preamble",
+      "copyright": "Texts collected from  legislation.gov.uk.",
+      "translator": null,
+      "sha256": "b26302e3315bc70e2ce1ff6999cf7a639a24e145caf51f6cf579a0670b0f0167",
+      "n_chars": 711
+    },
+    {
+      "constitution_id": "United_Kingdom_2013",
+      "section_id": "94",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "figures",
+        "motive",
+        "preamble"
+      ],
+      "header": "Bill of Rights 1689",
+      "article": "Preamble",
+      "copyright": "Texts collected from  legislation.gov.uk.",
+      "translator": null,
+      "sha256": "87875ce69893d18e6a710513985217906b9f8d00b43e97edff0ea7207135544e",
+      "n_chars": 625
+    },
+    {
+      "constitution_id": "United_Kingdom_2013",
+      "section_id": "171",
+      "lang": "en",
+      "topic_keys": [
+        "motive",
+        "preamble"
+      ],
+      "header": "Act of Settlement 1701",
+      "article": "Preamble",
+      "copyright": "Texts collected from  legislation.gov.uk.",
+      "translator": null,
+      "sha256": "c6488e8047242c26ee9bfc79fa22e290ad7fd90354509b8525c664fb80ccaf63",
+      "n_chars": 106
+    },
+    {
+      "constitution_id": "United_Kingdom_2013",
+      "section_id": "189",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "offrel",
+        "preamble"
+      ],
+      "header": "Union with Scotland Act 1706",
+      "article": "Preamble. Recital of Articles of Union, dated 22d July, 5 Ann.; and of an Act of Parliament passed in Scotland, 16th January, 5 Ann",
+      "copyright": "Texts collected from  legislation.gov.uk.",
+      "translator": null,
+      "sha256": "2722aa96de5ce2faef38e3e84d6e0a674fdf96240ad96e11d0b87ea2b2f55ca4",
+      "n_chars": 1754
+    },
+    {
+      "constitution_id": "United_Kingdom_2013",
+      "section_id": "309",
+      "lang": "en",
+      "topic_keys": [
+        "housenum",
+        "motive",
+        "preamble",
+        "uhselect"
+      ],
+      "header": "Parliament Acts 1911 and 1949",
+      "article": "Preamble",
+      "copyright": "Texts collected from  legislation.gov.uk.",
+      "translator": null,
+      "sha256": "10efecb728886333134a2d1f00516bd8f2d8f1223add69314037f2929fecc1dc",
+      "n_chars": 827
+    },
+    {
+      "constitution_id": "United_Kingdom_2013",
+      "section_id": "349",
+      "lang": "en",
+      "topic_keys": [
+        "motive",
+        "preamble"
+      ],
+      "header": "Life Peerages Act 1958",
+      "article": "Preamble",
+      "copyright": "Texts collected from  legislation.gov.uk.",
+      "translator": null,
+      "sha256": "57b8dfdab880fe85720580affbebecea15109fb4005c4f6ea810948262eb4543",
+      "n_chars": 134
+    },
+    {
+      "constitution_id": "United_Kingdom_2013",
+      "section_id": "563",
+      "lang": "en",
+      "topic_keys": [
+        "motive",
+        "preamble"
+      ],
+      "header": "Senior Courts Act 1981",
+      "article": "Preamble",
+      "copyright": "Texts collected from  legislation.gov.uk.",
+      "translator": null,
+      "sha256": "9469b03316f7ff4e786528c8c3f50b18d40466ad58ce6c7e0ee60d42e03f554a",
+      "n_chars": 473
+    },
+    {
+      "constitution_id": "United_Kingdom_2013",
+      "section_id": "7411",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "Scotland Act 1998",
+      "article": "Preamble",
+      "copyright": "Texts collected from  legislation.gov.uk.",
+      "translator": null,
+      "sha256": "530295102090c5e27c58e0693ef195e55ad9b16e0a4738ffac7cf821d2a22284",
+      "n_chars": 722
+    },
+    {
+      "constitution_id": "United_Kingdom_2013",
+      "section_id": "11394",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "intrght",
+        "motive",
+        "preamble"
+      ],
+      "header": "Human Rights Act 1998",
+      "article": "Preamble",
+      "copyright": "Texts collected from  legislation.gov.uk.",
+      "translator": null,
+      "sha256": "ad1593b23183b95014a1d949c3ffec0a6ba710185a03bcdff35c06dc148db91a",
+      "n_chars": 508
+    },
+    {
+      "constitution_id": "United_Kingdom_2013",
+      "section_id": "12244",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "House of Lords Act 1999",
+      "article": "Preamble",
+      "copyright": "Texts collected from  legislation.gov.uk.",
+      "translator": null,
+      "sha256": "eb7eb09416b4d3c6d6b69834ebfb85a296b7649bec2ae5ccb030ec663a178943",
+      "n_chars": 480
+    },
+    {
+      "constitution_id": "United_Kingdom_2013",
+      "section_id": "12301",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "levjud",
+        "motive",
+        "preamble"
+      ],
+      "header": "Constitutional Reform Act 2005",
+      "article": "Preamble",
+      "copyright": "Texts collected from  legislation.gov.uk.",
+      "translator": null,
+      "sha256": "e905ed66fc47ac2bfc1b2e7ee052be3b36ad21b52aa514db48596b4f08f2ab5f",
+      "n_chars": 746
+    },
+    {
+      "constitution_id": "United_Kingdom_2013",
+      "section_id": "15377",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "Government of Wales Act 2006",
+      "article": "Preamble",
+      "copyright": "Texts collected from  legislation.gov.uk.",
+      "translator": null,
+      "sha256": "9788efac08cd21ad85d901f39864aaf4ff8cfb268bacee751054d6c6ab24bc35",
+      "n_chars": 295
+    },
+    {
+      "constitution_id": "United_Kingdom_2013",
+      "section_id": "20878",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "Fixed-term Parliaments Act 2011",
+      "article": "Preamble",
+      "copyright": "Texts collected from  legislation.gov.uk.",
+      "translator": null,
+      "sha256": "53fd8899ad705b5fed999cb8571a6c70670c9815366d6e4f1b6d0c82b40a9224",
+      "n_chars": 408
+    },
+    {
+      "constitution_id": "United_States_of_America_1992",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "motive",
+        "preamble"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "a15c9ccfe5690dfca6fa8af361ba76afefc8c968240586e6f3d4812c7c0925ca",
+      "n_chars": 327
+    },
+    {
+      "constitution_id": "Uzbekistan_2023",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "custlaw",
+        "dignity",
+        "env",
+        "ethincl",
+        "intlaw",
+        "motive",
+        "preamble",
+        "prevcond",
+        "science",
+        "solid",
+        "standliv"
+      ],
+      "header": "",
+      "article": "PREAMBLE",
+      "copyright": null,
+      "translator": null,
+      "sha256": "d65c43311ee0569e8e6a9d76df887ad19b5537fd50ad696d462f7b59f919735a",
+      "n_chars": 1546
+    },
+    {
+      "constitution_id": "Vanuatu_2023",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "c9e5ddbb711ff0e271c83fcdb07a26364e9d67bcef9ffcb5301d7d35cffc6f81",
+      "n_chars": 439
+    },
+    {
+      "constitution_id": "Venezuela_2009",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "figures",
+        "god",
+        "motive",
+        "preamble",
+        "region",
+        "selfdet",
+        "solid"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": "English Translation of amended Articles 160, 162, 174, 192, and 230 © 2012 by William S. Hein & Co., Inc.  All rights reserved.",
+      "translator": "Amendment translated by Jefri J. Ruchti",
+      "sha256": "52c65bf27e3d944a5abe978648b453deb1bc335c39942385b5d9d51f381ba7a4",
+      "n_chars": 1404
+    },
+    {
+      "constitution_id": "Zambia_2016",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "offrel",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "ad6c38152f3b02e7efc7e125167b714fd8650e0d574f7aac5e8ade8d0e9efab7",
+      "n_chars": 1287
+    },
+    {
+      "constitution_id": "Zimbabwe_2021",
+      "section_id": "1",
+      "lang": "en",
+      "topic_keys": [
+        "auth",
+        "god",
+        "motive",
+        "preamble",
+        "prevcond"
+      ],
+      "header": "",
+      "article": "Preamble",
+      "copyright": null,
+      "translator": null,
+      "sha256": "e5ef41c2fb9d7b304fea11460f7eb08ac3d8ae187e0f7beead52fe47481604f9",
+      "n_chars": 1397
+    }
+  ]
+}
