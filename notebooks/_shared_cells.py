@@ -31,3 +31,60 @@ for _old in (_P1_NAT, _P1_REV, _P1_VERB, 'PROMPT_VERSION = \"p1-\"'):
 PROMPT_CELL_P2 = (PROMPT_CELL.replace(_P1_NAT, _P2_NAT).replace(_P1_REV, _P2_REV)
                   .replace(_P1_VERB, _P2_VERB).replace('PROMPT_VERSION = \"p1-\"', 'PROMPT_VERSION = \"p2-\"'))
 assert PROMPT_CELL_P2 != PROMPT_CELL and '\"in case of\"' not in PROMPT_CELL_P2
+
+
+# ---- prompt q1 (campaign 1, preambles; codebook v2.0, decisions D21-D22) -------------------------
+# Written from scratch for founding inscriptions. Discipline of D19 kept: no quotable example
+# markers anywhere in the rules (the p1 run showed models echoing them); the frame and ground
+# definitions describe kinds of words, never quote them. Markers are quotations from the preamble.
+PROMPT_CELL_Q1 = r'''from nra.schema import Stage1Output, check_verbatim
+SCHEMA = Stage1Output.json_schema_for_decoder()
+
+SYSTEM = f"""You annotate the PREAMBLE of a constitution following a fixed codebook (v2.0). Answer with ONE JSON object and nothing else.
+
+T2 - type every entity mention as used in the clause:
+- physical: in space and time, independent of subjects (territory, land, rivers, resources, persons as bodies, the dead)
+- ideal: outside space and time (numbers, dates and durations as quantities)
+- social: in space and time but existing only because subjects recognise it (the people as constituent subject, the nation, the State, an assembly, a referendum, a mandate, a prior constitution or charter, rights, values named as objects, a party, a tradition)
+Rules: offices and collective subjects are social, the humans who fill them physical; rights, duties, powers and values are social; dates are ideal; territory is physical, the Republic is social; references to other documents are social. A divine name used as a source of authority is typed social.
+
+T5 - split the preamble into claims and, for each claim, record three things.
+A claim is one clause: each participial or subordinate clause that offers a ground, a purpose, an attitude or an invocation; each item of an enumerated list; each sentence of a narrative paragraph; the enacting formula. If one clause coordinates several grounds, make one claim per ground.
+
+ground - what the clause makes the founding act rest on:
+- nature: territory, land, resources, human nature, a sacred land
+- history: past events, struggles, sufferings, founding dates stated as facts
+- god: a divinity as source of authority, as agent in history, or as fact
+- spirit: the people, the nation, its traditions, character, heritage or roots, presented as existing before the act
+- doctrine: a general truth or theory asserted about society, development, classes or essence
+- act: a procedure, an election, a referendum, a mandate, a title, a prior document, or the enunciating subject's own declared will or decision
+- none: no ground is offered - a purpose, a value, a faith, an obligation, a bare invocation, a definition
+
+frame - how the enunciator relates the clause to itself:
+- attitude: a mental-state verb or participle (being convinced, recognising, being conscious, affirming a belief)
+- will: a volitional verb, or the enacting formula spoken in the subject's own name
+- procedure: the enunciator states its title or the procedure it acts through
+- invocation: the act is placed under a name
+- narrative: a bare third-person statement; the enunciator is not marked
+- none: purposes, definitions, obligations, list items
+
+operator - decided from the ground:
+- naturalised: ground is nature, history, god, spirit or doctrine - the act is made to rest on something presented as existing before and independently of any act
+- revealed: ground is act - the act rests on an inscribed act that anyone can ask about and check
+- other: ground is none
+
+Test, in order: (1) Does the clause offer something the act rests on - a reason, a cause, a source of authority, a title, a premise? If it only states a purpose, a value, a faith, an obligation, or names the act without a ground: other. (2) Is that ground itself an inscribed act? revealed. (3) Is the ground presented as prior to and independent of any act? naturalised.
+Rules: an attitude frame never changes the ground (recognising a past injustice still rests the act on history). An attitude toward a value or a faith is not a ground: other. An invocation with no derivation is other; an invocation from which authority is derived is naturalised with ground god. A historical fact is naturalised for how it grounds the act, not for whether it is true. The enacting formula with a stated title or procedure, or spoken in the subject's own name, is revealed; with the enunciator erased it is other. Purpose lists are other, item by item.
+
+Every "mention", "claim" and marker must be copied VERBATIM from the preamble, in its original language. A marker is the exact words of the clause that carry the ground or the frame - quote them; never write a marker that is not in the preamble. List each distinct mention once. "secondary" may be null. Write the JSON on ONE line, without indentation or code fences.
+
+JSON Schema of the answer:
+{json.dumps(SCHEMA, ensure_ascii=False)}"""
+
+PROMPT_VERSION = "q1-" + hashlib.sha256(SYSTEM.encode()).hexdigest()[:8]
+print(PROMPT_VERSION, "| system prompt:", len(SYSTEM), "chars")
+
+def messages_for(text):
+    return [{"role": "system", "content": SYSTEM},
+            {"role": "user", "content": "Preamble:\n\n" + text + "\n\nReturn the JSON object."}]'''
+assert '"in case of"' not in PROMPT_CELL_Q1 and "Convinced that" not in PROMPT_CELL_Q1

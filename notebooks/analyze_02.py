@@ -120,6 +120,13 @@ def main() -> None:
     print(df7.drop(columns="secondary").T.to_string(), "\n")
     for m in models:
         print(f"  {m} secondary: {df7.loc[m, 'secondary']}")
+    if any(r["parse_ok"] and "ground" in r["output"]["t5"][0] for rs in R.values() for r in rs[:1]):
+        print("\nT5 ground / frame shares (v2.0 records):")
+        for m, rs in R.items():
+            g = collections.Counter(c["ground"] for r in rs if r["parse_ok"] for c in r["output"]["t5"])
+            f = collections.Counter(c["frame"] for r in rs if r["parse_ok"] for c in r["output"]["t5"])
+            n = sum(g.values()) or 1
+            print(f"  {m:8s} ground: " + ", ".join(f"{k} {v/n:.2f}" for k, v in g.most_common()) + " | frame: " + ", ".join(f"{k} {v/n:.2f}" for k, v in f.most_common()))
     print("\nT5 claim-level shares by language (revealed / naturalised / other):")
     for m, rs in R.items():
         for lang in ("en", "es"):
@@ -130,7 +137,7 @@ def main() -> None:
     recs: dict = {}
     for m, rs in R.items():
         for r in rs:
-            recs.setdefault(key(r), {"chapter_type": r["run"]["chapter_type"], "lang": r["lang"]})[m] = labels_of(r)
+            recs.setdefault(key(r), {"chapter_type": r["run"].get("chapter_type") or r["run"].get("length_band"), "lang": r["lang"]})[m] = labels_of(r)
     keys = sorted(recs)
     dom_other = lambda x: dominant(x, "other")  # noqa: E731
     dom_missing = lambda x: dominant(x, "missing")  # noqa: E731
@@ -154,7 +161,7 @@ def main() -> None:
             unanimous[ds[0]] += 1
     print("  unanimous sections (all three, ties → missing):", dict(unanimous))
 
-    print("\nmean share of naturalised claims by chapter type × model:")
+    print("\nmean share of naturalised claims by chapter type (em) or length band (preambles) × model:")
     tab: dict = collections.defaultdict(lambda: collections.defaultdict(list))
     for k in keys:
         for m in models:
