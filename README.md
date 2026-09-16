@@ -1,7 +1,5 @@
 # model — New-Realism Analyzer
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22748194.svg)](https://doi.org/10.5281/zenodo.22748194)
-
 Computational-ontology model for mapping *competing realities* in constitutional texts, built on Maurizio Ferraris's New Realism (ontology ≠ epistemology; documentality: *Object = Inscribed Act*). Part of the [Computational Ontology](https://computational-ontology.com/) ecosystem alongside `soce`, `constitutionsplus` and `herder-companion`.
 
 The analyzer takes a text and returns a structured breakdown in three strata:
@@ -16,7 +14,7 @@ Every model output is labelled **emendable** and carries a model hash and a date
 
 ## Status
 
-Sprint 0 (Sept–Oct 2026): repository skeleton, codebook v1.0, frozen corpus snapshot. See [`docs/plan.md`](docs/plan.md) for the full plan, timeline and preregistration skeleton, and [`docs/project-instructions.md`](docs/project-instructions.md) for the axioms, the three tables and the canonical vocabulary (in Spanish).
+Sprint 0 (Sept–Oct 2026): repository skeleton, codebook v1.0 (emergency provisions, exploratory) and v2.0 (preambles), frozen corpus snapshots. See [`docs/plan.md`](docs/plan.md) for the full plan, timeline and preregistration skeleton, and [`docs/project-instructions.md`](docs/project-instructions.md) for the axioms, the three tables and the canonical vocabulary.
 
 Pilot corpus: **emergency provisions** (Constitute topic key `em`) across in-force constitutions, English first, Spanish originals second.
 
@@ -44,4 +42,4 @@ GitHub releases are archived on Zenodo under one concept DOI (`CITATION.cff` car
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). Concept DOI (all versions): [10.5281/zenodo.22748194](https://doi.org/10.5281/zenodo.22748194); v1.0.0: [10.5281/zenodo.22748195](https://doi.org/10.5281/zenodo.22748195). Constitute texts must be cited as: Elkins, Zachary, Tom Ginsburg, James Melton. *Constitute: The World's Constitutions to Read, Search, and Compare.* constituteproject.org.
+See [`CITATION.cff`](CITATION.cff). Constitute texts must be cited as: Elkins, Zachary, Tom Ginsburg, James Melton. *Constitute: The World's Constitutions to Read, Search, and Compare.* constituteproject.org.

@@ -2,21 +2,13 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
 title: "New-Realism Analyzer: a computational-ontology model for mapping competing realities in constitutional texts"
-doi: 10.5281/zenodo.22748194
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.22748194
-    description: "Concept DOI (all versions)"
-  - type: doi
-    value: 10.5281/zenodo.22748195
-    description: "Version DOI for v1.0.0"
 authors:
   - family-names: "Bourguet González"
     given-names: "Luis Felipe"
     orcid: "https://orcid.org/0000-0002-4673-4486"
     affiliation: "LabOnt – Center for Ontology, University of Turin; Complex Systems Science Laboratory, Hiroshima University"
-version: 1.0.0
-date-released: 2026-09-14
+version: 2.0.0
+date-released: 2026-09-16
 license: Apache-2.0
 repository-code: "https://github.com/computational-ontology/model"
 url: "https://computational-ontology.com/"
@@ -32,4 +24,6 @@ abstract: >-
   Pipeline and models that break a text down into three strata (Record, Enunciation,
   Mediation) following Maurizio Ferraris's New Realism, typing entities as physical,
   ideal or social and labelling each claim with a hermeneutic operator (naturalised,
-  revealed, other). Pilot corpus: emergency provisions across in-force constitutions.
+  revealed, other) together with the ground the clause makes a founding act rest on. Campaign 1
+  corpus: the preambles of in-force constitutions (English and Spanish records); an exploratory
+  study on emergency provisions preceded it.

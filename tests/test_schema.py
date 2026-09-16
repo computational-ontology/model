@@ -61,6 +61,22 @@ def test_decoder_schema_is_strict_and_clean():
     assert s["$defs"]["EntityType"]["enum"] == ["physical", "ideal", "social"]
 
 
+def test_v2_fields_default_and_are_required_by_decoder():
+    # v1.0 records (no frame/ground) still validate; the decoder grammar requires both
+    out = Stage1Output.model_validate(GOOD)
+    assert out.t5[0].frame.value == "none" and out.t5[0].ground.value == "none"
+    s = Stage1Output.json_schema_for_decoder()
+    assert set(s["$defs"]["Claim"]["required"]) == {"claim", "operator", "markers", "frame", "ground", "secondary"}
+    assert s["$defs"]["Ground"]["enum"] == ["nature", "history", "god", "spirit", "doctrine", "act", "none"]
+    assert s["$defs"]["Frame"]["enum"] == ["attitude", "will", "procedure", "invocation", "narrative", "none"]
+    v2 = json.loads(json.dumps(GOOD))
+    v2["t5"][0].update(frame="narrative", ground="nature")
+    assert Stage1Output.model_validate(v2).t5[0].ground.value == "nature"
+    v2["t5"][0]["ground"] = "tradition"  # not in the enum
+    with pytest.raises(ValidationError):
+        Stage1Output.model_validate(v2)
+
+
 def test_record_requires_aware_timestamp():
     base = dict(
         constitution_id="Ireland_2019", section_id="12345", lang="en", sha256="0" * 64,
@@ -69,4 +85,4 @@ def test_record_requires_aware_timestamp():
     with pytest.raises(ValidationError):
         Stage1Record.model_validate({**base, "emitted_at": datetime(2026, 9, 14, 12, 0)})  # noqa: DTZ001 — naive on purpose
     rec = Stage1Record.model_validate({**base, "emitted_at": datetime(2026, 9, 14, 12, 0, tzinfo=timezone.utc)})
-    assert rec.codebook_version == "1.0" and rec.verbatim_ok is None
+    assert rec.codebook_version == "2.0" and rec.verbatim_ok is None

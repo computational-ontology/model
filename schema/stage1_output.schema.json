@@ -16,6 +16,12 @@
           },
           "type": "array"
         },
+        "frame": {
+          "$ref": "#/$defs/Frame"
+        },
+        "ground": {
+          "$ref": "#/$defs/Ground"
+        },
         "secondary": {
           "anyOf": [
             {
@@ -31,6 +37,8 @@
         "claim",
         "operator",
         "markers",
+        "frame",
+        "ground",
         "secondary"
       ],
       "type": "object"
@@ -40,6 +48,29 @@
         "physical",
         "ideal",
         "social"
+      ],
+      "type": "string"
+    },
+    "Frame": {
+      "enum": [
+        "attitude",
+        "will",
+        "procedure",
+        "invocation",
+        "narrative",
+        "none"
+      ],
+      "type": "string"
+    },
+    "Ground": {
+      "enum": [
+        "nature",
+        "history",
+        "god",
+        "spirit",
+        "doctrine",
+        "act",
+        "none"
       ],
       "type": "string"
     },

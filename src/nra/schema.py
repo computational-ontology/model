@@ -13,7 +13,12 @@ Placement in the project tables: the record is an inscription of an *act of labe
 (thesis 5: who / what act / support / date) and, when the emitter is a model, a weak document
 (thesis 9). Everything in it is *amendable* (Table 1); the section it points to is not.
 
-Field semantics follow codebook/README.md v1.0 §1 (output format), §2 (T2) and §3 (T5).
+Field semantics follow codebook/README.md v2.0 §1 (output format), §2 (T2) and §3 (T5).
+
+v2.0 (decisions D21, D22): a claim carries, besides its operator, the *frame* through which the
+enunciator relates it to itself and the *ground* the clause makes the founding act rest on. The
+operator is decided from the ground (codebook §3); v1.0 records, which have neither field, still
+validate (both default to ``none``) but the decoder requires them.
 """
 
 from __future__ import annotations
@@ -26,7 +31,7 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
-CODEBOOK_VERSION = "1.0"
+CODEBOOK_VERSION = "2.0"
 
 
 class EntityType(str, Enum):
@@ -56,6 +61,32 @@ class SecondaryOperator(str, Enum):
     parallel = "parallel"  # ∥
 
 
+class Frame(str, Enum):
+    """Codebook v2.0 §3: how the enunciator relates the clause to itself (constative layer)."""
+
+    attitude = "attitude"  # convinced that, recognising, conscious of, affirming its belief
+    will = "will"  # wishing, desiring, resolved to, proclaims its will, do hereby adopt
+    procedure = "procedure"  # through elected representatives, by referendum, in Constituent Assembly
+    invocation = "invocation"  # in the name of
+    narrative = "narrative"  # bare third-person statement, enunciator erased
+    none = "none"  # purpose lists, definitions, obligations — no framing of the enunciator
+
+
+class Ground(str, Enum):
+    """Codebook v2.0 §3: what the clause makes the founding act rest on (performative layer)."""
+
+    nature = "nature"  # territory, resources, human nature, "sacred" land
+    history = "history"  # past events and struggles stated as facts
+    god = "god"  # a divinity as source of authority or as fact
+    spirit = "spirit"  # the people, nation, tradition, character, roots presented as prior to the act
+    doctrine = "doctrine"  # a general truth or theory asserted (class struggle, development, essence)
+    act = "act"  # a procedure, mandate, election, referendum, prior inscription, the subject's own decision
+    none = "none"  # no ground offered (bare performative, purpose, value, faith, obligation)
+
+
+NATURALISING_GROUNDS = frozenset({Ground.nature, Ground.history, Ground.god, Ground.spirit, Ground.doctrine})
+
+
 class Mention(BaseModel):
     """One entity mention, typed as used in the clause (codebook §2, rule 1)."""
 
@@ -76,6 +107,8 @@ class Claim(BaseModel):
         default_factory=list,
         description="Verbatim words that triggered the label ('if the President is satisfied', 'en caso de').",
     )
+    frame: Frame = Field(default=Frame.none, description="How the enunciator relates the clause to itself (v2.0).")
+    ground: Ground = Field(default=Ground.none, description="What the clause makes the founding act rest on (v2.0).")
     secondary: SecondaryOperator | None = Field(
         default=None, description="Exploratory six-operator label; may be null."
     )
@@ -97,7 +130,7 @@ class Stage1Output(BaseModel):
         _strip(schema)
         # every key is required for the decoder, so all emitters produce the same shape
         schema["required"] = ["t2", "t5", "notes"]
-        schema["$defs"]["Claim"]["required"] = ["claim", "operator", "markers", "secondary"]
+        schema["$defs"]["Claim"]["required"] = ["claim", "operator", "markers", "frame", "ground", "secondary"]
         return schema
 
 

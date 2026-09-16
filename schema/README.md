@@ -8,7 +8,7 @@ JSON by hand; change the pydantic model and regenerate.
 
 | Layer | Class | Who produces it | Contents |
 |---|---|---|---|
-| Model output | `Stage1Output` | the LLM (or a human, in the annotation tool) | `t2` mentions typed physical / ideal / social; `t5` claims labelled naturalised / revealed / other, with verbatim `markers` and an optional exploratory `secondary` operator; `notes` |
+| Model output | `Stage1Output` | the LLM (or a human, in the annotation tool) | `t2` mentions typed physical / ideal / social; `t5` claims labelled naturalised / revealed / other, with verbatim `markers`, the v2.0 `frame` and `ground` fields and an optional exploratory `secondary` operator; `notes` |
 | Record | `Stage1Record` | the harness | section identity by `constitution_id` + `section_id` + `sha256` (never the text), `annotator`, `emitter_kind`, `emitted_at` (timezone-aware), `codebook_version`, `prompt_version`, `decoding` parameters, `parse_ok`, `verbatim_ok`, and the `output` |
 
 The model never sees or emits identifiers, dates or versions — it cannot get them wrong if it
@@ -27,6 +27,11 @@ section it points to, fixed by its hash in the snapshot manifest, is not.
 
 - `type`: `physical`, `ideal`, `social` (codebook §2).
 - `operator`: `naturalised` (↓), `revealed` (✦), `other` (codebook §3, decision D2).
+- `ground` (v2.0, decision D22): `nature`, `history`, `god`, `spirit`, `doctrine` (naturalising
+  grounds), `act` (revealing ground), `none` — what the clause makes the founding act rest on
+  (codebook §3.1). The operator is decided from it (§3.3).
+- `frame` (v2.0): `attitude`, `will`, `procedure`, `invocation`, `narrative`, `none` — how the
+  enunciator relates the clause to itself (codebook §3.2); never changes the ground.
 - `secondary` (exploratory, not gated): `implication` ⇒, `aggregation` ⊕, `naturalisation` ↓,
   `erasure` ∅, `revelation` ✦, `parallel` ∥ — the six operators of *Ideological Architectures*.
   English names are provisional; the symbols are canonical.
