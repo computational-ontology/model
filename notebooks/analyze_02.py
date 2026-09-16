@@ -110,7 +110,7 @@ def main() -> None:
     ap.add_argument("--private", default=None, help="directory with the span-form JSONL (not in the repo)")
     args = ap.parse_args()
     d = Path(args.dir)
-    R = {m: read(d / f"{name}.offsets.jsonl") for m, name in MODELS.items()}
+    R = {m: read(d / f"{name}.offsets.jsonl") for m, name in MODELS.items() if (d / f"{name}.offsets.jsonl").exists()}  # a bake-off may lack a model
     models = list(R)
     pd.set_option("display.width", 220)
     pd.set_option("display.max_columns", 40)
@@ -159,7 +159,7 @@ def main() -> None:
         ds = [dom_missing(recs[k].get(m, [])) for m in models]
         if all(ds) and len(set(ds)) == 1:
             unanimous[ds[0]] += 1
-    print("  unanimous sections (all three, ties → missing):", dict(unanimous))
+    print("  unanimous sections (all models, ties → missing):", dict(unanimous))
 
     print("\nmean share of naturalised claims by chapter type (em) or length band (preambles) × model:")
     tab: dict = collections.defaultdict(lambda: collections.defaultdict(list))
@@ -173,7 +173,7 @@ def main() -> None:
 
     if args.private:
         p = Path(args.private)
-        S = {m: read(p / f"{name}.jsonl") for m, name in PRIVATE_NAMES.items()}
+        S = {m: read(p / f"{name}.jsonl") for m, name in PRIVATE_NAMES.items() if (p / f"{name}.jsonl").exists()}
         print("\n[private] prompt-example markers echoed (claims with ≥1 example marker / claims; of those markers, not verbatim):")
         for m, rs in S.items():
             claims = [c for r in rs if r["parse_ok"] for c in r["output"]["t5"]]

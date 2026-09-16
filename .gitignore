@@ -40,3 +40,6 @@ Thumbs.db
 # AWS E1 staging (never commit texts or zips)
 _e1/
 e1-record.zip
+# span-form LLM outputs quote Constitute text: never committed
+data/private/
+data/annotations/_v*/
