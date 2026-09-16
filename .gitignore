@@ -36,3 +36,7 @@ kaggle.json
 Thumbs.db
 .vscode/
 .idea/
+
+# AWS E1 staging (never commit texts or zips)
+_e1/
+e1-record.zip
