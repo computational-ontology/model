@@ -10,7 +10,7 @@ nb = nbf.v4.new_notebook()
 C: list = []
 md, code = (lambda s: C.append(nbf.v4.new_markdown_cell(s))), (lambda s: C.append(nbf.v4.new_code_cell(s)))
 
-md("""# 02b · Stage 1 bake-off on preambles — three open-weights models on the 100-preamble pilot (codebook v2.0, prompt q1)
+md("""# 02b · Stage 1 bake-off on preambles — three open-weights models on the 100-preamble pilot (codebook v2.0, prompt q1) — v1.1
 
 Campaign 1 of the New-Realism Analyzer (github.com/computational-ontology/model) after the pivot to
 **preambles as the unit** (decisions D20–D23; codebook v2.0, release `v2.0.0`, Zenodo DOI
@@ -34,7 +34,14 @@ under one prompt is solidarity among emitters, not objectivity (*Manifiesto*, pp
 
 Settings: Accelerator **GPU T4 ×2**, Internet **on**, secret `HF_TOKEN`, dataset
 `luisdscientist/nra-snapshot-preamble`. Expected wall time: ~1–2.5 h per model (long preambles
-cost more tokens) → run all three in one version or set `ONLY_MODEL` to split.""")
+cost more tokens) → run all three in one version or set `ONLY_MODEL` to split.
+
+**v1.1 (retry of the capped preambles).** v1 (Versions 2–3, 16 Sep 2026) lost 4 (Gemma) and 6 (Qwen)
+`long` preambles at the 3 072-token cap. v1.1 attaches the v1 output as an input, keeps every record
+with `parse_ok=true`, drops the failed ones and regenerates them under `MAX_NEW_TOKENS=8192`
+(`RETRY_FAILED`); the paraphrase-B file is carried forward unchanged. The analysis cells also report
+`operator_from_ground` (the operator the codebook rule derives from the emitted `ground`) next to the
+emitted operator, because v1 showed both models emitting `ground=act` with `operator=naturalised`.""")
 
 md("""## 0 · Environment and run parameters
 
@@ -45,11 +52,13 @@ code(ENV_CELL + """
 
 ONLY_MODEL = None        # e.g. "google/gemma-4-12B-it" — None runs all three
 LIMIT = None             # e.g. 10 for a smoke test — None runs the whole pilot
-SENSITIVITY_N = 20       # sections for the prompt-paraphrase check on the first model; 0 = skip
-MAX_NEW_TOKENS = 3072    # preambles run to 20 000 chars; the em runs capped at 2048 on 2–5 sections
+SENSITIVITY_N = 0        # sections for the prompt-paraphrase check on the first model; 0 = skip (v1 did 20 on Gemma)
+MAX_NEW_TOKENS = 8192    # v1 capped at 3072 and lost the longest preambles (~20 000 chars)
+RETRY_FAILED = True      # seed OUT_DIR from an attached previous output, dropping parse_ok=false records
+PREV_GLOB = "/kaggle/input/**/stage1_preamble"   # where an attached notebook output mounts (any version)
 OUT_DIR = "/kaggle/working/stage1_preamble"   # em records live in data/annotations/stage1*/ — never mixed
 import os as _os; _os.makedirs(OUT_DIR, exist_ok=True)
-print("params:", dict(ONLY_MODEL=ONLY_MODEL, LIMIT=LIMIT, SENSITIVITY_N=SENSITIVITY_N, MAX_NEW_TOKENS=MAX_NEW_TOKENS, OUT_DIR=OUT_DIR))""")
+print("params:", dict(ONLY_MODEL=ONLY_MODEL, LIMIT=LIMIT, SENSITIVITY_N=SENSITIVITY_N, MAX_NEW_TOKENS=MAX_NEW_TOKENS, RETRY_FAILED=RETRY_FAILED, OUT_DIR=OUT_DIR))""")
 
 md("""## 1 · Hugging Face token""")
 code(TOKEN_CELL)
@@ -181,6 +190,34 @@ def done_keys(path):
     return keys
 print("record helpers ready")""")
 
+md("""## 5b · Resume from an attached previous output (v1.1)
+
+If a previous version's output is attached as an input, its `stage1_preamble/` files are copied into
+`OUT_DIR` so that §6 skips the sections already done and §7–§9 read the complete set. With
+`RETRY_FAILED`, records with `parse_ok=false` (the 3 072-token cap in v1) are dropped from both the
+span and the offsets file, so §6 regenerates exactly those; the paraphrase-B file is copied whole.
+A record is never overwritten: the new attempt is a new inscription with its own `emitted_at`.""")
+code("""import glob, shutil
+prev_dirs = sorted(set(glob.glob(PREV_GLOB, recursive=True)))
+print("previous outputs found:", prev_dirs or "none")
+for pdir in prev_dirs:
+    for src in sorted(glob.glob(f"{pdir}/*.jsonl")):
+        name = os.path.basename(src)
+        dst = f"{OUT_DIR}/{name}"
+        if os.path.exists(dst):
+            print(f"  {name}: already in OUT_DIR, left as is"); continue
+        if "paraphrase" in name or not RETRY_FAILED:
+            shutil.copy(src, dst); print(f"  {name}: copied"); continue
+        kept = dropped = 0
+        with open(src, encoding="utf-8") as fi, open(dst, "w", encoding="utf-8") as fo:
+            for line in fi:
+                r = json.loads(line)
+                if r["parse_ok"]:
+                    fo.write(line if line.endswith("\\n") else line + "\\n"); kept += 1
+                else:
+                    dropped += 1; print(f"    retry: {r['annotator']} {r['constitution_id']} ({r['lang']}) — {r['run']['verdict'][:60]}")
+        print(f"  {name}: {kept} kept, {dropped} dropped for retry")""")
+
 md("""## 6 · Run: every candidate over the pilot preambles
 
 One model at a time. Per section: generate under the grammar, parse, build the record, append
@@ -233,6 +270,9 @@ language. These are properties of the *emitters*, not measures of correctness. T
 checks on the v2.0 rule "operator is decided from the ground": how often a model's operator
 contradicts its own ground, per model.""")
 code("""import glob, pandas as pd
+from nra.schema import NATURALISING_GROUNDS
+def rule_operator(ground):   # codebook v2.0 §3: the operator is decided from the ground
+    return "naturalised" if ground in {g.value for g in NATURALISING_GROUNDS} else "revealed" if ground == "act" else "other"
 rows = []
 for path in sorted(glob.glob(f"{OUT_DIR}/*.jsonl")):
     if path.endswith(".offsets.jsonl") or "paraphrase" in path:
@@ -248,7 +288,8 @@ for path in sorted(glob.glob(f"{OUT_DIR}/*.jsonl")):
                          "labels": [c["operator"] for c in r["output"]["t5"]] if r["parse_ok"] else [],
                          "grounds": [c["ground"] for c in r["output"]["t5"]] if r["parse_ok"] else [],
                          "frames": [c["frame"] for c in r["output"]["t5"]] if r["parse_ok"] else [],
-                         "claims": [(c["claim"], c["operator"], c["ground"], c["frame"]) for c in r["output"]["t5"]] if r["parse_ok"] else []})
+                         "labels_fg": [rule_operator(c["ground"]) for c in r["output"]["t5"]] if r["parse_ok"] else [],
+                         "claims": [(c["claim"], c["operator"], c["ground"], c["frame"], rule_operator(c["ground"])) for c in r["output"]["t5"]] if r["parse_ok"] else []})
 df = pd.DataFrame(rows)
 print(len(df), "records")
 disc = df.groupby("model").agg(records=("cid", "size"), valid=("parse_ok", "mean"), eos=("eos", "mean"),
@@ -256,17 +297,15 @@ disc = df.groupby("model").agg(records=("cid", "size"), valid=("parse_ok", "mean
                                tok_mean=("n_out", "mean"), sec_mean=("sec", "mean"), sec_p90=("sec", lambda s: s.quantile(.9)),
                                t2_mean=("n_t2", "mean"), t5_mean=("n_t5", "mean")).round(2)
 display(disc)
-for col, title in (("labels", "operator"), ("grounds", "ground"), ("frames", "frame")):
+for col, title in (("labels", "operator"), ("labels_fg", "operator_from_ground"), ("grounds", "ground"), ("frames", "frame")):
     lab = df.explode(col).dropna(subset=[col]).groupby(["model", "lang", col]).size().unstack(fill_value=0)
     lab = lab.div(lab.sum(axis=1), axis=0).round(2)
     print(f"\\nT5 {title} shares per model and language (claim level):"); display(lab)
-NAT = {"nature", "history", "god", "spirit", "doctrine"}
-def expected(g):
-    return "naturalised" if g in NAT else "revealed" if g == "act" else "other"
 cons = {}
 for m in sorted(df["model"].unique()):
     cl = [c for cs in df[df["model"] == m]["claims"] for c in cs]
-    cons[m.split("/")[-1]] = f"{sum(op != expected(g) for _, op, g, _ in cl)}/{len(cl)} claims where operator ≠ rule(ground)"
+    off = collections.Counter((g, op) for _, op, g, _, opg in cl if op != opg)
+    cons[m.split("/")[-1]] = f"{sum(off.values())}/{len(cl)} claims where operator ≠ rule(ground); top {off.most_common(2)}"
 print("\\nconsistency with the v2.0 rule (operator decided from ground):", cons)""")
 
 md("""## 8 · Model–model agreement on operator, ground and frame (D18: three units, no synthetic labels)
@@ -321,9 +360,9 @@ for lang in ("en", "es"):
 text_of = {(s["constitution_id"], s["section_id"], s["lang"]): s["text"] for s in sections}
 def spans(claims, text):
     out = []
-    for c, op, g, fr in claims:
+    for c, op, g, fr, opg in claims:
         i = text.find(c)
-        out.append(((i, i + len(c)) if i >= 0 else None, (op, g, fr)))
+        out.append(((i, i + len(c)) if i >= 0 else None, (op, g, fr, opg)))
     return out
 def jaccard(a, b):
     if a is None or b is None:
@@ -354,7 +393,7 @@ for a, b in itertools.combinations(models, 2):
         print(f"    {short(a)} vs {short(b)}: no aligned claims"); continue
     n_a = sum(len(v) for k, v in claims_by.items() if k[3] == a)
     line = f"    {short(a)} vs {short(b)}: {len(pairs)} aligned claims ({len(pairs)/max(n_a,1):.0%} of {short(a)}'s)"
-    for name, cats, idx in (("operator", CATS, 0), ("ground", GCATS, 1), ("frame", FCATS, 2)):
+    for name, cats, idx in (("operator", CATS, 0), ("ground", GCATS, 1), ("frame", FCATS, 2), ("operator_from_ground", CATS, 3)):
         m2 = np.array([[cats[x[idx]] for x, _ in pairs], [cats[y[idx]] for _, y in pairs]], dtype=float)
         agree = np.mean([x[idx] == y[idx] for x, y in pairs])
         line += f" | {name}: raw {agree:.2f} α {alpha(m2, 'nominal')}"
