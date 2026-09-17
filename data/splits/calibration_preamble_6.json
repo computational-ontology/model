@@ -1,0 +1,54 @@
+{
+ "seed": 20260917,
+ "purpose": "calibration set for annotator training, campaign 1: drawn from the 90 preambles outside pilot_preamble_100, stratified as the pilot (EN short/medium/medium/long, ES medium/long); discussed jointly, never scored",
+ "sections": [
+  {
+   "constitution_id": "Palau_1992",
+   "section_id": "1",
+   "lang": "en",
+   "length_band": "short",
+   "n_chars": 497,
+   "sha256": "985fbe794c703daf4a9193839e2d36e7a65f2ddc28c77e5ebcadd19005f6d26e"
+  },
+  {
+   "constitution_id": "Zimbabwe_2021",
+   "section_id": "1",
+   "lang": "en",
+   "length_band": "medium",
+   "n_chars": 1397,
+   "sha256": "e5ef41c2fb9d7b304fea11460f7eb08ac3d8ae187e0f7beead52fe47481604f9"
+  },
+  {
+   "constitution_id": "Uzbekistan_2023",
+   "section_id": "1",
+   "lang": "en",
+   "length_band": "medium",
+   "n_chars": 1546,
+   "sha256": "d65c43311ee0569e8e6a9d76df887ad19b5537fd50ad696d462f7b59f919735a"
+  },
+  {
+   "constitution_id": "East_Timor_2002",
+   "section_id": "1",
+   "lang": "en",
+   "length_band": "long",
+   "n_chars": 3067,
+   "sha256": "0e6ce377c7be3653fc39cf2578bfd196bb7597c33c8a8c9ede9398c4945aed07"
+  },
+  {
+   "constitution_id": "Equatorial_Guinea_2012",
+   "section_id": "1",
+   "lang": "es",
+   "length_band": "medium",
+   "n_chars": 922,
+   "sha256": "a69b6b2b23fa4567e0f26e866aa47601721fb549adb7923463eb62e65c15a14b"
+  },
+  {
+   "constitution_id": "Iran_1989",
+   "section_id": "1",
+   "lang": "es",
+   "length_band": "long",
+   "n_chars": 2380,
+   "sha256": "b54b753c4fb82f9cf9758d3ec4ef56874ddbc4d4ca7b620d98af19362591490a"
+  }
+ ]
+}
