@@ -1,10 +1,11 @@
 """Claim-level agreement between emitters, on the releasable offsets form.
 
-Sections are the unit in analyze_02.py; here the unit is the aligned claim: two claims from two models
+Sections are the unit in analyze_02.py; here the unit is the aligned claim: two claims from two emitters
+(models, or human annotators converted with human_to_offsets.py; any *.offsets.jsonl in --dir is read)
 are aligned when their character spans overlap with IoU >= --iou (default 0.5), greedily by best IoU.
 Prints, per model pair: coverage (aligned / claims), Krippendorff nominal alpha on operator, ground and
-frame over aligned claims, and per model the share of claims whose operator matches the codebook v2.0
-rule operator = rule(ground). Amendable output (Table 1): a measure of solidarity between emitters, not
+frame over aligned claims (plus operator_from_ground, and operator alpha per language and per length band),
+and per model the share of claims whose operator matches the codebook v2.0 rule operator = rule(ground). Amendable output (Table 1): a measure of solidarity between emitters, not
 of objectivity (Manifiesto pp. 97-99); objectivity comes from the human anchoring (D11).
 """
 from __future__ import annotations
@@ -70,8 +71,12 @@ def main() -> None:
     ap.add_argument("--iou", type=float, default=0.5)
     args = ap.parse_args()
     d = Path(args.dir)
-    R = {m: {(r["constitution_id"], r["section_id"], r["lang"]): r for r in read(d / f"{n}.offsets.jsonl") if r["parse_ok"]}
-         for m, n in MODELS.items() if (d / f"{n}.offsets.jsonl").exists()}
+    files = {m: d / f"{n}.offsets.jsonl" for m, n in MODELS.items() if (d / f"{n}.offsets.jsonl").exists()}
+    known = set(files.values())
+    for f in sorted(d.glob("*.offsets.jsonl")):  # any other emitter (human annotators, extra models): keyed by file stem
+        if f not in known:
+            files[f.name.replace(".offsets.jsonl", "")] = f
+    R = {m: {(r["constitution_id"], r["section_id"], r["lang"]): r for r in read(f) if r["parse_ok"]} for m, f in files.items()}
     # a claim whose span could not be located in the record (non-verbatim quote) has claim=None: it cannot be aligned
     for m, recs in R.items():
         dropped = 0
@@ -91,6 +96,9 @@ def main() -> None:
 
     for a, b in itertools.combinations(R, 2):
         keys = sorted(set(R[a]) & set(R[b]))
+        if not keys:
+            print(f"\n{a}-{b}: no section annotated by both; skipped")
+            continue
         pairs, na, nb = [], 0, 0
         for k in keys:
             ca, cb = R[a][k]["output"]["t5"], R[b][k]["output"]["t5"]
@@ -98,15 +106,21 @@ def main() -> None:
             nb += len(cb)
             pairs += align(ca, cb, args.iou)
         print(f"\n{a}-{b}: {len(keys)} sections valid in both; aligned claims {len(pairs)} "
-              f"(coverage {len(pairs)/na:.2f} of {a}, {len(pairs)/nb:.2f} of {b}; IoU >= {args.iou})")
+              f"(coverage {len(pairs)/max(na, 1):.2f} of {a}, {len(pairs)/max(nb, 1):.2f} of {b}; IoU >= {args.iou})")
         for field in ("operator", "ground", "frame"):
             pp = [(x[field], y[field]) for x, y in pairs]
             agree = sum(x == y for x, y in pp) / max(len(pp), 1)
             print(f"  {field:9s} raw agreement {agree:.2f}  alpha {alpha(pp)}")
+        pp = [(rule(x["ground"]), rule(y["ground"])) for x, y in pairs]
+        print(f"  operator_from_ground raw {sum(x == y for x, y in pp)/max(len(pp), 1):.2f}  alpha {alpha(pp)}")
         for lang in ("en", "es"):
             sub = [(x["operator"], y["operator"]) for k in keys if k[2] == lang
                    for x, y in align(R[a][k]["output"]["t5"], R[b][k]["output"]["t5"], args.iou)]
             print(f"  operator {lang}: n={len(sub)} alpha {alpha(sub)}")
+        for band in ("short", "medium", "long"):
+            sub = [(x["operator"], y["operator"]) for k in keys if R[a][k]["run"]["length_band"] == band
+                   for x, y in align(R[a][k]["output"]["t5"], R[b][k]["output"]["t5"], args.iou)]
+            print(f"  operator {band}: n={len(sub)} alpha {alpha(sub)}")
         conf = collections.Counter((x["operator"], y["operator"]) for x, y in pairs)
         print("  operator confusion (a, b):", dict(conf.most_common()))
 
