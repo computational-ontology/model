@@ -3,8 +3,8 @@ message: "If you use this software, please cite it as below."
 type: software
 title: "New-Realism Analyzer: a computational-ontology model for mapping competing realities in constitutional texts"
 authors:
-  - family-names: "Bourguet González"
-    given-names: "Luis Felipe"
+  - family-names: "Bourguet"
+    given-names: "Luis"
     orcid: "https://orcid.org/0000-0002-4673-4486"
     affiliation: "LabOnt – Center for Ontology, University of Turin; Complex Systems Science Laboratory, Hiroshima University"
 version: 2.0.0

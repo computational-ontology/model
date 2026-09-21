@@ -1,0 +1,28 @@
+{
+  "title": "New-Realism Analyzer: a computational-ontology model for mapping competing realities in constitutional texts",
+  "upload_type": "software",
+  "license": "Apache-2.0",
+  "creators": [
+    {
+      "name": "Bourguet, Luis",
+      "affiliation": "LabOnt — Centre for Ontology, Università degli Studi di Torino",
+      "orcid": "0000-0002-4673-4486"
+    }
+  ],
+  "keywords": [
+    "new realism",
+    "documentality",
+    "social ontology",
+    "comparative constitutional law",
+    "computational social science",
+    "natural language processing",
+    "ideology"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://computational-ontology.com/",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
