@@ -1,5 +1,6 @@
 {
   "title": "New-Realism Analyzer: a computational-ontology model for mapping competing realities in constitutional texts",
+  "description": "<p>A Python package that reads a constitutional text and returns a structured breakdown in three strata &mdash; Record, Enunciation, Mediation &mdash; following Maurizio Ferraris&rsquo;s New Realism: entities typed as physical, ideal or social, and each claim labelled with a hermeneutic operator (naturalised, revealed, other) together with the ground on which the clause makes a founding act rest.</p><p>The <em>model</em> named in the title is that three-strata analytical framework, <strong>not a trained model</strong>. The package distributes source code, schemas, prompts and a codebook; it calls external language models through an interchangeable back end and ships no weights. Every output is labelled <em>emendable</em> and carries a model hash and a date, so any reading can be traced back to the exact configuration that produced it.</p>",
   "upload_type": "software",
   "license": "Apache-2.0",
   "creators": [

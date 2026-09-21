@@ -1,4 +1,4 @@
-# model — New-Realism Analyzer
+# New-Realism Analyzer
 
 Computational-ontology model for mapping *competing realities* in constitutional texts, built on Maurizio Ferraris's New Realism (ontology ≠ epistemology; documentality: *Object = Inscribed Act*). Part of the [Computational Ontology](https://computational-ontology.com/) ecosystem alongside `soce`, `constitutionsplus` and `herder-companion`.
 

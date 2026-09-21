@@ -9,7 +9,7 @@ description = "New-Realism Analyzer — computational-ontology model for mapping
 readme = "README.md"
 license = { text = "Apache-2.0" }
 requires-python = ">=3.10"
-authors = [{ name = "Luis Felipe Bourguet González", email = "luisfelipe.bourgetgonzalez@unito.it" }]
+authors = [{ name = "Luis Bourguet", email = "luisfelipe.bourgetgonzalez@unito.it" }]
 keywords = ["new realism", "documentality", "social ontology", "constitutions", "nlp"]
 
 # Versions verified against official docs / PyPI on 2026-09-14 (see docs/plan.md §3).
